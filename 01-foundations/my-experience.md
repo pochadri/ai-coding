@@ -149,18 +149,6 @@ The real cost most teams underestimate is not the subscription. It's the **revie
 
 If you want the one-paragraph version of everything above: pick one tool and pay for it. Write a starter AGENTS.md in your repo today. Set up the security floor (CI scanner, secret-scanning, skill-scanner) before you install anything else. Adopt spec-driven development the next time you start a feature, even if the spec is 100 words. Author one custom skill capturing the pattern your agent keeps getting wrong. Treat the saved time as yours to spend, not as a productivity dividend to extract — invest it in alignment, review, and craftsmanship. And keep tracking your own usage; what's true for me won't be exactly true for you, and the only way to know is to measure. The rest of the guide is the longer version of that.
 
-## How I work on this guide itself
-
-A meta-note worth surfacing because it informs how I think about AI-assisted *content* work, not just code. This guide is itself a practitioner's experiment in using AI to maintain a substantial body of writing. The discipline that's worked for me on it:
-
-I run the same kind of audit-and-correct loop on the writing that I run on production code. Style audits (voice, tics, formulaic structures), content audits (depth, currency, accuracy), contradiction audits (does anything in this body conflict with anything else), naivety audits (is the treatment surface-level for the topic). Each audit finds different things; running only one misses the others. The pattern is the same one I described in [review discipline](../03-effective-use/review-discipline.md), applied to writing.
-
-The other discipline that's saved me hours of rework: **sample first, scale second**. When I'm about to apply a voice change across many pages, I rewrite *one* page first and gut-check it before scaling. The scaling cost when the pattern was wrong is much larger than the sampling cost. This is the single most important habit I've built for AI-assisted editorial work.
-
-Bulk transformations get a critical re-pass too. A find-and-replace that "fixes" one tic frequently introduces another (the "This page is X" → "What follows is X" episode is the canonical example). After any sweep across files, I do a focused pass looking for *what the operation broke or created*, not a re-run of the original review.
-
-None of this is unique to writing. The same audit-and-correct discipline, the same sample-first habit, the same critical re-pass after bulk transformations — these all apply to any large-scale AI-assisted work. I name them here because the guide otherwise reads as if AI is only for code; in practice it's also for the writing about the code.
-
 ## Related reading
 
 - [Where AI actually helps](../03-effective-use/where-ai-helps.md), the generalized version of these observations
