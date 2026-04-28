@@ -34,6 +34,14 @@ xychart-beta
 
 > Full citations and links to these studies live in [REFERENCES.md](../REFERENCES.md).
 
+## A note on precision claims you can't verify
+
+Working on this guide has taught me to be more skeptical of precise numbers in vendor research than I used to be. Specific multipliers ("4x more secret leaks", "46% faster", "322% spike in privilege escalation") sound authoritative. Trace them back to a primary source and you sometimes find the number is from secondary coverage of an interview, or that the original methodology was a slice of a slice, or that the number floats across versions of the same press release.
+
+The pattern I've adopted: when I can verify the primary source, I cite it inline and use the precise number. When I can't, I describe the pattern directionally and flag the verification status. "Repos with AI assistants exhibit materially higher rates of secret exposure" is honest if the primary source is fuzzy. "Repos with AI assistants leak secrets at exactly 4x the rate" is overclaim if the multiplier doesn't survive a primary-source check.
+
+This isn't an attack on vendor research. It's an acknowledgment that the citation chain in this space has gotten weaker as the volume of AI-coding research has gone up. The fix isn't to stop citing; the fix is to grade your own claims by the strength of the underlying evidence, and to write hedges that match the evidence's actual strength.
+
 ## Related reading
 
 - [Measuring what matters](../10-team-and-process/measuring-impact.md), DORA metrics, the hidden cost of PR review

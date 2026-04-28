@@ -231,6 +231,28 @@ I tried gstack for two weeks. Kept three things (`design-shotgun`, `ship`, the `
 
 For evaluating any specific skill before installing, the install-time safety checklist is on the quality and anti-patterns page.
 
+## Two patterns I had to learn the hard way
+
+These don't fit cleanly into the factor framework above, but they shape every recommendation I make now and they're worth naming explicitly.
+
+### "Vendor-published" doesn't mean "for vendor customers"
+
+The skill ecosystem has a subtle taxonomy problem. Some skills are *published by* a vendor but are *general-purpose* — they happen to live in that vendor's repo and don't require using the vendor's product. Some are *for* the vendor's product specifically. Some are vendor-style-opinionated (the vendor's commit conventions, the vendor's review preferences) and only useful if you adopt those opinions.
+
+The example I keep using: Sentry's published skill bundle. `code-review` is general-purpose (a strong open-ecosystem review skill that doesn't need Sentry product usage). `skill-scanner` is general-purpose (audits *other* skills before install). `commit` is Sentry-style-opinionated (their commit conventions). The Sentry-debugging-and-observability skills are product-specific.
+
+I used to recommend "install the Sentry skill bundle" as if it were one thing. It isn't. Recommending the full bundle to a non-Sentry user pulls in product-specific skills they won't use. The right framing is: name which pieces are general-purpose (install standalone), which are opinionated (install only if you adopt the opinions), and which are product-specific (install only if you use the product).
+
+The same taxonomy applies to other vendors' skill collections. When you're choosing what to install, separate the artifact from its vendor association.
+
+### Don't dismiss tools in language stronger than the evidence
+
+I've watched the skill-recommendation ecosystem (including this guide, in earlier drafts) reach for "disqualified" or "do not use" framing on tools that had legitimate downsides but weren't actually disqualifying. The example that taught me: GSD / get-shit-done. Earlier drafts of this guide called it "disqualified for primary recommendation" because of two governance signals (a Solana token in the README, a prior Anthropic ToS event). On a closer read, the project is MIT-licensed, actively maintained, supports 15+ runtimes, and is a legitimate primary choice for the right profile. The two signals are real and worth flagging. They're not disqualifying.
+
+The corrected framing: surface the signals, let the user weigh them. "Two narrow caveats that may or may not apply to your context" is honest. "Disqualified" is not, when the evidence doesn't support it.
+
+The general principle: when reviewing tools, the temptation to dismiss is strong because dismissal is a clean recommendation and nuance is messy. Resist it. Calibrate the strength of your language to the strength of the evidence. If the only objection is "I'd prefer X for reasons Y," say that, not "X is the only acceptable choice."
+
 ## Related reading
 
 - [Ecosystem landscape](./ecosystem-landscape.md), the catalog every choice above pulls from

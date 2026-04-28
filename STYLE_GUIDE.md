@@ -283,10 +283,10 @@ The pattern: a real situation, the diff or output the agent produced, what was w
 
 ## Closing patterns
 
-Pages can end in a few ways. Pick one that fits:
+Pages can end in a few ways. Pick one that fits — and **vary across pages**. Closing patterns get formulaic at scale; if every page in the same folder ends with the same shape, the reader notices.
 
 - **A single paragraph summarizing the practical action.** Don't label it "What I'd tell a peer" — the whole guide is in that voice already; calling out the closer announces what should be obvious. Just write the paragraph and let it close the page.
-- **"What 'good' looks like"** — a short list of observable behaviors of a team / project doing this right. Strong choice for how-to pages.
+- **"What 'good' looks like"** — a short list of observable behaviors of a team / project doing this right. Strong choice for how-to pages, but don't put it on every how-to page.
 - **"What I'm still uncertain about"** — honest reflection on open questions. Strong choice for opinion-heavy pages.
 - **Just stop.** When the page has said what it needs to say, stop. No "in conclusion." No labeled section announcing the page is wrapping up.
 
@@ -303,13 +303,24 @@ Run these checks before declaring a page done.
 3. **Read-aloud test.** Does this sound like a peer talking, or a corporate doc?
 4. **Consultant-words grep.** Scan for the avoid-list above; cut any matches.
 5. **Em-dash count.** More than ~10 in body prose is a sign to convert most.
-6. **Bullet bold-lead count.** More than ~6-8 in one page is a sign to restructure (use prose for some).
+6. **Bullet bold-lead count.** More than ~6-8 in one page is a sign to restructure — *but it's a heuristic, not a hard cap*. Pages that are info-dense reference material (like `09-security/defenses.md`) legitimately exceed it when the bullets are doing real definitional or comparison work. Convert the *structural tics*, keep the *structural work*.
 7. **Citation density.** More than ~3 inline citations per page is usually too many; move to footer.
 8. **Meta-narration scan.** Any sentence that's about the page rather than the content of the page should be cut.
 9. **"We" scan.** "We" should not appear in body prose (only in template boilerplate).
 10. **Paragraph length.** Any paragraph over five sentences? Split it. Any paragraph over ten? It's actually two paragraphs.
 11. **Length check.** Does the depth match the topic? See the length section above.
 12. **Closing check.** Does the page actually end, or does it taper off?
+
+## After any bulk transformation: critical re-pass
+
+Mechanical sweeps across many files (search-and-replace, bulk em-dash conversion, bulk meta-narration deletion) catch the obvious instances and *introduce new tics*. Two examples from this guide's own history:
+
+- A bulk replacement of "This page is about X" with "What follows is X" looked like a fix and was actually substituting one tic for another. Caught and reverted on the next critical re-pass.
+- A bulk em-dash → comma replacement sometimes left run-on sentences where the em-dash had been doing real syntactic work. Caught by reading the resulting prose paragraph by paragraph.
+
+The discipline: **after any bulk transformation, do a focused re-pass on a sample of pages and look for what the bulk operation broke or created.** Not the same as the original audit — the re-pass is hunting for *new* problems the operation introduced. Skip this and the cleanup work just shifts from one tic to another.
+
+The same principle applies to any agentic mechanical work, not just editorial sweeps. After an agent does a large mechanical refactor, a re-pass looking for *what the refactor created that wasn't there before* catches a different class of problem than reviewing the original change.
 
 ## What modern technical readers expect (and don't)
 

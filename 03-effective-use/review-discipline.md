@@ -112,6 +112,28 @@ We spent twenty minutes rewriting the relevant section together. The PR merged t
 
 Lesson: the bug was in the code, but the *signal* was in the conversation. The "explain your own diff" check is what surfaced it. Without that check, this would have been a 2 a.m. page in production three weeks later.
 
+## Reviewing AI-generated content (not just code)
+
+Code review isn't the only place this discipline matters. The same lessons apply when AI generates *any* maintained artifact — documentation, runbooks, blog posts, internal wikis, this guide itself. Three patterns from the editorial work I do on AI-assisted writing that translate directly back to code review.
+
+### Layered audits with different lenses catch different things
+
+No single review pass catches everything. When I'm reviewing a substantial body of AI-assisted writing, I run separate passes with separate intents: a *style* pass (voice, tics, formulaic structures), a *content* pass (depth, accuracy, currency), a *contradiction* pass (does anything in this body conflict with anything else), a *naivety* pass (is the treatment surface-level for the topic), and a *cross-reference* pass (do the links work and point at current names). Each pass finds things the prior pass missed because the lens is different.
+
+The same pattern works for code review. A reviewer who looks at correctness, then again at security, then again at observability, then again at consistency-with-codebase will catch more than a reviewer who tries to look at everything at once. Different lenses; different findings. The cost is real (review takes longer); the catch rate is meaningfully higher for non-trivial AI diffs.
+
+### Sample first, then scale
+
+Before applying a pattern across many files (or letting an agent apply a refactor across many files), do *one* and verify. The "rewrite one page in the new voice and gut-check before scaling" discipline saved enormous rework on this guide. The same pattern: ask the agent to refactor *one* file before approving the same change across thirty.
+
+This sounds obvious; in practice the temptation to skip the sample step and "just run it across everything" is real, especially when each individual change looks small. The scaling cost when the pattern was wrong is much larger than the sampling cost.
+
+### Bulk transformations need a critical re-pass
+
+Mechanical sweeps catch the obvious instances and *introduce new tics*. A bulk find-and-replace that "fixes" one pattern often substitutes a new one. After any agent-driven mechanical change across many files, do a focused re-pass looking for *what the operation broke or created* — not a re-run of the original review, but a fresh hunt for the problems the operation introduced.
+
+This is the difference between "did the change land" and "did the change land cleanly." Both questions need answering, and they're not the same question.
+
 ## Related reading
 
 - [Prompting patterns](./prompting-patterns.md), getting useful output upstream of review
