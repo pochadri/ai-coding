@@ -13,7 +13,7 @@ last_updated: 2026-04-28
 
 The risk that worries me most about AI coding tools is what they do to the developer who hasn't yet built fundamentals. A senior engineer using Claude Code is offloading the mechanical work and keeping the judgment. A junior engineer using Claude Code without a structured ramp is offloading the judgment too, often without realizing it. The output looks the same. The growth trajectory does not.
 
-This page is the progression I'd run if I were onboarding a junior today. It's stricter than what most teams do and the result is a junior who's productive faster *and* who can debug their own code six months in.
+What follows is the progression I'd run if I were onboarding a junior today. It's stricter than what most teams do and the result is a junior who's productive faster *and* who can debug their own code six months in.
 
 ## Why this matters more than it sounds
 

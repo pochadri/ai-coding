@@ -13,7 +13,7 @@ last_updated: 2026-04-26
 
 The single most-quoted org-design observation I've made to peers in 2026: **Atlassian acquired DX for $1B in cash + restricted stock** ([announced Sept 2025, closed Nov 2025](https://techcrunch.com/2025/09/18/atlassian-acquires-dx-a-developer-productivity-platform-for-1b/)). Developer productivity *measurement* is now a board-level capability worth acquiring outright. That's the signal worth orienting around, the org that wins this isn't the one with the best AI tools; it's the one that knows whether the tools are working and adjusts.
 
-This page is the org pieces that actually matter: the platform team's charter, the champions network, what to do about hiring and leveling, and the junior-pipeline question I get asked more than any other.
+The org pieces that actually matter, in order: the platform team's charter, the champions network, what to do about hiring and leveling, and the junior-pipeline question I get asked more than any other.
 
 ---
 

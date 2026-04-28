@@ -15,7 +15,7 @@ Let's start with the numbers everyone quotes. According to the [2025 DORA report
 
 Impressive, right? But here's what those numbers don't tell you.
 
-Only 29% of developers say they actually trust AI-generated code (down from 40% a year ago, [per Stack Overflow](https://survey.stackoverflow.co/2025/ai)). Less than a third. The rest of us are using tools we don't fully trust. Think about that for a second. We've adopted these things faster than almost any technology in history, and most of us are still skeptical.
+Only 29% of developers say they actually trust AI-generated code (down from 40% a year ago, [per Stack Overflow](https://survey.stackoverflow.co/2025/ai)). Less than a third. The rest of the industry is using tools it doesn't fully trust. Think about that for a second. AI coding tools have been adopted faster than almost any technology in history, and most users are still skeptical.
 
 That's not cognitive dissonance, it's pragmatism. The tools ARE useful, just not in the way the marketing suggests. They're useful for boilerplate. For syntax you can't quite remember. For getting unstuck when you're staring at a blank file. They're less useful for complex logic, architectural decisions, or anything that requires understanding context beyond what's in your current file.
 

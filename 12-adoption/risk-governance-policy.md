@@ -17,7 +17,7 @@ The single most important number in this whole guide for a CTO audience is from 
 
 Pair it with [IBM's 2025 finding that shadow-AI-related breaches cost $650K+ more than standard breaches and 1 in 5 organizations has had one](https://www.ibm.com/think/topics/shadow-ai), and the directive writes itself: if you're mandating AI coding, you must mandate AI AppSec in parallel. Anything else is incomplete.
 
-This page is the framework for doing that, plus the regulatory and IP context you need to actually set policy.
+Here's the framework for doing that, plus the regulatory and IP context you need to actually set policy.
 
 ---
 

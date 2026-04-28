@@ -7,7 +7,7 @@ summary: The 5-minute version. If you do nothing else from this guide, do these 
 
 You don't need to read the whole guide before you start using AI coding tools well. You need to do three things, and they take about an hour combined. The rest of the guide is for when you want to go deeper.
 
-This page is opinionated. If you want the reasoning behind each recommendation, click through to the linked pages.
+If you want the reasoning behind each recommendation, click through to the linked pages.
 
 ## The three things
 

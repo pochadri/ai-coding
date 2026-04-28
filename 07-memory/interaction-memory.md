@@ -14,7 +14,7 @@ last_updated: 2026-04-26
 
 When the vendor-native defaults don't cut it, usually because you want transparency, cross-tool portability, KG-backed retrieval, or just a deeper episodic store, you reach for a third-party memory layer. There are roughly twenty-five of these now, with very different bets.
 
-This page covers the ones I think are worth knowing. For *artifact* memory (code knowledge graphs like graphify and GitNexus) and for "what should I actually use," see the related pages at the end.
+The ones worth knowing, by category. For *artifact* memory (code knowledge graphs like graphify and GitNexus) and for "what should I actually use," see the related pages at the end.
 
 > ⚠️ Star counts and version numbers move weekly. Numbers below were verified in April 2026 and will drift.
 

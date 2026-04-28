@@ -11,7 +11,7 @@ last_updated: 2026-04-28
 
 # AI for Maintenance
 
-The question I was uncertain about a year ago: can the same tools that *generate* new code actually help maintain old code? The answer in 2024 was "kind of." The answer in 2026 is "yes, materially, for a specific set of tasks." This page covers what's working, what still doesn't, and the workflow I run when I'm dropped into a codebase I've never seen.
+The question I was uncertain about a year ago: can the same tools that *generate* new code actually help maintain old code? The answer in 2024 was "kind of." The answer in 2026 is "yes, materially, for a specific set of tasks."
 
 The headline shift in the last twelve months has been the 1M context window. Maintenance was the use case where retrieval pipelines used to matter most; for many codebases they no longer do. You can paste an entire subsystem into context and ask cross-cutting questions without building any infrastructure. That alone moved AI-for-maintenance from "interesting" to "default."
 

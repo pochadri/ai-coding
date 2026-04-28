@@ -19,7 +19,7 @@ I've thought about this a lot. My answer is uncomfortable: **you need to underst
 
 Ten years ago, a senior engineer could hold most of a system in their head. They knew every module, every quirk, every reason behind every decision. That model is already dead, killed by microservices, third-party dependencies, and team turnover. AI just accelerated what was already happening.
 
-Nobody understands all of Kubernetes. Nobody understands all of React's internals. We've been building on abstractions we don't fully understand for years. AI-generated code is just another layer of abstraction.
+Nobody understands all of Kubernetes. Nobody understands all of React's internals. The industry has been building on abstractions nobody fully understands for years. AI-generated code is just another layer of abstraction.
 
 ## But You Can't Understand Nothing
 
@@ -55,7 +55,7 @@ For small codebases, this is fine. For large codebases serving multiple use case
 
 I've seen this in practice. I've worked with monorepos of 500k+ lines of code. Claude Code can read it all, but it keeps suggesting patterns that work in isolation but break our cross-service contracts. It doesn't know that we never use library X because of a security incident three years ago. It doesn't know that module Y is deprecated but still in use by two legacy clients.
 
-The solution, as far as I've found one, has two parts. **First, documentation becomes critical.** Not the documentation we've always said we should write. Documentation that captures *why*, not just *what*. Architecture decision records. Context that AI can read and learn from. **Second, persistent memory layers** ([07 — Memory](../07-memory/)) turn that documentation into something the agent actually carries across sessions instead of re-discovering each time.
+The solution, as far as I've found one, has two parts. **First, documentation becomes critical.** Not the documentation that engineers have always said they should write and never quite do. Documentation that captures *why*, not just *what*. Architecture decision records. Context that AI can read and learn from. **Second, persistent memory layers** ([07 — Memory](../07-memory/)) turn that documentation into something the agent actually carries across sessions instead of re-discovering each time.
 
 ## The Repository Intelligence Problem
 

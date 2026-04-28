@@ -60,7 +60,7 @@ These should not be primarily AI-authored. If a PR in these areas is labelled `a
 
 ## How this is different from the [IC review discipline page](../../03-effective-use/review-discipline.md)
 
-The IC page is the same checklist with practitioner-voice framing, written for an engineer doing review. This page is the same checklist as a *team artifact*, written for an EM or platform lead choosing what to put in their PR template. Use whichever framing your audience needs.
+The IC page frames the same checklist in practitioner voice, written for an engineer doing review. What follows is the same checklist as a *team artifact*, written for an EM or platform lead choosing what to put in their PR template. Use whichever framing your audience needs.
 
 ## Related
 

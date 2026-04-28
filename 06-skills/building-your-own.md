@@ -13,7 +13,7 @@ last_updated: 2026-04-25
 
 Community skills are generic. Your codebase isn't. The highest-leverage skill I've ever written wasn't a clever methodology, it was just "use our `AppError` wrapper, don't propose generic try/catch." Took me 20 minutes to write. Saved me an argument with the agent every single PR thereafter.
 
-This page is what I've learned from writing those, what works, what doesn't, what I wasted time on. If you haven't read the format basics on the "what are skills" page yet, start there.
+What follows is what I've learned from writing those, what works, what doesn't, what I wasted time on. If you haven't read the format basics on the "what are skills" page yet, start there.
 
 ---
 

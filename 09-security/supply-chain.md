@@ -12,7 +12,7 @@ last_updated: 2026-04-27
 
 # Supply Chain & Prompt Injection
 
-The vulnerability classes on the [threat landscape](./threat-landscape.md) page are first-order: the model writes bad code, you run the bad code. This page is about second-order risk, where an attacker exploits the *path* between the model and your code, not the code itself.
+The vulnerability classes on the [threat landscape](./threat-landscape.md) page are first-order: the model writes bad code, you run the bad code. Second-order risk is when an attacker exploits the *path* between the model and your code, not the code itself.
 
 These attacks are newer, less well-defended in the average team, and growing fast as the agentic surface area grows.
 

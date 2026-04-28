@@ -15,7 +15,7 @@ last_updated: 2026-04-26
 
 I'll be blunt: most AI-coding metrics I see in board decks are useless. "% of code AI-generated" trends up forever and tells you nothing about delivery. "Developer satisfaction" is unreliable for the same reason METR found self-report unreliable on speed. If you build a board narrative on either, you'll either oversell (vendor numbers) or panic the room (METR numbers).
 
-This page is what I actually measure, how the cost picture quietly changed in 2026 in ways most TCO models haven't caught up to, and how to tell the story without lying.
+What follows is what I actually measure, how the cost picture quietly changed in 2026 in ways most TCO models haven't caught up to, and how to tell the story without lying.
 
 ---
 

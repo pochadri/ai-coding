@@ -16,7 +16,7 @@ last_updated: 2026-04-28
 
 # My Personal Experience
 
-I've been tracking my own AI coding usage carefully since mid-2024. This page is the reflective version of that tracking: what I do today, what's changed since I started, what surprised me, and what it actually costs in dollars and habit. The rest of the guide generalizes from these observations; this page is the data point.
+I've been tracking my own AI coding usage carefully since mid-2024. What follows is the reflective version of that tracking: what I do today, what's changed since I started, what surprised me, and what it actually costs in dollars and habit. The rest of the guide generalizes from these observations; this is the data point.
 
 ## Where I am right now
 

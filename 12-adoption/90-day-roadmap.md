@@ -11,7 +11,7 @@ last_updated: 2026-04-26
 
 # The 90-Day Roadmap
 
-Most "AI strategy" decks I see have a five-year vision and no Tuesday-morning starting point. This page is the opposite. It's three concrete 90-day plans, one for each common starting maturity level (0/1, 2, 3), that I'd actually hand to a peer who said "okay, I'm convinced; what do I do Monday?"
+Most "AI strategy" decks I see have a five-year vision and no Tuesday-morning starting point. What follows is three concrete 90-day plans, one for each common starting maturity level (0/1, 2, 3), that I'd actually hand to a peer who said "okay, I'm convinced; what do I do Monday?"
 
 If you don't know your level, take the [maturity assessment](./assessment.md) first.
 

@@ -12,7 +12,7 @@ last_updated: 2026-04-27
 
 # Defenses
 
-The threat landscape is depressing. The defenses are tractable. This page is the practical "what I do" companion to [The threat landscape](./threat-landscape.md), and it's the page I most want team leads to read.
+The threat landscape is depressing. The defenses are tractable. What follows is the practical "what I do" companion to [The threat landscape](./threat-landscape.md), the page I most want team leads to read.
 
 ## Tier 1: the non-negotiables
 

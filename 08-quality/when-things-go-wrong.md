@@ -12,7 +12,7 @@ last_updated: 2026-04-28
 
 # When Things Go Wrong
 
-Bugs from AI-generated code have a specific shape, and the investigation playbook is different from debugging human-written code. The biggest difference: when a human writes buggy code, you can ask them what they were trying to do. When an agent writes it, you can't, and the prompt history (if you even have it) is rarely a satisfying substitute. This page is the playbook I run when an AI-generated bug lands in production.
+Bugs from AI-generated code have a specific shape, and the investigation playbook is different from debugging human-written code. The biggest difference: when a human writes buggy code, you can ask them what they were trying to do. When an agent writes it, you can't, and the prompt history (if you even have it) is rarely a satisfying substitute.
 
 ## The investigation is harder
 

@@ -12,7 +12,7 @@ last_updated: 2026-04-27
 
 # The Threat Landscape
 
-I'm going to be blunt: the security situation with AI coding tools is not good. Not because the tools are malicious, but because they're not security-aware, and neither are most developers using them. This page is the "what goes wrong and why" page. The next page is "what to do about it."
+I'm going to be blunt: the security situation with AI coding tools is not good. Not because the tools are malicious, but because they're not security-aware, and neither are most developers using them.
 
 ## What I've Seen Go Wrong
 

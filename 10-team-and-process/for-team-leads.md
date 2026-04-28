@@ -13,7 +13,7 @@ last_updated: 2026-04-28
 
 # For Team Leads
 
-This page is for engineering managers and tech leads running a single team that's adopting AI coding tools. If you're a CTO, VPE, or Director making *org-level* decisions (platform team scope, hiring/leveling rubrics, AUP rollout, board narrative), the [12 — Adoption](../12-adoption/) folder is the right altitude. The two folders complement each other; this one is the team-of-5-to-15 view.
+If you're an engineering manager or tech lead running a single team that's adopting AI coding tools, the rest of this page is for you. If you're a CTO, VPE, or Director making *org-level* decisions (platform team scope, hiring/leveling rubrics, AUP rollout, board narrative), the [12 — Adoption](../12-adoption/) folder is the right altitude. The two folders complement each other; this is the team-of-5-to-15 view.
 
 The thesis: most teams that buy AI tools and expect productivity gains don't get them in the first three months. The teams that get the gains are the ones who treat the rollout as a capability-building exercise, not a tool-purchasing one. Tools are the cheap part. Building the team's discipline around them is the work.
 

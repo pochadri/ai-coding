@@ -13,7 +13,7 @@ last_updated: 2026-04-26
 
 > **TL;DR.** Read **Booking.com** for the gold-standard rollout (the deployment-vs-daily-active-usage pivot is the most-instructive operational decision in this space) and **Replit/SaaStr** for the cautionary tale (autonomous agent + production access = predictable disaster). The other seven cases are useful supporting evidence.
 
-I trust case studies more than vendor decks. Real companies, real outcomes (sometimes painful), real numbers, usually self-disclosed in blog posts, conference talks, or in the case of failures, news coverage they didn't choose. This page is the ones I keep referencing.
+I trust case studies more than vendor decks. Real companies, real outcomes (sometimes painful), real numbers, usually self-disclosed in blog posts, conference talks, or in the case of failures, news coverage they didn't choose. The ones I keep referencing follow.
 
 The pattern I'd hold onto: **the gold-standard rollout (Booking.com) and the cautionary tale (Replit/SaaStr) cost roughly the same to study. Read both.**
 

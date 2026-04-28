@@ -15,8 +15,6 @@ The single workflow shift that closed the biggest quality gap in my AI-coding wo
 
 The deeper realization that took me longer to internalize: when AI-generated code is wrong, **the spec is what's missing detail, not the code**. Edit the spec and regenerate; don't patch the code in place. Over time the spec hardens against the failure modes the model produces, and the regeneration loop gets faster and more reliable.
 
-This page covers the workflow, the tools, a worked example showing how a real spec evolved through three rounds, and the honest case against (the workflow isn't always worth it).
-
 ## The shift
 
 The traditional workflow: describe what you want conversationally, watch the agent produce something, fix what's wrong, iterate. The spec-driven version: write a detailed specification first, hand the spec to the agent, review against the spec.

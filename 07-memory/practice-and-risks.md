@@ -12,7 +12,7 @@ last_updated: 2026-04-26
 
 # Practice and Risks
 
-This page is the synthesis. The decision tree, the actual stacks I use, the patterns worth borrowing and then the security and quality concerns, because the memory situation in April 2026 has a real underbelly that nobody's talking about loudly enough.
+The decision tree, the actual stacks I use, the patterns worth borrowing, and then the security and quality concerns. The memory situation in April 2026 has a real underbelly that nobody's talking about loudly enough.
 
 For the full picker logic, also see the interactive memory picker (linked at the end).
 

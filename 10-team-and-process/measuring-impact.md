@@ -11,7 +11,7 @@ last_updated: 2026-04-25
 
 # Measuring What Matters
 
-> **A note on altitude.** This page is the practitioner-level treatment of measurement: DORA, the productivity paradox, what *I* tracked. If you're a CTO/VPE building a board narrative — TCO under usage-based pricing, DX Core 4, the bimodal productivity story for the boardroom. See **[00 — Leadership / ROI and board narrative](../12-adoption/roi-and-board-narrative.md)**.
+> **Altitude:** practitioner-level measurement here — DORA, the productivity paradox, what I tracked. For org-level TCO under usage-based pricing, DX Core 4, and the bimodal productivity story for the boardroom, see **[12 — Adoption / ROI and the case for investment](../12-adoption/roi-and-board-narrative.md)**.
 
 I've seen a lot of teams "measure" AI tool impact by asking developers "do you feel more productive?" This tells you almost nothing.
 

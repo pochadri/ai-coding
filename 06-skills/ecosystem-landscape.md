@@ -13,7 +13,7 @@ last_updated: 2026-04-25
 
 The skills ecosystem now has six rough categories, and you'll get the most leverage if you understand which is which: **methodology systems** that impose a workflow, **Anthropic's official skills** that ship with Claude, **vendor skills** for specific products, **security skills** for audit and review, **personal/influencer skills** that codify one developer's opinions, and **community catalogs** that aggregate hundreds.
 
-This page is my opinionated tour. The pages in this folder cover "which one should *I* install" and "how do I write one"; the references page at the root has the canonical URL list.
+An opinionated tour follows. For "which one should *I* install" and "how do I write one," see the other pages in this folder; the references page at the root has the canonical URL list.
 
 > ⚠️ Star counts and install numbers move weekly. Numbers below were verified in April 2026 and will drift.
 

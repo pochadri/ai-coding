@@ -16,7 +16,7 @@ The legal context is moving faster than most teams realize. Two key facts to anc
 1. **You are legally responsible for code your AI generates.** There is no "the AI wrote it" defense.
 2. **The EU AI Act is now enforceable**, and AI coding pipelines whose output lands in safety-critical contexts inherit the high-risk regime.
 
-This page is the short, practical summary. For the policy frame and template artifacts, see [Risk, governance, policy](../12-adoption/risk-governance-policy.md) in the adoption folder.
+For the policy frame and template artifacts, see [Risk, governance, policy](../12-adoption/risk-governance-policy.md) in the adoption folder.
 
 ## EU AI Act
 
