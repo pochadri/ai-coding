@@ -95,6 +95,12 @@ This is what spec-driven development *actually* gives you over time. The first f
 
 The mental model that helps: **the spec is the codebase you're maintaining; the code is a regeneratable artifact.** Edit the spec, regenerate the code. The way you'd update a function and re-run a test, except the function is the spec and the test is the produced code matching what you meant.
 
+## Specs as a security control
+
+The spec-hardening pattern above generalizes directly to security. The single highest-leverage security practice I've adopted is making security requirements first-class lines in the spec — alongside functional requirements, not in a separate "security review" pass tacked on at the end. The mechanism is the same: when the agent produces insecure code, the spec is missing a constraint; add the constraint and regenerate. Over time the security-relevant lines accumulate and the agent stops producing the same classes of vulnerability.
+
+The full treatment lives in [09 — Defenses, Spec-driven security](../09-security/defenses.md#spec-driven-security-the-highest-leverage-tier-2-practice) with concrete spec lines I include by default (authn/authz before business logic, parameterized queries, no `pickle` or `ObjectInputStream` on untrusted input, secret-handling through the config layer, SSRF allowlists for outbound calls). If you take spec-driven development seriously for quality, take it seriously for security too. The mechanism is identical.
+
 ## When this workflow isn't worth it
 
 Honest about the limits:

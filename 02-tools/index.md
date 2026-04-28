@@ -36,6 +36,8 @@ quadrantChart
 | [OpenAI Codex](./openai-codex.md) | OpenAI ecosystem teams | Newer in this space |
 | [Other tools](./other-tools.md) | Niche fits (AWS, free tier, OSS) | Mixed maturity |
 
+> **Pricing note (April 2026).** Major tools moved from flat per-seat to usage-billed-on-top in early 2026. Serious daily users now land in the $150-250/month range for the primary tool, with secondary tools adding $20-60/month each. See [Recommended setup](./recommended-setup.md) for the current numbers.
+
 ## Read in order
 
 1. [GitHub Copilot](./github-copilot.md)

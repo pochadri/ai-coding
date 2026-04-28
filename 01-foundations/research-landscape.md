@@ -19,7 +19,7 @@ Then there's the [GitHub/Microsoft study](https://arxiv.org/abs/2302.06590) ever
 
 The [Uplevel study](https://uplevelteam.com/blog/ai-for-developer-productivity) found 41% more bugs among Copilot users. [GitClear](https://www.gitclear.com/ai_assistant_code_quality_2025_research) found 4x more code duplication. [Faros AI](https://www.faros.ai/blog/ai-software-engineering) found individual productivity went up but PR review time increased 91%, eating all the gains and then some.
 
-McKinsey's February 2026 study across 4,500 developers found 46% reduction in routine coding time. That's more optimistic than METR, but notice the qualifier: "routine coding" is a narrower claim than overall productivity. (Source guide attribution; primary McKinsey URL not located. See [REFERENCES.md](../REFERENCES.md#17-mckinsey--feb-2026-developer-productivity-study-4500-developers).)
+McKinsey's February 2026 study across 4,500 developers reportedly found 46% reduction in routine coding time. That's more optimistic than METR, but notice the qualifier: "routine coding" is a narrower claim than overall productivity. (I have not located a primary McKinsey URL for this specific finding. Treat the number as directional, sourced through secondary coverage; see [REFERENCES.md](../REFERENCES.md) for the verification status.)
 
 Here's my synthesis: AI tools help with simple, well-defined, greenfield tasks. They hurt (or at best don't help) with complex, ambiguous, maintenance work. Most real software development is the latter, which is why the productivity gains don't always materialize.
 
