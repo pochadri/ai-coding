@@ -1,0 +1,128 @@
+/* Skill picker styling */
+.skill-picker {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: var(--vp-c-bg-soft);
+  margin: 1.5rem 0;
+}
+
+.skill-picker__row {
+  display: grid;
+  grid-template-columns: minmax(120px, 200px) 1fr;
+  gap: 0.75rem 1rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.skill-picker__row label {
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+
+.skill-picker__row select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.skill-picker__row select:focus {
+  outline: none;
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 0 0 3px rgba(60, 135, 114, 0.15);
+}
+
+.skill-picker__output {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed var(--vp-c-divider);
+}
+
+.skill-picker__output h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.05rem;
+  color: var(--vp-c-brand-1);
+}
+
+.skill-picker__output ul {
+  margin: 0.5rem 0 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.skill-picker__output li {
+  margin: 0.25rem 0;
+}
+
+.skill-picker__caveat {
+  font-size: 0.875rem;
+  color: var(--vp-c-text-2);
+  font-style: italic;
+  margin-top: 0.75rem;
+}
+
+.skill-picker__counter {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--vp-c-default-soft);
+  color: var(--vp-c-text-1);
+  margin-left: 0.5rem;
+}
+
+.skill-picker__counter--warn {
+  background: var(--vp-c-warning-soft);
+  color: var(--vp-c-warning-1);
+}
+
+/* Memory picker — reuses skill-picker class structure */
+.memory-picker { border: 1px solid var(--vp-c-divider); border-radius: 12px; padding: 1.5rem; background: var(--vp-c-bg-soft); margin: 1.5rem 0; }
+.memory-picker__row { display: grid; grid-template-columns: minmax(120px, 200px) 1fr; gap: 0.75rem 1rem; align-items: center; margin-bottom: 0.75rem; }
+.memory-picker__row label { font-weight: 600; color: var(--vp-c-text-1); }
+.memory-picker__row select { width: 100%; padding: 0.5rem 0.75rem; border: 1px solid var(--vp-c-divider); border-radius: 6px; background: var(--vp-c-bg); color: var(--vp-c-text-1); font-size: 0.95rem; cursor: pointer; }
+.memory-picker__row select:focus { outline: none; border-color: var(--vp-c-brand-1); box-shadow: 0 0 0 3px rgba(60, 135, 114, 0.15); }
+.memory-picker__output { margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px dashed var(--vp-c-divider); }
+.memory-picker__output h3 { margin: 0 0 0.5rem 0; font-size: 1.05rem; color: var(--vp-c-brand-1); }
+.memory-picker__output ul { margin: 0.5rem 0 1rem 0; padding-left: 1.5rem; }
+.memory-picker__output li { margin: 0.4rem 0; }
+.memory-picker__tier { display: inline-block; margin: 0 0.4rem; font-size: 0.75rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.04em; }
+.memory-picker__caveat { font-size: 0.875rem; color: var(--vp-c-text-2); font-style: italic; margin-top: 0.75rem; }
+.memory-picker__note { margin: 0.5rem 0; padding: 0.6rem 0.85rem; background: var(--vp-c-bg); border-left: 3px solid var(--vp-c-brand-1); border-radius: 0 4px 4px 0; font-size: 0.92rem; }
+.memory-picker__counter { display: inline-block; padding: 0.15rem 0.55rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600; background: var(--vp-c-default-soft); color: var(--vp-c-text-1); margin-left: 0.5rem; }
+.memory-picker__counter--warn { background: var(--vp-c-warning-soft); color: var(--vp-c-warning-1); }
+
+/* Maturity assessment */
+.maturity-assessment { border: 1px solid var(--vp-c-divider); border-radius: 12px; padding: 1.5rem; background: var(--vp-c-bg-soft); margin: 1.5rem 0; }
+.maturity-assessment__progress { display: flex; justify-content: space-between; padding: 0.5rem 0.75rem; background: var(--vp-c-bg); border-radius: 6px; margin-bottom: 1.25rem; font-size: 0.9rem; font-weight: 600; }
+.maturity-assessment__counter { color: var(--vp-c-brand-1); }
+.maturity-assessment__q { margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px dashed var(--vp-c-divider); }
+.maturity-assessment__q:last-of-type { border-bottom: none; }
+.maturity-assessment__qtext { font-weight: 600; margin: 0 0 0.5rem 0; color: var(--vp-c-text-1); }
+.maturity-assessment__options { display: flex; flex-direction: column; gap: 0.4rem; padding-left: 0.25rem; }
+.maturity-assessment__option { display: flex; align-items: flex-start; gap: 0.6rem; cursor: pointer; padding: 0.4rem 0.6rem; border-radius: 4px; transition: background 0.1s; }
+.maturity-assessment__option:hover { background: var(--vp-c-bg); }
+.maturity-assessment__option input { margin-top: 0.2rem; }
+.maturity-assessment__output { margin-top: 1.5rem; padding: 1.25rem; background: var(--vp-c-bg); border-left: 4px solid var(--vp-c-brand-1); border-radius: 0 6px 6px 0; }
+.maturity-assessment__output h3 { margin-top: 0; color: var(--vp-c-brand-1); }
+.maturity-assessment__output h4 { margin: 1rem 0 0.4rem; }
+.maturity-assessment__level { font-size: 1.15rem; font-weight: 700; margin: 0.25rem 0; color: var(--vp-c-text-1); }
+.maturity-assessment__cta { margin: 1rem 0 0.5rem; }
+.maturity-assessment__caveat { font-size: 0.85rem; color: var(--vp-c-text-2); font-style: italic; margin-top: 0.75rem; }
+
+/* Mermaid diagram styling */
+.mermaid-diagram { display: flex; justify-content: center; margin: 1.5rem 0; padding: 1rem; background: var(--vp-c-bg-soft); border-radius: 8px; overflow-x: auto; }
+.mermaid-diagram svg { max-width: 100%; height: auto; }
+/* Caption convention: the paragraph immediately after a Mermaid diagram, marked with a leading "▴ " */
+p.mermaid-caption { text-align: center; font-size: 0.875rem; color: var(--vp-c-text-2); font-style: italic; margin: -0.5rem 0 1.5rem; }
+
+/* Custom-skills section in skill picker */
+.skill-picker__hint { font-size: 0.92rem; color: var(--vp-c-text-2); margin: 0.5rem 0 0.75rem; }
+.skill-picker__custom { margin: 0.5rem 0 1rem 0; padding-left: 1.5rem; }
+.skill-picker__custom li { margin: 0.5rem 0; }
+.skill-picker__custom code { background: var(--vp-c-default-soft); padding: 0.1rem 0.4rem; border-radius: 4px; font-size: 0.9rem; }
