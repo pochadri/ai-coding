@@ -109,13 +109,7 @@ Three patterns that show up repeatedly when teams don't structure the junior ram
 
 The structured ramp prevents all three. Skipping it doesn't save time; it just shifts the cost to month six.
 
-## What I'd tell a peer running their first cohort
-
-Three things, in this order:
-
-1. **Hold the skill gates.** When the calendar says graduate but the gate isn't passed, extend the month. The pressure to push juniors forward fast is huge; resist it. The juniors you delay by a month in Month 1 outperform the juniors you push through.
-2. **Pair with seniors who actually know how to teach.** Not every senior is a good mentor. Pick the ones who can articulate why they make the decisions they make, not just the ones who write the most code.
-3. **Make the "can you explain this" question routine.** Build it into PR review, into 1:1s, into pairing sessions. The junior who can always explain their code is the one who's actually learning.
+If you're running your first cohort, three things in this order. Hold the skill gates — when the calendar says graduate but the gate isn't passed, extend the month. The pressure to push juniors forward fast is huge; resist it. The juniors you delay by a month in Month 1 outperform the juniors you push through. Pair them with seniors who actually know how to teach, not just the ones who write the most code; the difference matters. And make the "can you explain this" question routine — build it into PR review, into 1:1s, into pairing sessions. The junior who can always explain their code is the one who's actually learning.
 
 ## Related reading
 

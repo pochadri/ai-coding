@@ -147,13 +147,7 @@ So roughly **$260/month of personal tooling**, before infrastructure costs (CI s
 
 The real cost most teams underestimate is not the subscription. It's the **review time on AI-generated PRs**, the **incident response when an AI-introduced defect lands in production**, and the **process overhead of doing this responsibly** (security scanners, secret-scanning hooks, skill-scanner audits, AGENTS.md curation, custom skill authoring). The subscription is the cheap line item; the operational cost dwarfs it.
 
-## What I'd tell someone starting today
-
-If you've read this whole page and want my one-paragraph version:
-
-> *Pick one tool and pay for it. Write a starter AGENTS.md in your repo today. Set up the security floor (CI scanner, secret-scanning, skill-scanner) before you install anything else. Adopt spec-driven development the next time you start a feature, even if the spec is 100 words. Author one custom skill capturing the pattern your agent keeps getting wrong. Treat the saved time as yours to spend, not as a productivity dividend to extract — invest it in alignment, review, and craftsmanship. And keep tracking your own usage; what's true for me won't be exactly true for you, and the only way to know is to measure.*
-
-The rest of the guide is the longer version of that paragraph.
+If you want the one-paragraph version of everything above: pick one tool and pay for it. Write a starter AGENTS.md in your repo today. Set up the security floor (CI scanner, secret-scanning, skill-scanner) before you install anything else. Adopt spec-driven development the next time you start a feature, even if the spec is 100 words. Author one custom skill capturing the pattern your agent keeps getting wrong. Treat the saved time as yours to spend, not as a productivity dividend to extract — invest it in alignment, review, and craftsmanship. And keep tracking your own usage; what's true for me won't be exactly true for you, and the only way to know is to measure. The rest of the guide is the longer version of that.
 
 ## Related reading
 

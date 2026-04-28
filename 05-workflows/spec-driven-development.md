@@ -121,8 +121,6 @@ Three signs your team has internalized the practice:
 
 If specs feel like ceremony three months in, the team is treating them as documentation rather than as the source of truth. That's the regression to watch for.
 
-## What I'd tell a peer
-
 The spec-driven workflow looks like overhead the first three times you do it. By the fifth or sixth time it's faster than what you were doing before, because the spec template you're inheriting from prior cycles is already hardened against the failure modes the model produces. The cost is a few weeks of feeling like you're "wasting time on documentation"; the payoff is permanent. Start with one non-trivial feature next week. Write the spec before you prompt. Update the spec the first time the agent gets something wrong. By feature three, you'll feel the lift.
 
 ## Related reading

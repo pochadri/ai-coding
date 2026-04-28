@@ -285,10 +285,10 @@ The pattern: a real situation, the diff or output the agent produced, what was w
 
 Pages can end in a few ways. Pick one that fits:
 
-- **"What I'd tell a peer"** — a single paragraph summarizing the practical action, in the voice you'd use over coffee. Strong choice for advice-heavy pages.
+- **A single paragraph summarizing the practical action.** Don't label it "What I'd tell a peer" — the whole guide is in that voice already; calling out the closer announces what should be obvious. Just write the paragraph and let it close the page.
 - **"What 'good' looks like"** — a short list of observable behaviors of a team / project doing this right. Strong choice for how-to pages.
 - **"What I'm still uncertain about"** — honest reflection on open questions. Strong choice for opinion-heavy pages.
-- **Just stop.** When the page has said what it needs to say, stop. No "in conclusion."
+- **Just stop.** When the page has said what it needs to say, stop. No "in conclusion." No labeled section announcing the page is wrapping up.
 
 After the closing, you can add `Related reading` and `Sources` sections, in that order.
 
