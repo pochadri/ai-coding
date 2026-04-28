@@ -139,10 +139,9 @@ The honest list:
 
 ## What it actually costs
 
-The question I get asked most by peers and rarely see answered honestly. My actual numbers, not generalized, as of late April 2026:
+The question I get asked most by peers and rarely see answered honestly. My actual numbers, not generalized, as of late April 2026.
 
-- **Claude Code**, used at the daily-power-user level: ~**$200/month**. Pricing shifted from flat per-seat to usage-billed-on-top in early 2026, and serious daily use lands in the $150-250 range; Anthropic's published benchmark for serious users is around $13 per developer per active day, which matches my bill.
-- **Cursor**, kept for IDE-native interactive editing and inline completion: ~**$60/month**.
+Claude Code, used at the daily-power-user level, lands at roughly **$200/month**. Pricing shifted from flat per-seat to usage-billed-on-top in early 2026, and serious daily use lands in the $150-250 range; Anthropic's published benchmark is around $13 per developer per active day, which matches my bill. Cursor, which I keep for IDE-native interactive editing and inline completion, runs another **$60/month**.
 
 So roughly **$260/month of personal tooling**, before infrastructure costs (CI scanners, vendor-skill subscriptions, secret-scanning, etc.). For a senior engineer hour, that's a few hours a month, easily justified at my usage level. For less-intensive use the math is closer; for occasional users the per-seat case is harder.
 

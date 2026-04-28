@@ -19,7 +19,7 @@ The thesis: most teams that buy AI tools and expect productivity gains don't get
 
 ## Training matters more than tools
 
-I've seen teams give everyone Copilot licenses and expect productivity to improve. It doesn't. At least not for three months. People don't know how to use the tools effectively, the review discipline hasn't caught up to the new failure modes, and the team's existing AGENTS.md (if there is one) is built for a world without agentic execution.
+I've seen teams give everyone Copilot licenses and expect productivity to improve. It doesn't, at least not for three months. People don't know how to use the tools effectively, the review discipline hasn't caught up to the new failure modes, and the team's existing AGENTS.md (if there is one) is built for a world without agentic execution.
 
 The teams that do well invest in training. Not "how to accept suggestions" but four specific skills:
 
@@ -30,52 +30,47 @@ The teams that do well invest in training. Not "how to accept suggestions" but f
 
 ## A 90-day rollout plan
 
-This is the structure I'd run if I were rolling AI coding to a 5-15 person team starting Monday.
+If I were rolling AI coding to a 5-15 person team starting Monday, this is the structure I'd run.
 
 ### Days 1-30: foundation
 
-Goals: everyone has the tools installed, knows the team's basic policies, and has had at least one real session pairing with a more-experienced AI user.
+The first month is about getting tools installed and the security floor in place. Pick one tool and standardize — don't let everyone choose, because indecision and tool-fragmentation cost more than picking the "wrong" tool. I'd default to [Claude Code](../02-tools/claude-code.md) unless you have a specific reason to choose otherwise; pair it with Cursor or Copilot for IDE-native completion if your team wants it.
 
-Concrete actions:
+Write the team's [AGENTS.md](../12-adoption/templates/agents-md-org-template.md) early, even just thirty lines covering your stack, your conventions, and what NOT to AI-generate. Commit it to the repo root and treat it as a living document.
 
-- **Pick one tool and standardize.** Don't let everyone choose. Indecision and tool-fragmentation cost more than picking the "wrong" tool. See [recommended setup](../02-tools/recommended-setup.md). I'd default to Claude Code unless you have a strong reason otherwise.
-- **Write the team's AGENTS.md.** Even 30 lines. The team's stack, conventions, what NOT to AI-generate. Commit it to the repo root. See [the org-level template](../12-adoption/templates/agents-md-org-template.md) for a starting point; trim ruthlessly.
-- **Set up the security floor.** Static analysis (Semgrep / Snyk / CodeQL) on every PR; secret-scanning pre-commit and in CI; `skill-scanner` audit before any community skill installs. Non-negotiable. See [09 — Defenses](../09-security/defenses.md).
-- **Run a team-wide "how I use Claude Code" session.** Whoever on the team is most fluent walks through their actual workflow. Specs, agent mode, skills, memory, the security review pass. One hour. Recorded.
-- **Update the PR template.** Add a checkbox: "AI-generated code, fully reviewed and understood." This is the explicit signal to reviewers that this PR needs the AI-aware review discipline.
+Set up the security floor in parallel — static analysis (Semgrep / Snyk / CodeQL) on every PR, secret-scanning pre-commit and in CI, and `skill-scanner` audits before any community skill installs. Non-negotiable; details in [09 — Defenses](../09-security/defenses.md).
+
+Round it out with a one-hour team-wide "how I use the tool" session run by whoever is most fluent (recorded for later joiners), and update the PR template with a checkbox: "AI-generated code, fully reviewed and understood." The checkbox is the explicit signal to reviewers that this PR needs the AI-aware review discipline.
+
+By end of month one: tools installed, AGENTS.md exists, security floor is live, and the team has shared a baseline of how to use the tooling.
 
 ### Days 31-60: discipline
 
-Goals: the team has adopted the spec-first workflow for non-trivial work, code review has caught up to AI's failure modes, and the first custom skills are getting authored.
+The second month is where the practices land. Adopt [spec-driven development](../05-workflows/spec-driven-development.md) for anything non-trivial: any change bigger than a one-file edit starts with a short markdown spec checked into the repo. The first month is awkward; the second month it's reflex.
 
-Concrete actions:
+Update the code-review guidelines to cover AI-specific issues. Do all imports/dependencies actually exist? Does this code follow the team's patterns or is it generic? Are there obvious security issues? And the controversial one: **does the author understand what they shipped?** That last one is load-bearing; see [review discipline](../03-effective-use/review-discipline.md).
 
-- **Adopt spec-driven development for anything non-trivial.** Anything bigger than a one-file change starts with a short markdown spec checked into the repo. See [spec-driven development](../05-workflows/spec-driven-development.md). The first month is awkward; the second month it's reflex.
-- **Update the code review guidelines.** The existing checklist probably doesn't cover AI-specific issues. Add: do all imports/dependencies actually exist? Does this code follow our patterns or is it generic? Are there obvious security issues? **Does the author understand what they shipped?** That last one is controversial but it's load-bearing. See [review discipline](../03-effective-use/review-discipline.md).
-- **Author the team's first custom skills.** Two or three. Pick patterns the agent has been getting wrong repeatedly: your error-handling wrapper, your test-naming convention, your API-contract style. Twenty minutes per skill; hours per week of compounded return. See [building your own skills](../06-skills/building-your-own.md).
-- **Start the AI-vs-AI security review pass habit** for any PR touching auth, deserialization, or external input. Different session, ideally different model. See [defenses, Tier 2](../09-security/defenses.md).
+Author the team's first two or three custom skills. Pick patterns the agent has been getting wrong repeatedly — your error-handling wrapper, your test-naming convention, your API-contract style. Twenty minutes per skill, hours per week of compounded return. The how-to lives in [building your own skills](../06-skills/building-your-own.md).
+
+Start the [AI-vs-AI security review pass](../09-security/defenses.md#ai-vs-ai-review-a-separate-model-reviews-the-first-models-output) habit for any PR touching auth, deserialization, or external input — different session, ideally different model. This is the single highest-leverage Tier 2 security practice.
+
+By end of month two: spec-driven is the default for real work, the code-review checklist has caught up, the first custom skills exist, and the security review pass is a habit.
 
 ### Days 61-90: institutionalize
 
-Goals: the practices are habits, not initiatives. The team's metrics show the gains are real (not just self-reported). The lead has data to take to the next level of management.
+The third month is where the rollout proves itself with data. Pick two metrics and start tracking — not lines of code; probably one throughput metric (deploys per week, story points completed) and one quality metric (PR review cycle time, post-merge defects). Six weeks of data is enough to tell if the rollout worked. See [measuring impact](./measuring-impact.md).
 
-Concrete actions:
+Audit the custom-skill kit and prune it. Every quarter, look at which skills are actually firing and which aren't; remove the ones the agent is no longer using. The kit should be living, not archived.
 
-- **Pick two metrics and start tracking.** Not lines of code. Probably a throughput metric (deploys per week, story points completed) and a quality metric (PR review cycle time, post-merge defects). See [measuring impact](./measuring-impact.md). Six weeks of data is enough to tell if the rollout worked.
-- **Audit the custom-skill kit and prune.** Every quarter, look at which skills are actually firing and which aren't. Remove the ones the agent is no longer using. The kit should be living.
-- **Address the alignment problem head-on.** Three months in, the team's individual throughput is up but team coordination is showing strain (more parallel work, more PR-stage misalignment). See [the alignment bottleneck](./alignment-bottleneck.md). Adopt at least one of the five practices on that page (the easiest is usually "plans as checked-in markdown artifacts").
-- **Run a retrospective specifically on the rollout.** What's working? What's not? What practices should we drop because they were performative? What should we double down on?
+Address the alignment problem head-on. Three months in, the team's individual throughput is up but team coordination is showing strain (more parallel work, more PR-stage misalignment). See [the alignment bottleneck](./alignment-bottleneck.md). Adopt at least one of the five practices on that page; the easiest is usually "plans as checked-in markdown artifacts."
+
+Run a retrospective specifically on the rollout. What's working? What's not? What practices should you drop because they were performative? What should you double down on?
 
 By day 90, you'll know whether AI coding is working for your team and you'll have the data to defend that conclusion.
 
 ## Set clear boundaries
 
-The rules I'd enforce on any team I led:
-
-- **AI is not trusted on auth, crypto, or [security-critical code](../09-security/threat-landscape.md) without the structured pattern:** AI drafts, a human writes the security boundary, a separate-model review pass catches what the generation session missed. See [09 — Defenses](../09-security/defenses.md) for the pattern.
-- **AI-generated code must be labeled in the PR.** A checkbox is enough. The reviewer needs to know to apply the AI-aware review discipline.
-- **Any AI-suggested dependency must be verified before installation.** Slopsquatting is a real attack now. See [supply chain](../09-security/supply-chain.md).
-- **Juniors run the [structured ramp](./junior-developers.md).** Pair without AI in month 1, autocomplete only in month 2, full toolkit in month 3 with skill gates between each.
+The rules I'd enforce on any team I led, in plain language. AI is not trusted on auth, crypto, or other [security-critical code](../09-security/threat-landscape.md) without the structured pattern: AI drafts, a human writes the security boundary, a separate-model review pass catches what the generation session missed. AI-generated code must be labeled in the PR (a checkbox is enough) so the reviewer knows to apply the AI-aware discipline. Any AI-suggested dependency must be verified before installation, because slopsquatting is a real attack now (see [supply chain](../09-security/supply-chain.md)). And juniors run the [structured ramp](./junior-developers.md): pair without AI in month 1, autocomplete only in month 2, full toolkit in month 3 with skill gates between each.
 
 You'll have different rules. The specifics matter less than the fact that they exist and are written down. The Wild West approach leads to the kind of incident that you only need to have once before you wish you'd had rules.
 
@@ -87,10 +82,7 @@ Three classes of issue I'd escalate beyond the team:
 2. **Vendor-policy events that disrupt the team's tooling.** When Anthropic or OpenAI changes terms in a way that breaks workflows (it has happened), the team needs a runbook for migration. Don't absorb this quietly; it's an org-wide signal.
 3. **Sustained throughput-without-quality patterns.** When the team's PR rate is up but post-merge defects are also up, that's not a team problem to solve in isolation. Escalate it as a measurement-and-platform problem.
 
-Things to absorb without escalating:
-- Individual incidents from AI hallucinations that didn't reach production. Fold into the next retro and update the AGENTS.md.
-- Friction between engineers about tooling preferences within the standard. The team should have one tool; debate is fine, fragmentation isn't.
-- Anyone insisting "AI doesn't help me." Not every engineer has the same gain profile. As long as they're meeting the team's quality bar, individual style differences are individual.
+Things to absorb without escalating: individual incidents from AI hallucinations that didn't reach production (fold into the next retro and update the AGENTS.md); friction between engineers about tooling preferences within the standard (the team should have one tool; debate is fine, fragmentation isn't); anyone insisting "AI doesn't help me" (not every engineer has the same gain profile, and as long as they're meeting the team's quality bar, individual style differences are individual).
 
 ## What "good" looks like at three months
 
@@ -99,7 +91,7 @@ Five observable signs your rollout worked:
 1. New PRs include the AI-generated checkbox more often than not. The team has internalized that AI use is normal and labeled, not hidden.
 2. The team has at least 2-3 custom skills checked into the repo and being maintained.
 3. The PR review cycle time is stable or down. Throughput hasn't been consumed by review burden.
-4. At least one production incident has been caught in the security review pass before merge. (This means the pass is real, not performative.)
+4. At least one production incident has been caught in the security review pass before merge. The pass is real, not performative.
 5. Junior engineers (if any) are progressing on the [skill-gate ramp](./junior-developers.md), not just shipping more code with hidden senior review burden.
 
 If three months in you don't have any of these, the rollout isn't sticking. Don't double down on tools; back up to the discipline.

@@ -50,14 +50,13 @@ Honest about the limits:
 
 ## Things that have changed in the last six months
 
-The tool moves fast. The deltas worth knowing as of April 2026:
+The tool moves fast. Six deltas worth knowing as of April 2026.
 
-- **Auto mode** (March 24, 2026 research preview): the agent decides which actions are safe to take without asking. I use it for read-only and clearly-scoped work; I don't use it for anything touching auth, secrets, or state-changing external APIs.
-- **Computer use** (March 25, 2026): Claude can open files, click, navigate the screen. Useful for tasks that span tools (code + browser + terminal). I treat it like a power feature, on for specific workflows, off by default.
-- **64k output tokens default** for Opus 4.6 (early 2026). Long generations are now genuinely long; I write specs longer than I used to and get back complete implementations more often.
-- **`/memory` command** with auto-memory persists learned facts across sessions to `~/.claude/CLAUDE.md`. Load-bearing for long projects. See [07 — Memory / Vendor-native](../07-memory/vendor-native.md#claude-code-memory).
-- **1M context window** (rolled out broadly in late 2025): the change that most reshaped my retrieval habits. Most RAG pipelines I'd built are no longer load-bearing.
-- **Permission modes** (sandbox / approval gates): the safety floor. The most restrictive mode requires per-action approval; intermediate modes constrain shell, file-write, and network access. I default to a moderately-restrictive mode and tighten for anything touching secrets or production.
+The biggest practical shift was the **1M context window** (rolled out broadly in late 2025). Most of the RAG pipelines I'd built a year ago are no longer load-bearing; I just paste the relevant subsystem into context. Closely related: **64k output tokens default** for Opus 4.6 (early 2026) means long generations are now genuinely long. I write longer specs than I used to and get back complete implementations more often.
+
+The **`/memory` command** with auto-memory persists learned facts across sessions to `~/.claude/CLAUDE.md`, load-bearing for projects that go beyond a single week (see [07 — Memory / Vendor-native](../07-memory/vendor-native.md#claude-code-memory)). **Permission modes** (sandbox and approval gates) are the safety floor — the most restrictive mode requires per-action approval; intermediate modes constrain shell, file-write, and network access. I default to a moderately-restrictive mode and tighten for anything touching secrets or production.
+
+Two newer features I treat as power-features rather than defaults: **Auto mode** (March 24, 2026 research preview) lets the agent decide which actions are safe to take without asking — I use it for read-only and clearly-scoped work and don't use it for anything touching auth, secrets, or state-changing external APIs. **Computer use** (March 25, 2026) lets Claude open files, click, and navigate the screen — useful for tasks that span tools (code + browser + terminal), but on for specific workflows, off by default.
 
 ## When to pick Claude Code vs Cursor vs Codex
 

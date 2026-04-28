@@ -46,12 +46,9 @@ This tier scales with AI's code-generation speed. Human review does not.
 
 ### 3. Secret-scanning pre-commit AND in CI
 
-The cheapest, highest-yield defense most teams don't run. Two layers:
+The cheapest, highest-yield defense most teams don't run, in two layers. The pre-commit layer ([`gitleaks`](https://github.com/gitleaks/gitleaks), [`detect-secrets`](https://github.com/Yelp/detect-secrets), or [`trufflehog`](https://github.com/trufflesecurity/trufflehog) wired via the `pre-commit` framework) catches the leak before it ever lands in git history. The CI layer runs the same tool on every PR and catches what bypasses the pre-commit hook — developers can disable hooks; CI cannot be disabled by the developer.
 
-- **Pre-commit:** [`gitleaks`](https://github.com/gitleaks/gitleaks), [`detect-secrets`](https://github.com/Yelp/detect-secrets), or [`trufflehog`](https://github.com/trufflesecurity/trufflehog) wired via `pre-commit` framework. Catches the leak before it ever lands in git history.
-- **CI:** the same tool runs on every PR. Catches what bypasses the pre-commit hook (developers can disable hooks; CI cannot be disabled by the developer).
-
-Plus: **scan your git history once.** Most teams have legacy secrets buried; flag and rotate them now before they show up in an incident report.
+One more thing: **scan your git history once.** Most teams have legacy secrets buried in old commits; flag and rotate them now before they show up in an incident report.
 
 ### 4. Verify every dependency before installing
 
