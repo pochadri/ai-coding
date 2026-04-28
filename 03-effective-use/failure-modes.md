@@ -50,6 +50,22 @@ It's so easy to ask AI to write a new function instead of finding the existing o
 
 Technical debt compounds. All that duplicated code becomes a maintenance nightmare. I've started explicitly prompting: "Before writing new code, check if there's an existing utility for this in the codebase." It helps, but it's not perfect.
 
+## Overcomplication
+
+A failure mode that doesn't get a clean name often enough: **the agent's tendency to overengineer.** Karpathy [named it directly in late 2025](https://x.com/karpathy/status/2015883857489522876): "They really like to overcomplicate code and APIs, bloat abstractions, don't clean up dead code... implement a bloated construction over 1000 lines when 100 would do."
+
+I see this constantly. Ask the agent for a simple function and you get a configurable framework. Ask for a script and you get a CLI tool with subcommands and a plugin system. Ask for a one-time data migration and you get a generalized migration framework with rollback support, dry-run mode, and a metrics endpoint. All of it works. None of it was asked for.
+
+The mechanism: the model has seen far more "production-grade" code than throwaway scripts in its training data, and it pattern-matches toward the production-grade shape even when the situation calls for the throwaway. It also doesn't know what "no, that's overkill" looks like — it interprets ambiguity as license to add more.
+
+The fix is in the prompt. Constraints work; vague asks don't:
+
+- *"Minimum code that solves the problem. No abstractions for single-use code. No flexibility or configurability that wasn't requested. No error handling for impossible scenarios. If 200 lines could be 50, rewrite it."*
+
+I've adopted those lines (paraphrased from the [andrej-karpathy-skills CLAUDE.md](https://github.com/forrestchang/andrej-karpathy-skills)) as standing instructions in my AGENTS.md for any project where I do exploratory work. The line that catches the most: *"Would a senior engineer say this is overcomplicated? If yes, simplify."* The agent will sometimes catch its own overengineering when forced to apply the test.
+
+This is also a review discipline. Reviewers should flag overengineering as a defect, not a stylistic preference. A 200-line PR that solves a 50-line problem is worse than a 50-line PR that solves the same problem, even if the 200-line version is "more flexible." The flexibility you didn't ask for is technical debt with extra steps.
+
 ## Related reading
 
 - [Review discipline](./review-discipline.md), the checklist that catches these patterns

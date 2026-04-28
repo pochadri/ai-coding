@@ -357,6 +357,17 @@ Topical sections first (productivity, security, academic, regulatory), then fold
 - **Date:** February 2026
 - **Coverage:** https://thenewstack.io/vibe-coding-is-passe/
 
+### Andrej Karpathy — observations on LLM coding pitfalls
+- **Original post:** https://x.com/karpathy/status/2015883857489522876
+- **Topic:** LLMs make wrong assumptions silently, overcomplicate code and APIs, change/remove code they don't fully understand, and "are exceptionally good at looping until they meet specific goals." The post that inspired the `andrej-karpathy-skills` CLAUDE.md template (~95K stars; see [06 — Ecosystem landscape](./06-skills/ecosystem-landscape.md#forrest-changs-andrej-karpathy-skills)).
+- **Cited in:** [Failure modes / overcomplication](./03-effective-use/failure-modes.md), [Prompting patterns / success criteria over imperatives](./03-effective-use/prompting-patterns.md), [Review discipline / surgical changes](./03-effective-use/review-discipline.md)
+
+### Forrest Chang — `andrej-karpathy-skills` repository
+- **Repo:** https://github.com/forrestchang/andrej-karpathy-skills
+- **License:** MIT · ~95K stars (April 2026) · created January 27, 2026
+- **What it is:** a single `CLAUDE.md` (also packaged as a Claude Code plugin) distilling four behavioral principles from Karpathy's tweet above. The single-file format and meteoric star growth make it a noteworthy data point on what the community is reaching for.
+- **Cited in:** [Ecosystem landscape](./06-skills/ecosystem-landscape.md), [Choosing skills](./06-skills/choosing-skills.md), [QUICKSTART](./QUICKSTART.md)
+
 ### Collins Dictionary — Word of the Year 2025
 - **WOTY page:** https://www.collinsdictionary.com/us/woty
 - **Announcement post:** https://blog.collinsdictionary.com/language-lovers/collins-word-of-the-year-2025-ai-meets-authenticity-as-society-shifts/

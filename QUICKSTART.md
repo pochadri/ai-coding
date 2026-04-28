@@ -23,6 +23,8 @@ Even thirty lines is enough. The single highest-leverage thing you can do for th
 
 A starting template lives in [`12-adoption/templates/agents-md-org-template.md`](./12-adoption/templates/agents-md-org-template.md). Copy it, strip what you don't need, fill in your stack and your two or three biggest "AI keeps doing this wrong" patterns, commit it. You'll iterate on it forever; the first version doesn't need to be good.
 
+If you want a defensible behavioral baseline before you've written your own conventions, the [`andrej-karpathy-skills` CLAUDE.md](https://github.com/forrestchang/andrej-karpathy-skills) (~95K stars; `curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md`) is a solid starting point. Layer your project-specific AGENTS.md on top of it.
+
 ### 3. Set up the security floor.
 
 Three things, in order of leverage:

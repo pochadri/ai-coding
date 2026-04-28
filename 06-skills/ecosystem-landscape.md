@@ -148,6 +148,13 @@ These are individual developers' opinionated kits, useful both to install direct
 - A mirror of `/mnt/skills` from Claude's code interpreter environment, useful for studying what Anthropic ships internally.
 - Willison's [October 2025 post on skills](https://simonwillison.net/2025/Oct/16/claude-skills/) is, to my knowledge, the post that brought skills mainstream.
 
+### Forrest Chang's `andrej-karpathy-skills`
+
+- **[github.com/forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills)** · ~95K stars · MIT · created January 2026
+- A single `CLAUDE.md` file (also packaged as a Claude Code plugin) distilling four behavioral principles from [Andrej Karpathy's tweet](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls: **Think Before Coding** (don't assume; surface tradeoffs; push back), **Simplicity First** (no overengineering; minimum code that solves the problem), **Surgical Changes** (touch only what you must; don't "improve" adjacent code), **Goal-Driven Execution** (define success criteria; loop until verified).
+- **The format is the interesting thing.** Most "skills" in this folder are multi-file SKILL.md folders with progressive disclosure. This is one file — and yet it's bigger by stars than nearly anything else in the ecosystem (~95K stars in three months). The traction tells you something: a tight, well-curated single-CLAUDE.md focused on *agent behavior correction* rather than task-specific workflows resonates with developers in a way most skill collections don't.
+- **My take:** install it as a baseline behavioral CLAUDE.md on any new project, then layer your project-specific AGENTS.md on top. The four principles do real work — particularly "Surgical Changes" against the agent's tendency to drive-by refactor, and "Goal-Driven Execution" as a reframe of the spec-driven workflow toward verifiable success criteria. Those two principles informed the additions to [03 — Failure modes](../03-effective-use/failure-modes.md) and [03 — Review discipline](../03-effective-use/review-discipline.md) on this guide.
+
 ### Other notable individual collections
 
 I haven't used these heavily but they show up in conversations:

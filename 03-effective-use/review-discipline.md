@@ -92,6 +92,25 @@ For AI-generated code that's confusing in review, time-box the "what was the age
 
 This is harder than it sounds because curiosity pulls you in. Resist. The detective work is interesting; rarely load-bearing for the fix.
 
+### The surgical-changes principle
+
+Borrowed and generalized from the [Karpathy CLAUDE.md template](https://github.com/forrestchang/andrej-karpathy-skills) but it's a reviewer's check, not just a prompt instruction. **Every changed line in an AI-generated diff should trace directly to the user's request.** Anything else is the agent making changes you didn't ask for.
+
+What this catches in review:
+
+- Drive-by reformatting of files the change didn't need to touch.
+- Renaming variables in adjacent code "for consistency."
+- Refactoring helper functions that worked fine.
+- Removing comments the agent didn't understand.
+- Updating dependencies as a side effect of the requested change.
+- Adding configurability or abstraction layers the requirement didn't call for.
+
+These are not improvements; they're scope creep. Each one is a separate review burden the reviewer didn't sign up for. Each one is a place a regression can hide. Each one extends the diff's blast radius.
+
+The reviewer's specific check: read the change description (the prompt or the spec), then read the diff. Anything in the diff that doesn't trace back to the description gets flagged. Author defends it or removes it before merge.
+
+The agent-side prevention is in the prompt: *"Touch only what you must. Don't 'improve' adjacent code, comments, or formatting. If you notice unrelated dead code, mention it — don't delete it. Match existing style, even if you'd do it differently."* Putting these in AGENTS.md catches most of it before it reaches review.
+
 ## What "good" looks like
 
 Three signs your team's review discipline is keeping up with AI:

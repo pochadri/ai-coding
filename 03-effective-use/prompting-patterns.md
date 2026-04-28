@@ -91,6 +91,30 @@ When asking for a list of options, cap the list. "Give me three options, ranked 
 
 When the model proposes a solution, ask it to describe how the solution fails. "What's the input that breaks this? What's the production load that exposes the limit? What edge case does this not handle?" This often surfaces issues the happy-path implementation didn't show.
 
+### Success criteria over imperatives
+
+[Karpathy's observation](https://x.com/karpathy/status/2015883857489522876) that's reshaped how I think about the longer-running prompts: *"LLMs are exceptionally good at looping until they meet specific goals. Don't tell it what to do, give it success criteria and watch it go."*
+
+The pattern: instead of an imperative ("add validation", "fix the bug", "refactor X"), give the agent a verifiable goal it can check itself against. Two examples:
+
+- *Imperative:* "Add validation to the user endpoint."
+- *Success criterion:* "Write tests for invalid inputs (empty, oversized, malformed JSON, SQL-injection-shaped strings, boundary cases). Make them pass. Then write the validation code that makes them stay passing."
+
+- *Imperative:* "Fix the race condition in the caching layer."
+- *Success criterion:* "Write a test that reliably reproduces the race condition under concurrent load. Then make the code pass the test without breaking any existing tests."
+
+The agent's loop becomes: write the verification, run it, see what's failing, change the code, repeat. You don't need to drive each step. Strong success criteria let the agent run independently for much longer than a vague imperative would. Weak criteria ("make it work") require constant clarification.
+
+For multi-step tasks, state a brief plan with verification at each step:
+
+```
+1. [Step] → verify: [check]
+2. [Step] → verify: [check]
+3. [Step] → verify: [check]
+```
+
+This is the verification side of [plan-before-code](#plan-before-code) — the planning side states what you'll do; this side states how you'll know each step worked. Used together they cover the full loop.
+
 ## Failure modes I see catch engineers off guard
 
 ### The pile-on prompt

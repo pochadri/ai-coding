@@ -224,6 +224,7 @@ For what it's worth, here's the kit I run on most projects right now:
 - **One vendor skill set per stack**: usually Supabase + Vercel for typical web work, MongoDB or ClickHouse if I'm doing data work.
 - **Two custom skills I wrote**: one for our error-handling pattern (because the AI kept proposing generic try/catch instead of our `AppError` wrapper), one for our test naming convention. Both started as prompts I was repeating, then I extracted them.
 - **From Superpowers**, just `writing-plans` and `subagent-driven-development`. Not the strict TDD enforcement.
+- **The [`andrej-karpathy-skills`](https://github.com/forrestchang/andrej-karpathy-skills) CLAUDE.md as a behavioral baseline.** A single-file plugin distilling four principles from Karpathy's observations on LLM coding pitfalls (Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution). I install this as the default behavioral CLAUDE.md and layer my project-specific AGENTS.md on top. The "Surgical Changes" and "Simplicity First" principles do real work against the agent's drive-by refactoring and overcomplication tendencies.
 
 I tried gstack for two weeks. Kept three things (`design-shotgun`, `ship`, the `freeze`/`guard` security pattern), uninstalled the rest because the slash-command friction wasn't worth it for *my* workflow. Your mileage will absolutely vary, if you're a YC-style founder doing rapid full-stack web work, the whole thing might fit you perfectly.
 
