@@ -14,7 +14,16 @@ The scaffolding around an AI agent: prompts, constraints, tool restrictions, and
 Project-level instruction files that AI tools read at the start of every session. They encode conventions, architecture notes, and rules the AI can't infer from the code. See [Context engineering](./04-understanding-and-context/context-engineering.md).
 
 ### Agentic engineering
-Term proposed by Andrej Karpathy in February 2026: humans stop writing code entirely and delegate to agents. Successor concept to [vibe coding](#vibe-coding).
+Term proposed by Andrej Karpathy in February 2026: humans stop writing code entirely and delegate to agents. Successor concept to [vibe coding](#vibe-coding); broadens the framing from "trust the suggestion without understanding" to "delegate the work end-to-end to an autonomous agent."
+
+### ACE (Agent Collaboration Environment)
+Research prototype from GitHub Labs presented in Maggie's talk *"One Developer, Two Dozen Agents, Zero Alignment."* Multiplayer agent sessions backed by isolated cloud microVMs, with shared prompt history, live previews, integrated PR creation, and multiplayer code editing. The shape of what alignment-first agent tooling could look like. See [The alignment bottleneck](./10-team-and-process/alignment-bottleneck.md).
+
+### Alignment bottleneck (in AI coding)
+The team-level problem: implementation has stopped being the bottleneck on shipping good software; team alignment on *what* and *why* to build now is. The existing tools (pull requests, Slack, Jira) were built for a world where implementation was slow enough to leave room for alignment, and don't fit agent-driven workflows. Thesis articulated by GitHub Labs in 2026. See [The alignment bottleneck](./10-team-and-process/alignment-bottleneck.md).
+
+### Claude Mythos
+A new Claude model whose existence was revealed by an Anthropic configuration error in March 2026, described in internal language as "the most capable model built to date." No official announcement at the time of writing; treat as a name that may or may not survive to public release.
 
 ### Composer / Composer 2
 Cursor's in-house code-generation models. Composer 2 (March 2026) is built on Kimi K2.5 and scores 61.7 on Terminal-Bench 2.0. See [Cursor](./02-tools/cursor.md).

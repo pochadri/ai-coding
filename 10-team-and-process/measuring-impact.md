@@ -38,8 +38,11 @@ More code means more to review. AI-generated code is often verbose, it doesn't u
 
 If you're measuring individual productivity, AI looks great. If you're measuring team delivery, the picture is murkier. **Don't forget to look at the whole pipeline.**
 
+The structural reason team delivery doesn't move as much as individual productivity has its own page; see [the alignment bottleneck](./alignment-bottleneck.md). The short version: the bottleneck moved from implementation to coordination, and the existing tools (PRs, Slack, Jira) weren't built for the new bottleneck.
+
 ## Related reading
 
 - [The research landscape](../01-foundations/research-landscape.md), METR, Uplevel, Faros AI in detail
-- [00 — Leadership / ROI and board narrative](../12-adoption/roi-and-board-narrative.md), DX Core 4, TCO, the board version of the same conversation
+- [The alignment bottleneck](./alignment-bottleneck.md), why team delivery lags individual gains
+- [12 — Adoption / ROI and the case for investment](../12-adoption/roi-and-board-narrative.md), DX Core 4, TCO, the board version of the same conversation
 - [For team leads](./for-team-leads.md), turning metrics into team practice
