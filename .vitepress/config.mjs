@@ -48,7 +48,6 @@ export default withMermaid(defineConfig({
   },
 
   rewrites: {
-    'README.md': 'index.md',
     'skills/README.md': 'skills/index.md',
   },
 
