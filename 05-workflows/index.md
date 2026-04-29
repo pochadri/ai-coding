@@ -16,5 +16,5 @@ The shift from autocomplete to *operating modes*. These three pages describe the
 ## Where to go next
 
 - The conceptual foundation → **[04 — Understanding & context](../04-understanding-and-context/)**
-- Quality and safety implications → **[06 — Quality, security, maintenance](../07-quality-and-security/)**
-- What's next on the research frontier → **[08 — Research frontier](../09-frontier/research-frontier.md)**
+- Quality and safety implications → **[07 — Quality & Security](../07-quality-and-security/)**
+- What's next on the research frontier → **[09 — Research frontier](../09-frontier/research-frontier.md)**

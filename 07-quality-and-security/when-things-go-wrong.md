@@ -39,7 +39,7 @@ These are the patterns I've watched repeat across teams and codebases. If your b
 
 **The wrong abstraction.** AI grouped behaviors that share surface similarity but should not share an implementation. The result reads cleanly, scales poorly, and produces subtle bugs as the abstraction is asked to handle cases it wasn't designed for.
 
-**The auth ordering bug.** Authorization check is in the wrong place: after the operation runs, after the resource is loaded, in a path that's reachable without going through the auth middleware. Looks correct; isn't. See [09 — defenses](../07-quality-and-security/defenses.md) for the specific examples.
+**The auth ordering bug.** Authorization check is in the wrong place: after the operation runs, after the resource is loaded, in a path that's reachable without going through the auth middleware. Looks correct; isn't. See [07 — Defenses](../07-quality-and-security/defenses.md) for the specific examples.
 
 **The forgotten-edge-case explosion.** AI optimized for the happy path and the obvious edge cases. The non-obvious ones (empty input, max-size input, malformed input, concurrent input, partial network failure mid-request) weren't in the spec, so they aren't handled.
 
@@ -96,4 +96,4 @@ If AI-incident investigations are taking 3-5x longer than human-bug investigatio
 - [AI for maintenance](./ai-for-maintenance.md), the upstream practice that prevents some of these incidents
 - [Agents](../05-workflows/agents.md), why agentic diffs are larger and need more careful review
 - [Review discipline](../03-effective-use/review-discipline.md), catching issues before they ship
-- [09 — Defenses](../07-quality-and-security/defenses.md), the security-specific version of this playbook
+- [07 — Defenses](../07-quality-and-security/defenses.md), the security-specific version of this playbook

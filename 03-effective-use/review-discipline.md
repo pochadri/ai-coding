@@ -15,7 +15,7 @@ last_updated: 2026-04-28
 
 This is where most teams fail. They adopt AI tools without changing their review practices, then get surprised six months in when defect rates have crept up and PR-review time has doubled. The cause is downstream of one fact: **AI-generated code needs different review than human-written code**, and most teams' review checklists were built for the latter.
 
-Humans make typos, forget edge cases, get tired. AI makes different mistakes: subtle logic errors at boundaries, hallucinated APIs, security shortcuts, the systematic patterns covered in [failure modes](./failure-modes.md) and in [09 — When things go wrong](../07-quality-and-security/when-things-go-wrong.md). The review playbook has to match.
+Humans make typos, forget edge cases, get tired. AI makes different mistakes: subtle logic errors at boundaries, hallucinated APIs, security shortcuts, the systematic patterns covered in [failure modes](./failure-modes.md) and in [07 — When things go wrong](../07-quality-and-security/when-things-go-wrong.md). The review playbook has to match.
 
 ## The five-item checklist (the floor, not the ceiling)
 
@@ -23,7 +23,7 @@ The minimum every AI-generated PR should pass:
 
 1. **Do I actually understand what this does?** If not, don't approve it. (Yes, this one is controversial. It's also load-bearing — see below.)
 2. **Do all the imports and dependencies actually exist?** Check the real registries. Slopsquatting is a real attack now.
-3. **Are there any obvious security issues?** SQL injection, hardcoded secrets, deserialization of untrusted input, missing authz checks. The full list lives in [09 — Defenses](../07-quality-and-security/defenses.md).
+3. **Are there any obvious security issues?** SQL injection, hardcoded secrets, deserialization of untrusted input, missing authz checks. The full list lives in [07 — Defenses](../07-quality-and-security/defenses.md).
 4. **Are edge cases handled?** Null, empty, boundary conditions, malformed input, concurrent access. Most AI-generated code passes the happy path and fails the others.
 5. **Does this follow our patterns?** Or is it generic AI code that doesn't fit your codebase's existing utilities and conventions?
 
@@ -35,7 +35,7 @@ This is the floor. Reviewing only against this list catches the obvious problems
 
 The single highest-leverage pattern I've adopted: **after the agent generates code, open a different session (ideally a different model family) and prompt it as a security engineer reviewing the diff.** The reviewer doesn't share the generator's context, so it doesn't share the generator's blind spots.
 
-Why this works: same training data ≈ same blind spots. Cross-family review (e.g., generate with Claude, review with GPT or Gemini) catches systematic biases the same model would have missed in self-review. A worked example with a real auth-endpoint diff lives in [09 — Defenses](../07-quality-and-security/defenses.md#worked-example-the-security-review-pass-on-a-real-auth-endpoint).
+Why this works: same training data ≈ same blind spots. Cross-family review (e.g., generate with Claude, review with GPT or Gemini) catches systematic biases the same model would have missed in self-review. A worked example with a real auth-endpoint diff lives in [07 — Defenses](../07-quality-and-security/defenses.md#worked-example-the-security-review-pass-on-a-real-auth-endpoint).
 
 This is now a per-PR habit on anything touching auth, deserialization, or external input.
 
@@ -69,7 +69,7 @@ Agentic execution produces larger diffs than human work. A "small refactor" can 
 
 - **Skim the diff for shape first.** Are the file changes consistent? Does the agent appear to have a coherent mental model, or is it stitching together five different approaches?
 - **Identify the load-bearing change.** Most large diffs have 50-100 lines of actual semantic change and 900 lines of mechanical follow-on. Focus review on the semantic change; spot-check the mechanical part.
-- **Run static analysis on the dependency graph.** What calls what? If module X changed, what depends on X? See [08 — When things go wrong](../07-quality-and-security/when-things-go-wrong.md#impact-analysis-when-the-diff-is-1000-lines).
+- **Run static analysis on the dependency graph.** What calls what? If module X changed, what depends on X? See [07 — When things go wrong](../07-quality-and-security/when-things-go-wrong.md#impact-analysis-when-the-diff-is-1000-lines).
 - **Don't try to review every line linearly.** You'll miss the actual bug while approving thirty trivial changes. Read for shape; verify for substance; spot-check for everything else.
 - **If the diff is over ~1,500 lines, send it back to be split.** Past that size, no review is reliable.
 
@@ -157,7 +157,7 @@ This is the difference between "did the change land" and "did the change land cl
 
 - [Prompting patterns](./prompting-patterns.md), getting useful output upstream of review
 - [Failure modes](./failure-modes.md), the systematic patterns this discipline defends against
-- [09 — Defenses, AI-vs-AI review](../07-quality-and-security/defenses.md#ai-vs-ai-review-a-separate-model-reviews-the-first-models-output), the security-specific version of the cross-session pattern
-- [08 — When things go wrong](../07-quality-and-security/when-things-go-wrong.md), what happens when review misses something and it lands in production
+- [07 — Defenses, AI-vs-AI review](../07-quality-and-security/defenses.md#ai-vs-ai-review-a-separate-model-reviews-the-first-models-output), the security-specific version of the cross-session pattern
+- [07 — When things go wrong](../07-quality-and-security/when-things-go-wrong.md), what happens when review misses something and it lands in production
 - [For team leads](../08-team-and-adoption/for-team-leads.md), encoding this discipline as team policy
 - [Junior developers](../08-team-and-adoption/junior-developers.md), why this discipline is harder and more important during the ramp

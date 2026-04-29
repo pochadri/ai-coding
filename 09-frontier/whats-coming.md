@@ -66,7 +66,7 @@ What teams can do today, without waiting, lives in [the alignment bottleneck](..
 
 ## Regulation catches up faster than the industry expects
 
-The **EU AI Act August 2, 2026 deadline** for the high-risk regime is the most-underestimated date in this space. Most engineering orgs don't have an inventory of AI systems in use, let alone a classification of which fall under Annex III. If you have any EU footprint, this is a 2026 deliverable, not a 2027 one. See [09 — Regulation](../07-quality-and-security/regulation.md).
+The **EU AI Act August 2, 2026 deadline** for the high-risk regime is the most-underestimated date in this space. Most engineering orgs don't have an inventory of AI systems in use, let alone a classification of which fall under Annex III. If you have any EU footprint, this is a 2026 deliverable, not a 2027 one. See [07 — Regulation](../07-quality-and-security/regulation.md).
 
 What follows the EU AI Act:
 
@@ -93,4 +93,4 @@ The developers who thrive will be the ones who treat AI as a powerful tool to am
 - [Research frontier](./research-frontier.md), the academic underpinnings of where this is going
 - [The bottom line](./bottom-line.md), the closing summary
 - [The alignment bottleneck](../08-team-and-adoption/alignment-bottleneck.md), what to do today before ACE-class tools land
-- [09 — Regulation](../07-quality-and-security/regulation.md), the EU AI Act and what to do about it
+- [07 — Regulation](../07-quality-and-security/regulation.md), the EU AI Act and what to do about it

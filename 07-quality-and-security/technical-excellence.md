@@ -81,4 +81,4 @@ The teams getting this right have three habits in common: their spec template in
 
 ## Sources
 
-For the underlying numbers behind the volume problem (Veracode's 55%-secure baseline, Black Duck's vulnerability YoY, Aikido's breach attribution), see [09 — The threat landscape](../07-quality-and-security/threat-landscape.md), where the data is consolidated with full citations to the primary sources.
+For the underlying numbers behind the volume problem (Veracode's 55%-secure baseline, Black Duck's vulnerability YoY, Aikido's breach attribution), see [07 — The threat landscape](../07-quality-and-security/threat-landscape.md), where the data is consolidated with full citations to the primary sources.

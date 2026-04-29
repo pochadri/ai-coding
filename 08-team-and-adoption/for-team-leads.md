@@ -13,7 +13,7 @@ last_updated: 2026-04-28
 
 # For Team Leads
 
-If you're an engineering manager or tech lead running a single team that's adopting AI coding tools, the rest of this page is for you. If you're a CTO, VPE, or Director making *org-level* decisions (platform team scope, hiring/leveling rubrics, AUP rollout, board narrative), the [12 — Adoption](../08-team-and-adoption/) folder is the right altitude. The two folders complement each other; this is the team-of-5-to-15 view.
+If you're an engineering manager or tech lead running a single team that's adopting AI coding tools, the rest of this page is for you. If you're a CTO, VPE, or Director making *org-level* decisions (platform team scope, hiring/leveling rubrics, AUP rollout, board narrative), the [08 — Team & Adoption](../08-team-and-adoption/) folder is the right altitude. The two folders complement each other; this is the team-of-5-to-15 view.
 
 The thesis: most teams that buy AI tools and expect productivity gains don't get them in the first three months. The teams that get the gains are the ones who treat the rollout as a capability-building exercise, not a tool-purchasing one. Tools are the cheap part. Building the team's discipline around them is the work.
 
@@ -38,7 +38,7 @@ The first month is about getting tools installed and the security floor in place
 
 Write the team's [AGENTS.md](../08-team-and-adoption/templates/agents-md-org-template.md) early, even just thirty lines covering your stack, your conventions, and what NOT to AI-generate. Commit it to the repo root and treat it as a living document.
 
-Set up the security floor in parallel — static analysis (Semgrep / Snyk / CodeQL) on every PR, secret-scanning pre-commit and in CI, and `skill-scanner` audits before any community skill installs. Non-negotiable; details in [09 — Defenses](../07-quality-and-security/defenses.md).
+Set up the security floor in parallel — static analysis (Semgrep / Snyk / CodeQL) on every PR, secret-scanning pre-commit and in CI, and `skill-scanner` audits before any community skill installs. Non-negotiable; details in [07 — Defenses](../07-quality-and-security/defenses.md).
 
 Round it out with a one-hour team-wide "how I use the tool" session run by whoever is most fluent (recorded for later joiners), and update the PR template with a checkbox: "AI-generated code, fully reviewed and understood." The checkbox is the explicit signal to reviewers that this PR needs the AI-aware review discipline.
 
@@ -102,4 +102,4 @@ If three months in you don't have any of these, the rollout isn't sticking. Don'
 - [Measuring impact](./measuring-impact.md), the metrics worth tracking
 - [The alignment bottleneck](./alignment-bottleneck.md), the team coordination problem that surfaces at month three
 - [Review discipline](../03-effective-use/review-discipline.md), the underlying review checklist
-- [12 — Adoption / Org design + platform team](../08-team-and-adoption/org-design.md), the org-level framing of the same questions
+- [08 — Team & Adoption / Org design + platform team](../08-team-and-adoption/org-design.md), the org-level framing of the same questions

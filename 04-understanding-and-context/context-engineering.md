@@ -64,7 +64,7 @@ The major AI coding tools are converging on similar patterns.
 - **Instruction files** (`CLAUDE.md`, `.cursorrules`, `AGENTS.md`) provide persistent context about your project. The AI reads these at the start of every session.
 - **Skills** are descriptions of additional resources that the LLM can load on demand. Claude Code's [skills system](../05-workflows/skills-ecosystem.md) lets you package prompts, scripts, and documentation that activate when relevant.
 - **Context routing** classifies queries and directs them to the right context source. A billing question doesn't need the onboarding knowledge base.
-- **Memory systems** maintain information across sessions. This was a stub when the guide was first written; it's now an entire ecosystem (Claude memory, Copilot Memory, Codex Memories, claude-mem, Mem0, Letta, Zep/Graphiti, code knowledge graphs like graphify and GitNexus). See [07 — Memory](../06-skills-and-memory/) for the full treatment. Context engineering shapes the *current* turn; memory shapes *future* turns.
+- **Memory systems** maintain information across sessions. This was a stub when the guide was first written; it's now an entire ecosystem (Claude memory, Copilot Memory, Codex Memories, claude-mem, Mem0, Letta, Zep/Graphiti, code knowledge graphs like graphify and GitNexus). See [06 — Skills & Memory](../06-skills-and-memory/) for the full treatment. Context engineering shapes the *current* turn; memory shapes *future* turns.
 
 ## What I've Learned
 

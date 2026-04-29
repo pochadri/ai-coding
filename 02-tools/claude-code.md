@@ -32,7 +32,7 @@ Six task categories where Claude Code has materially shifted how I work:
 
 **The "what could go wrong" pre-mortem.** I prompt the agent with the diff and ask "what fails in production for this code." It catches ~30% of the issues a human reviewer would catch, in 30 seconds, against zero of my time. Doesn't replace review; complements it.
 
-**Security review as a separate session.** The AI-vs-AI pattern (different session, prompted as a security engineer) catches injection risks, missing authz checks, and deserialization gotchas that the generation session would have rationalized past. See [09 — Defenses](../07-quality-and-security/defenses.md#ai-vs-ai-review-a-separate-model-reviews-the-first-models-output) for the worked example.
+**Security review as a separate session.** The AI-vs-AI pattern (different session, prompted as a security engineer) catches injection risks, missing authz checks, and deserialization gotchas that the generation session would have rationalized past. See [07 — Defenses](../07-quality-and-security/defenses.md#ai-vs-ai-review-a-separate-model-reviews-the-first-models-output) for the worked example.
 
 ## What it doesn't do well
 
@@ -54,7 +54,7 @@ The tool moves fast. Six deltas worth knowing as of April 2026.
 
 The biggest practical shift was the **1M context window** (rolled out broadly in late 2025). Most of the RAG pipelines I'd built a year ago are no longer load-bearing; I just paste the relevant subsystem into context. Closely related: **64k output tokens default** for Opus 4.6 (early 2026) means long generations are now genuinely long. I write longer specs than I used to and get back complete implementations more often.
 
-The **`/memory` command** with auto-memory persists learned facts across sessions to `~/.claude/CLAUDE.md`, load-bearing for projects that go beyond a single week (see [07 — Memory / Vendor-native](../06-skills-and-memory/vendor-native.md#claude-code-memory)). **Permission modes** (sandbox and approval gates) are the safety floor — the most restrictive mode requires per-action approval; intermediate modes constrain shell, file-write, and network access. I default to a moderately-restrictive mode and tighten for anything touching secrets or production.
+The **`/memory` command** with auto-memory persists learned facts across sessions to `~/.claude/CLAUDE.md`, load-bearing for projects that go beyond a single week (see [06 — Skills & Memory / Vendor-native](../06-skills-and-memory/vendor-native.md#claude-code-memory)). **Permission modes** (sandbox and approval gates) are the safety floor — the most restrictive mode requires per-action approval; intermediate modes constrain shell, file-write, and network access. I default to a moderately-restrictive mode and tighten for anything touching secrets or production.
 
 Two newer features I treat as power-features rather than defaults: **Auto mode** (March 24, 2026 research preview) lets the agent decide which actions are safe to take without asking — I use it for read-only and clearly-scoped work and don't use it for anything touching auth, secrets, or state-changing external APIs. **Computer use** (March 25, 2026) lets Claude open files, click, and navigate the screen — useful for tasks that span tools (code + browser + terminal), but on for specific workflows, off by default.
 
@@ -95,4 +95,4 @@ The cost most teams underestimate isn't the subscription; it's the operational c
 - [Cursor](./cursor.md), the IDE-native companion in the same kit
 - [Recommended setup](./recommended-setup.md), full kit and current pricing
 - [Skills](../06-skills-and-memory/), the highest-leverage long-term investment for any Claude Code team
-- [09 — Security / Defenses](../07-quality-and-security/defenses.md), sandbox modes and the AI-vs-AI security review pattern
+- [07 — Quality & Security / Defenses](../07-quality-and-security/defenses.md), sandbox modes and the AI-vs-AI security review pattern

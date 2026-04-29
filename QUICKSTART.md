@@ -29,11 +29,11 @@ If you want a defensible behavioral baseline before you've written your own conv
 
 Three things, in order of leverage:
 
-- **Run a static analyzer on every PR.** Semgrep, Snyk, or CodeQL. Pick the lowest-friction option that runs on every PR. See [09 — Defenses, Tier 1 #2](./07-quality-and-security/defenses.md).
+- **Run a static analyzer on every PR.** Semgrep, Snyk, or CodeQL. Pick the lowest-friction option that runs on every PR. See [07 — Defenses, Tier 1 #2](./07-quality-and-security/defenses.md).
 - **Add secret-scanning pre-commit AND in CI.** [`gitleaks`](https://github.com/gitleaks/gitleaks) or [`detect-secrets`](https://github.com/Yelp/detect-secrets) wired through `pre-commit` framework, plus the same in CI. The cheapest, highest-yield defense most teams aren't running.
-- **Install `skill-scanner`** before you install any community skill. It's published in [Sentry's open skills repo](https://github.com/getsentry/skills) but is product-agnostic; it audits any skill for security issues. See [09 — Defenses, Tier 1 #5](./07-quality-and-security/defenses.md).
+- **Install `skill-scanner`** before you install any community skill. It's published in [Sentry's open skills repo](https://github.com/getsentry/skills) but is product-agnostic; it audits any skill for security issues. See [07 — Defenses, Tier 1 #5](./07-quality-and-security/defenses.md).
 
-That's the floor. If your project is touching customer data or money, also read the rest of [09 — Security](./07-quality-and-security/) before you ship.
+That's the floor. If your project is touching customer data or money, also read the rest of [07 — Quality & Security](./07-quality-and-security/) before you ship.
 
 ## Two checklists to keep in your editor
 
@@ -73,7 +73,7 @@ If this resonated and you want the deeper version:
 2. [Prompting patterns that work](./03-effective-use/prompting-patterns.md), then [the prompt library](./PROMPTS.md) for copy-pasteable starters.
 3. [Spec-driven development](./05-workflows/spec-driven-development.md) — the workflow that closed most of my "AI generates the wrong thing" gap.
 4. [Skills, what are they](./06-skills-and-memory/what-are-skills.md) and [how to write your own](./06-skills-and-memory/building-your-own.md) — the highest-leverage long-term investment.
-5. [09 — Security](./07-quality-and-security/) in full. The folder I most want you to read.
+5. [07 — Quality & Security](./07-quality-and-security/) in full. The folder I most want you to read.
 
 ## What you should not do
 
@@ -82,11 +82,11 @@ A short list of things I see teams do that don't work, just so you can skip them
 - Don't install ten skills on day one. Three is the experienced-practitioner default. Start with one or two.
 - Don't bench AI usage on a feature branch and then merge in one big bang. Use it for small commits from the start; the muscle is in the small loops.
 - Don't measure success by "lines of code generated." Use [DX Core 4 / DORA-flavored metrics](./08-team-and-adoption/measuring-impact.md) or your own throughput-and-quality balance.
-- Don't trust AI for auth, crypto, or input validation without an explicit second-pass review. The pattern that survives a deadline is in [09 — Defenses](./07-quality-and-security/defenses.md).
+- Don't trust AI for auth, crypto, or input validation without an explicit second-pass review. The pattern that survives a deadline is in [07 — Defenses](./07-quality-and-security/defenses.md).
 
 ## Where to go next
 
 - I'm new and want the foundations: [why this guide exists](./01-foundations/why-this-guide.md)
 - I want to use AI better and I'm already familiar: [where AI helps](./03-effective-use/where-ai-helps.md)
-- I'm rolling this out at my company: [12 — Adoption](./08-team-and-adoption/)
+- I'm rolling this out at my company: [08 — Team & Adoption](./08-team-and-adoption/)
 - I want every prompt I can copy-paste: [the prompt library](./PROMPTS.md)

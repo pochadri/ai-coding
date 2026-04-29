@@ -52,7 +52,7 @@ These are the tasks where AI helps but you have to work for it. Not "leave it on
 
 These categories haven't moved. AI is still the wrong tool, even with the 2026 capability gains.
 
-**Security boundaries written naively.** AI-generated auth code, crypto, input validation, permission checks: still routinely vulnerable. The fix is not "wait for a better model." The fix is the disciplined pattern in [09 — Defenses](../07-quality-and-security/defenses.md#1-treat-ai-generated-security-critical-code-as-untrusted-by-default): use AI to draft, hand-write the security boundary, run a separate-model security review pass. With discipline, AI can participate in security work safely. Without it, never trust AI to write a security boundary.
+**Security boundaries written naively.** AI-generated auth code, crypto, input validation, permission checks: still routinely vulnerable. The fix is not "wait for a better model." The fix is the disciplined pattern in [07 — Defenses](../07-quality-and-security/defenses.md#1-treat-ai-generated-security-critical-code-as-untrusted-by-default): use AI to draft, hand-write the security boundary, run a separate-model security review pass. With discipline, AI can participate in security work safely. Without it, never trust AI to write a security boundary.
 
 **Architecture and system-design decisions.** AI can't reason about system-level trade-offs that aren't visible in the immediate code: production load patterns, data growth over years, the deprecation of a service three quarters out, the political cost of choosing one team's API over another's. It'll happily produce working code that violates a constraint nobody documented. The decision-making part of architecture is still human.
 
@@ -83,5 +83,5 @@ That's the rule. Everything else is application of it.
 - [Prompting patterns](./prompting-patterns.md), getting better output upstream of the categorization
 - [Review discipline](./review-discipline.md), what to check before merging AI code in any category
 - [Failure modes](./failure-modes.md), the patterns that make "mediocre" code dangerous
-- [09 — Defenses](../07-quality-and-security/defenses.md), the disciplined pattern that makes the "bad" category recoverable
+- [07 — Defenses](../07-quality-and-security/defenses.md), the disciplined pattern that makes the "bad" category recoverable
 - [Spec-driven development](../05-workflows/spec-driven-development.md), the upgrade from "mediocre with prompting" to "great with a spec"

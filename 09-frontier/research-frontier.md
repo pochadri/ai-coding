@@ -53,7 +53,7 @@ What's still being worked out:
 Gartner reported a 1,445% surge in multi-agent system inquiries from Q1 2024 to Q2 2025. The research is catching up. The patterns that have crystallized:
 
 - **Orchestrator-and-specialists.** A coordinator agent decomposes work and dispatches to specialized agents (one for planning, one for implementation, one for review). This is what [OpenAI Codex's multi-agent v2](../02-tools/openai-codex.md) and [Cursor v3 Glass](../02-tools/cursor.md) productize.
-- **Writer/reviewer separation.** One model writes, another reviews. The cross-family version is the load-bearing security pattern in [09 — Defenses](../07-quality-and-security/defenses.md#ai-vs-ai-review-a-separate-model-reviews-the-first-models-output).
+- **Writer/reviewer separation.** One model writes, another reviews. The cross-family version is the load-bearing security pattern in [07 — Defenses](../07-quality-and-security/defenses.md#ai-vs-ai-review-a-separate-model-reviews-the-first-models-output).
 - **Plan/execute separation.** A more capable model plans; a faster model executes. Plan once, execute many times.
 
 Anthropic has documented running 5-10 sessions in parallel on complex tasks. The published guidance is consistent: **"Planning is essential. Agents should plan, then act. This goes a long way towards maintaining coherence."** Multi-agent without planning produces incoherent output; planning is the load-bearing primitive.

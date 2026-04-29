@@ -1,5 +1,5 @@
 ---
-title: 08 — Frontier
+title: 09 — Frontier
 summary: Academic research, recent market and product news, predictions, and the closing summary.
 ---
 

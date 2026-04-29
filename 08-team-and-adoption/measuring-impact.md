@@ -11,7 +11,7 @@ last_updated: 2026-04-25
 
 # Measuring What Matters
 
-> **Altitude:** practitioner-level measurement here — DORA, the productivity paradox, what I tracked. For org-level TCO under usage-based pricing, DX Core 4, and the bimodal productivity story for the boardroom, see **[12 — Adoption / ROI and the case for investment](../08-team-and-adoption/roi-and-board-narrative.md)**.
+> **Altitude:** practitioner-level measurement here — DORA, the productivity paradox, what I tracked. For org-level TCO under usage-based pricing, DX Core 4, and the bimodal productivity story for the boardroom, see **[08 — Team & Adoption / ROI and the case for investment](../08-team-and-adoption/roi-and-board-narrative.md)**.
 
 I've seen a lot of teams "measure" AI tool impact by asking developers "do you feel more productive?" This tells you almost nothing.
 
@@ -44,5 +44,5 @@ The structural reason team delivery doesn't move as much as individual productiv
 
 - [The research landscape](../01-foundations/research-landscape.md), METR, Uplevel, Faros AI in detail
 - [The alignment bottleneck](./alignment-bottleneck.md), why team delivery lags individual gains
-- [12 — Adoption / ROI and the case for investment](../08-team-and-adoption/roi-and-board-narrative.md), DX Core 4, TCO, the board version of the same conversation
+- [08 — Team & Adoption / ROI and the case for investment](../08-team-and-adoption/roi-and-board-narrative.md), DX Core 4, TCO, the board version of the same conversation
 - [For team leads](./for-team-leads.md), turning metrics into team practice

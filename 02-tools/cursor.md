@@ -36,7 +36,7 @@ The trade-off cuts both ways. For these tasks I switch out of Cursor and into Cl
 - **Multi-file agentic work** where the agent should reason about the whole change, not just the buffer in front of you. Claude Code's harness handles this better.
 - **Reading and explaining unfamiliar codebases.** Pasting a 100K-line subsystem into a 1M-context Claude Code session beats Cursor's IDE-bound interaction model for understanding work.
 - **Long-running tasks I want to queue and check on later.** Cursor is designed for active, in-editor work; Claude Code's sandbox modes and approval gates are designed for "let it work, come back to it."
-- **Anything where the security review pass is a separate-model session.** The cross-family review pattern (described in [09 — Defenses](../07-quality-and-security/defenses.md#ai-vs-ai-review-a-separate-model-reviews-the-first-models-output)) is operationally easier when one tool generates and another reviews. Cursor + Claude Code is a natural split.
+- **Anything where the security review pass is a separate-model session.** The cross-family review pattern (described in [07 — Defenses](../07-quality-and-security/defenses.md#ai-vs-ai-review-a-separate-model-reviews-the-first-models-output)) is operationally easier when one tool generates and another reviews. Cursor + Claude Code is a natural split.
 
 ## v3 "Glass" and parallel agents
 
@@ -65,7 +65,7 @@ The honest take: Composer 2 is a real shift, but I haven't migrated my high-stak
 
 Cursor introduced **"Memories"** in mid-2025, the kind of cross-session learned context that Claude Code's `/memory` provides today. They **removed it in v2.1.x** and told users to migrate to static Rules. Rules aren't memory — they don't learn, they don't update based on what you've done, they don't accumulate corrections over time. They're configuration.
 
-If you want real persistent memory in Cursor, the third-party MCP-based options are the workaround. See [07 — Memory / Cursor user](../06-skills-and-memory/practice-and-risks.md#cursor-user) for the current set. None are as integrated as Claude Code's native `/memory`; you're stitching it together.
+If you want real persistent memory in Cursor, the third-party MCP-based options are the workaround. See [06 — Skills & Memory / Cursor user](../06-skills-and-memory/practice-and-risks.md#cursor-user) for the current set. None are as integrated as Claude Code's native `/memory`; you're stitching it together.
 
 This is the single biggest reason I default to Claude Code as the primary harness rather than Cursor. The memory layer matters more than I expected when I started tracking the difference.
 
@@ -86,4 +86,4 @@ If you spend ≥4 hours a day in an IDE and want AI baked in deeply, Cursor is t
 - [Recommended setup](./recommended-setup.md), how Cursor fits into the actual stack and current pricing
 - [Context engineering](../04-understanding-and-context/context-engineering.md), `.cursorrules` and how to feed Cursor your project conventions
 - [The agentic shift](../05-workflows/agents.md), what the Agents Window changes about parallel work
-- [07 — Memory / Cursor user](../06-skills-and-memory/practice-and-risks.md#cursor-user), the third-party MCP options that fill the post-Memories gap
+- [06 — Skills & Memory / Cursor user](../06-skills-and-memory/practice-and-risks.md#cursor-user), the third-party MCP options that fill the post-Memories gap

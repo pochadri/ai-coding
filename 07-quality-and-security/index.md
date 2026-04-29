@@ -47,4 +47,4 @@ If you read nothing else in this folder:
 
 - Encode quality into team practice: **[08 — Team & Adoption](../08-team-and-adoption/)**
 - Strengthen the upstream review pass: **[03 — Review discipline](../03-effective-use/review-discipline.md)**
-- See it cross-referenced into adoption-level policy: **[12 — Risk, governance, policy](../08-team-and-adoption/risk-governance-policy.md)**
+- See it cross-referenced into adoption-level policy: **[08 — Risk, governance, policy](../08-team-and-adoption/risk-governance-policy.md)**

@@ -60,7 +60,7 @@ GitHub Agent HQ announced (February 2026). Run Claude, Codex, and Copilot simult
 
 ## Memory went mainstream
 
-The biggest under-the-radar story of early 2026, covered in depth in [07 — Memory](../06-skills-and-memory/):
+The biggest under-the-radar story of early 2026, covered in depth in [06 — Skills & Memory](../06-skills-and-memory/):
 
 - **Claude memory** hit the free tier (March 2, 2026). Stored as user-editable markdown.
 - **GitHub Copilot Memory** went on by default for Pro/Pro+ (March 4, 2026), with a 28-day TTL.
