@@ -5,7 +5,6 @@ tags: [adoption, templates, board, communication, slides]
 related:
   - ../roi-and-board-narrative.md
   - ../maturity-model.md
-  - ./vendor-evaluation-rubric.md
 last_updated: 2026-04-26
 ---
 
@@ -131,4 +130,3 @@ This is a markdown skeleton, copy each slide into your slide tool of choice. The
 
 - [ROI and board narrative](../roi-and-board-narrative.md), full reasoning behind each slide
 - [Maturity model](../maturity-model.md), for the level reference in Slide 6
-- [Vendor evaluation rubric](./vendor-evaluation-rubric.md), supporting detail for the spend slide

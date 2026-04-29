@@ -33,8 +33,9 @@ and one of the language-specific branches.
    Polyglot/other?
 
 > If the user said "Java", in the same follow-up turn also ask: **Spring / Spring Boot,
-> Quarkus, Micronaut, or plain Java?** Spring is the dominant default, if they don't
-> know, assume Spring Boot.
+> or another framework / plain Java?** Spring is the dominant default and the only
+> framework with a pre-baked custom-skill template; if they don't know, assume Spring
+> Boot. For non-Spring Java, recommend forking the Spring template and adapting.
 
 ### Phase 2 — Project shape (ask after Phase 1 answers)
 
@@ -257,8 +258,8 @@ Generate 2-4 custom skill recommendations with starter scaffolds inlined in the 
 - Mobile → `your-platform-targeting-rules`
 - Infra → `your-iac-conventions`
 - Data → `your-schema-evolution-pattern`
-- Voice → `your-prompt-template-conventions`
 - Library → `your-public-api-style`
+- Voice/realtime → fork an existing template (no pre-baked voice template; the patterns differ enough between voice frameworks that one generic template doesn't help)
 
 ### Stage-driven (1, except for prototype)
 
@@ -303,16 +304,15 @@ follow-up). If they didn't volunteer pain, default to `your-test-quality-rules`.
 
 ### Java framework-driven (always 1 if language is Java)
 
-Pick based on the framework follow-up from Phase 1:
+Recommend `your-spring-conventions` if the user is on Spring or Spring Boot (the
+dominant default). For Quarkus, Micronaut, plain Java, or other non-Spring
+frameworks, recommend forking `your-spring-conventions` and adapting — most of the
+structural sections (package layout, transaction boundaries, security paradox)
+translate; the framework-specific annotations and patterns are what gets customized.
 
-- **Spring / Spring Boot** → `your-spring-conventions` *(default; Spring is the
-  dominant Java framework; if the user didn't specify, assume this)*
-- **Quarkus** → `your-quarkus-conventions`
-- **Micronaut** → `your-micronaut-conventions`
-- **Plain Java / no framework** → `your-java-package-structure`
-
-For every Java template, the security paradox section is mandatory (AI is worse on Java
-security per Veracode, auth, deserialization, and reflection paths need extra review).
+The security paradox section is mandatory regardless of framework: AI is worse on
+Java security per Veracode, and auth, deserialization, and reflection paths need
+extra review on every Java codebase.
 
 ### Cap-binding rule (when more than 4 items)
 
@@ -392,7 +392,7 @@ Be upfront about these in the Caveats section when relevant:
 > User: *"Claude Code, Java"*
 
 **Agent (Java follow-up + Phase 2):**
-> Got it. For Java: Spring / Spring Boot, Quarkus, Micronaut, or plain Java?
+> Got it. For Java: Spring / Spring Boot, or another framework / plain Java?
 >
 > Also:
 > - Project type? (Frontend / Backend API / Full-stack / Mobile / Infra / Data / CLI)
@@ -458,8 +458,8 @@ Loaded on demand:
 - `references/install-catalog.md`, full descriptions, tool-specific install commands,
   current adoption signals (refresh quarterly).
 - `references/custom-skill-templates.md`, starter SKILL.md scaffolds for every
-  `your-X` recommendation, ready to fork. Includes Spring / Quarkus / Micronaut /
-  plain-Java variants.
+  `your-X` recommendation, ready to fork. Includes a Spring template; for other
+  Java frameworks, the recommendation is to fork the Spring template and adapt.
 
 ---
 

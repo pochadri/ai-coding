@@ -21,8 +21,7 @@ Each template is meant to be **forked and compressed**, not used verbatim. They'
 - **[AI Coding Acceptable Use Policy (AUP)](./aup.md)**: one-page policy template covering tools, data classes, workflow, audit, and incident response. Maps to the [STRIDE threat model categories](../risk-governance-policy.md#the-threat-model--ai-in-the-sdlc-stride-style).
 - **[Org-level `AGENTS.md` template](./agents-md-org-template.md)**: the canonical org-wide context file your platform team owns; per-repo override pattern.
 - **[Code review checklist](./code-review-checklist.md)**: a 6-item review checklist updated for AI-generated code, plus the "did the author understand it?" question. Adapt for your team's PR template.
-- **[Vendor evaluation rubric](./vendor-evaluation-rubric.md)**: 20-dimension scoring sheet for comparing AI coding vendors. Indemnification, data handling, residency, audit, exit terms, support.
-- **[Board update slide template](./board-update-slide-template.md)**: six-slide quarterly board update structure. Honest framing, three numbers, no hype.
+- **[Board update slide template](./board-update-slide-template.md)**: six-slide quarterly board update structure with the bimodal-productivity framing front and center.
 - **[AI incident response runbook](./incident-response-runbook.md)**: six-phase IR runbook tuned for AI-coding incident classes (memory poisoning, agent overreach, hallucinated-dep malware, shadow-AI breach, etc.).
 
 ## How to use them

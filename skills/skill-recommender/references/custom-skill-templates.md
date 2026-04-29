@@ -234,41 +234,6 @@ Schema changes happen in three deploys, never one:
 - [The specific data-migration mistakes AI makes]
 ```
 
-### `your-prompt-template-conventions` (Voice)
-
-```markdown
----
-name: your-prompt-template-conventions
-description: |
-  Use this skill when writing or modifying any voice agent prompt. Enforces our
-  system prompt structure, tool definition style, and turn-taking conventions.
-  Triggers: "create a voice agent", "modify the agent prompt", "add a tool to [X]".
-license: MIT
----
-
-# Your prompt template conventions
-
-## System prompt structure
-1. Identity (who the agent is)
-2. Capabilities (what it can do)
-3. Constraints (what it MUST NOT do)
-4. Conversation style (turn-taking, interruption handling, ambiguity resolution)
-5. Tool list (described separately, never inline)
-
-## Tool definitions
-- One tool, one job. No multi-purpose tools.
-- Description starts with verb, includes when to use *and* when NOT to use.
-- [Your max-args, naming conventions]
-
-## Turn-taking
-- [Your interruption handling]
-- [Your silence handling]
-- [Your fallback behavior on tool failure]
-
-## Gotchas
-- [Voice-specific patterns AI tends to miss]
-```
-
 ### `your-public-api-style` (Library)
 
 ```markdown
@@ -562,14 +527,18 @@ license: MIT
 
 ## Java framework templates
 
-Pick the one matching the user's Phase 1 Java framework follow-up. **Spring is the
-dominant default**, if the user didn't specify, use `your-spring-conventions`.
+Spring is the dominant Java framework by far; that's the only Java framework variant
+this catalog ships pre-baked. For Quarkus, Micronaut, plain-Java, or other
+framework-specific work, fork `your-spring-conventions` below and adapt — most of
+the structural sections (package layout, transaction boundaries, security paradox,
+gotchas) translate; the framework-specific annotations and patterns are the parts
+you customize.
 
-The "Java security paradox" section is mandatory in all four variants: Veracode found
-AI is *worse* on Java security than on TS/Python (auth flows, deserialization, and
-reflection paths need extra human review).
+The "Java security paradox" section is mandatory regardless of framework: Veracode
+found AI is *worse* on Java security than on TS/Python. Auth flows, deserialization,
+and reflection paths need extra human review on every Java codebase.
 
-### `your-spring-conventions` (Java — Spring / Spring Boot, default)
+### `your-spring-conventions` (Java — Spring / Spring Boot)
 
 ```markdown
 ---
@@ -617,160 +586,6 @@ license: MIT
 - [Specific bean/config mistakes AI makes in your codebase]
 - [Spring version-specific deprecations AI keeps suggesting]
 ```
-
-### `your-quarkus-conventions` (Java — Quarkus)
-
-```markdown
----
-name: your-quarkus-conventions
-description: |
-  Use this skill when writing any Quarkus code. Enforces our extension choices, native
-  vs JVM build conventions, CDI usage, and reactive vs imperative endpoint style.
-  Triggers: any code change in `src/main/java/`; "add a [resource/service]",
-  "wire up [X]", "make this reactive", "add a Quarkus extension".
-license: MIT
----
-
-# Your Quarkus conventions
-
-## Build mode (native vs JVM)
-- Default: [native | JVM]: pick one and document why.
-- If native: never add reflection-heavy libraries without `@RegisterForReflection`.
-- Profile-specific config in `application-{prod,dev,test}.properties`, never inline.
-
-## Extension policy
-- Only extensions in our approved list: [list yours]. New extensions need PR review —
-  they affect native image size and startup.
-- Prefer `quarkus-rest` over `quarkus-resteasy-classic` for new code.
-
-## Endpoint style
-- Reactive (`Uni<T>` / `Multi<T>`) for I/O-bound paths.
-- Imperative for simple CRUD; don't reactive-ify just because Quarkus supports it.
-- Never mix blocking and reactive in the same endpoint without `@Blocking`.
-
-## CDI usage
-- Constructor injection only; never `@Inject` on fields.
-- `@ApplicationScoped` for stateless services. `@RequestScoped` only when truly needed
-  (it's a perf trap if overused on hot paths).
-
-## Persistence
-- [Hibernate ORM with Panache | reactive Panache | jOOQ, pick one and document]
-- Transactions: `@Transactional` on the service layer, never on the resource.
-
-## Java security paradox, extra-careful zone
-- AI is *worse* on Java security than on TS/Python (per Veracode).
-- Auth/authz: always human-reviewed; Quarkus Security defaults differ from Spring's —
-  AI may suggest Spring patterns that don't apply.
-- Native-image deserialization: extra dangerous — Jackson/JSON-B paths must be reviewed.
-
-## Gotchas
-- [Native-build failures AI keeps causing, reflection, dynamic class loading, etc.]
-- [Extension version drift AI suggests]
-```
-
-### `your-micronaut-conventions` (Java — Micronaut)
-
-```markdown
----
-name: your-micronaut-conventions
-description: |
-  Use this skill when writing any Micronaut code. Enforces compile-time DI conventions,
-  AOT vs runtime trade-offs, declarative HTTP client usage, and our config style.
-  Triggers: any code change in Micronaut source files; "add a [controller/client/
-  bean]", "wire up [X]".
-license: MIT
----
-
-# Your Micronaut conventions
-
-## Compile-time DI mindset
-- Micronaut wires at compile time, no runtime reflection needed for DI.
-- Don't pull in Spring patterns that assume runtime proxying. AOT will silently break.
-- Use `@Singleton` (not `@Component`); `@Factory` for complex wiring.
-
-## Configuration
-- `application.yml` per environment (`application-prod.yml`, etc.).
-- Type-safe config via `@ConfigurationProperties` records, not raw `@Value`.
-
-## HTTP clients
-- Use `@Client` declarative interfaces, never write a manual HTTP client.
-- One client interface per upstream service; group by domain, not by endpoint.
-
-## Endpoint style
-- `@Controller` returns POJOs (auto-serialized) or `HttpResponse<T>`.
-- For reactive: `Mono<T>` / `Flux<T>` (Project Reactor); be consistent across the codebase.
-
-## Build / native
-- GraalVM native is a first-class target, every dependency added is checked against
-  the native-build matrix in CI before merge.
-
-## Java security paradox, extra-careful zone
-- AI is *worse* on Java security than on TS/Python (per Veracode).
-- Micronaut Security is *not* Spring Security — AI may suggest annotations or filters
-  that look right but apply different defaults. Always human-review auth flows.
-- Reflection-based libraries (e.g., Jackson custom deserializers) are doubly dangerous
-  in native builds.
-
-## Gotchas
-- [AOT-incompatible patterns AI keeps suggesting]
-- [Spring patterns that look right but break Micronaut DI]
-```
-
-### `your-java-package-structure` (Java, plain Java / no framework)
-
-```markdown
----
-name: your-java-package-structure
-description: |
-  Use this skill when writing any Java code in this codebase (no framework, plain JDK
-  or library project). Enforces our package layout, module boundaries, build conventions,
-  and dependency policy. Triggers: any code change in `src/main/java/`; "add a [class
-  /module/package]"; "should this go in [package X or Y]".
-license: MIT
----
-
-# Your Java package structure
-
-## Package layout
-- Top-level: `com.[org].[product]`
-- Subpackages by feature, not by layer (`user/`, `billing/`), not (`controllers/`,
-  `services/`). Layer-by-feature ages better than feature-by-layer.
-- Internal classes: `package-private` by default; `public` requires intent.
-
-## Module boundaries (JPMS or Maven multi-module)
-- One `module-info.java` (or one Maven module) per bounded context.
-- `exports` only what's part of the public API. `requires transitive` is a contract —
-  use sparingly.
-
-## Build
-- [Maven | Gradle, pick one]. Java toolchain version: [pin it].
-- Plugins/dependencies versioned via [BOM | version catalog]. Never inline-version a
-  dep in a sub-module.
-
-## Dependency policy
-- Bias toward the JDK. Adding a transitive heavyweight (e.g., Guava for one method) is
-  a smell, file a PR-comment instead.
-- For HTTP: `java.net.http.HttpClient` (JDK 11+) over Apache HttpClient unless there's
-  a documented reason.
-
-## Concurrency
-- Virtual threads (Java 21+) for I/O-bound work. Platform threads only for CPU-bound or
-  legacy code paths.
-- Never spawn threads inline, use a named `ExecutorService` or `StructuredTaskScope`.
-
-## Java security paradox, extra-careful zone
-- AI is *worse* on Java security than on TS/Python (per Veracode).
-- Deserialization (Jackson, ObjectInputStream, XStream): never trust AI suggestions
-  without security review. Many AI-suggested deserialization patterns predate the
-  serialization vulnerabilities of the late 2010s.
-- Reflection: AI loves it; reviewers should be skeptical. Prefer `MethodHandles` or
-  static dispatch.
-
-## Gotchas
-- [Specific patterns AI keeps suggesting that don't fit this codebase]
-- [JDK version-specific APIs AI uses incorrectly]
-```
-
 ---
 
 ## Quality templates
