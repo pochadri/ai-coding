@@ -89,15 +89,7 @@ For any incident involving AI-generated code, the post-mortem should ask three a
 
 Skipping these means the same class of bug will land again. The whole point of the post-mortem is to make the next incident a different kind of incident, not the same kind louder.
 
-## What "good" looks like
-
-Three signs your team is handling AI-bug investigation well:
-
-1. The PR template prompts engineers to paste the relevant prompt or session log. Most do. The prompt is treated as part of the diff.
-2. Your post-mortem template has the three AI-specific questions baked in. Recurring patterns produce AGENTS.md updates.
-3. Your AI-incident time-to-resolution is comparable to human-bug time-to-resolution. If AI bugs consistently take longer to investigate, the prompt-context discipline isn't working.
-
-If AI-incident investigations are taking 3-5x longer than human-bug investigations, the gap is almost always in step 1: the prompt and context aren't captured. Fix that and the rest follows.
+If AI-incident investigations are taking 3-5x longer than human-bug investigations, the gap is almost always that the prompt and context weren't captured. The PR template needs to prompt for them; the team needs to actually paste them in. Without that one practice, the post-mortem questions don't have material to work with.
 
 ## Related reading
 

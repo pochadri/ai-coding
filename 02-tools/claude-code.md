@@ -90,21 +90,9 @@ For an occasional user, the math is much lighter (and the cheaper Sonnet-only pl
 
 The cost most teams underestimate isn't the subscription; it's the operational cost (review time, scanner infrastructure, custom skill authoring, AGENTS.md curation). See [my experience](../01-foundations/my-experience.md#what-it-actually-costs) for the full breakdown.
 
-## What "good" looks like
-
-Three signs your team is using Claude Code well:
-
-1. New non-trivial features start with a checked-in spec before the agent is prompted. See [spec-driven development](../05-workflows/spec-driven-development.md).
-2. The team's `~/.claude/skills/` directory has 5-10 custom skills capturing your specific conventions. The custom kit is the load-bearing thing; community skills are a distant second.
-3. Permission mode is set deliberately for the type of work, not "auto everything for speed." Sandbox is treated as a real defense, not a checkbox.
-
 ## Related reading
 
-- [Cursor](./cursor.md), the IDE-native companion
-- [Recommended setup](./recommended-setup.md), the full kit and current pricing
-- [My personal experience](../01-foundations/my-experience.md), how Claude Code fits into daily practice
+- [Cursor](./cursor.md), the IDE-native companion in the same kit
+- [Recommended setup](./recommended-setup.md), full kit and current pricing
 - [Skills](../06-skills/), the highest-leverage long-term investment for any Claude Code team
-- [Memory](../07-memory/), `/memory`, auto-memory, claude-mem
-- [Context engineering](../04-understanding-and-context/context-engineering.md), feeding Claude your project conventions
-- [AI for maintenance](../08-quality/ai-for-maintenance.md), explaining and modernizing legacy code
 - [09 — Security / Defenses](../09-security/defenses.md), sandbox modes and the AI-vs-AI security review pattern

@@ -70,15 +70,7 @@ Worth a fuller treatment in [Junior developers](../10-team-and-process/junior-de
 
 If your hiring loop hasn't moved with this shift, you're optimizing for the part of the work AI now does fine without you.
 
-## What "good" looks like at the team level
-
-Three habits I see in teams that are getting this right:
-
-1. **The spec template includes the horizontal concerns by default.** Engineers don't need to remember to add "structured logging" to every spec; the template prompts for it. Same with observability, retries, idempotency, rate limits, error handling.
-2. **PR review has an explicit operability pass.** Beyond "is the logic right," reviewers are asked: "Could you debug this at 2am if it broke? Would you know it broke before a customer told you?"
-3. **Production incidents feed back into the spec template.** Every post-mortem ends with "what should have been in the spec that would have prevented this?" The template gets stronger over time.
-
-None of this is novel engineering practice. It's the same operability discipline good teams have always had. The AI shift just makes the cost of skipping it much higher, because skipping it now happens at 100x the volume.
+The teams getting this right have three habits in common: their spec template includes the horizontal concerns by default (engineers don't have to remember to add structured logging; the template prompts for it); their PR review has an explicit operability pass beyond "is the logic right" ("could you debug this at 2 a.m. if it broke; would you know it broke before a customer told you"); and their production incidents feed back into the spec template, with every post-mortem ending with "what should have been in the spec that would have prevented this." None of this is novel engineering practice. It's the same operability discipline good teams have always had. The AI shift just makes the cost of skipping it much higher, because skipping it now happens at 100x the volume.
 
 ## Related reading
 

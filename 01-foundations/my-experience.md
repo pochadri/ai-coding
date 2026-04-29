@@ -33,7 +33,7 @@ This is not the kit I had a year ago. The deltas are most of the interesting con
 
 ## What I do with it, by task
 
-I track which categories of work I use AI for, how often, and how it goes. The current breakdown, honest:
+I track which categories of work I use AI for, how often, and how it goes. The current breakdown:
 
 ### Writing new feature code
 
@@ -129,7 +129,7 @@ Things I didn't see coming, in roughly the order they hit me:
 
 ## What I'm still uncertain about
 
-The honest list:
+The list:
 
 - Whether collaborative-agent tools like ACE land in time and shape to matter, or whether the alignment problem keeps being solved with discipline rather than tooling.
 - Whether the organizational productivity gains catch up to the individual gains, or whether the team-throughput-flat finding becomes the long-run reality.
@@ -139,7 +139,7 @@ The honest list:
 
 ## What it actually costs
 
-The question I get asked most by peers and rarely see answered honestly. My actual numbers, not generalized, as of late April 2026.
+The question I get asked most by peers and rarely see answered with real numbers. My actual numbers, not generalized, as of late April 2026.
 
 Claude Code, used at the daily-power-user level, lands at roughly **$200/month**. Pricing shifted from flat per-seat to usage-billed-on-top in early 2026, and serious daily use lands in the $150-250 range; Anthropic's published benchmark is around $13 per developer per active day, which matches my bill. Cursor, which I keep for IDE-native interactive editing and inline completion, runs another **$60/month**.
 
@@ -152,9 +152,6 @@ If you want the one-paragraph version of everything above: pick one tool and pay
 ## Related reading
 
 - [Where AI actually helps](../03-effective-use/where-ai-helps.md), the generalized version of these observations
-- [Failure modes nobody talks about](../03-effective-use/failure-modes.md), the failure side of these observations
-- [Spec-driven development](../05-workflows/spec-driven-development.md), the workflow that closed the biggest gap for me
 - [Building your own skills](../06-skills/building-your-own.md), the highest-leverage long-term investment
 - [The alignment bottleneck](../10-team-and-process/alignment-bottleneck.md), why the team picture differs from the individual picture
-- [Recommended setup](../02-tools/recommended-setup.md), the tools I actually use
 - [QUICKSTART](../QUICKSTART.md), the five-minute version of the paragraph above

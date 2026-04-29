@@ -30,7 +30,7 @@ xychart-beta
 ```
 <p class="mermaid-caption">▴ The bimodal productivity range. METR (rigorous RCT) shows -19%; Anthropic internal shows +67%. Both are real. Your number is somewhere in this band, usually closer to METR/DORA than to vendor-self-reported.</p>
 
-The honest picture, with sources:
+The picture, with sources on both sides:
 
 | Side | Number | Source |
 |---|---|---|
@@ -43,7 +43,7 @@ The honest picture, with sources:
 | | DORA 2024–2025: individual output up (21% more tasks, 98% more PRs merged); organizational delivery metrics flat | [DORA 2025 report](https://dora.dev/dora-report-2025/) |
 | | Stack Overflow 2025: 84% adoption, trust at all-time low (29%); 46% actively distrust AI accuracy | Stack Overflow Developer Survey |
 
-The honest framing for your board:
+The framing for your board:
 
 > "Individual developer output is up 15–25% in our measurement. Organizational delivery throughput is roughly flat, the gain is being eaten by larger PRs, more review time, and more cleanup of subtly-wrong AI suggestions. We're investing in the practices that close that gap."
 

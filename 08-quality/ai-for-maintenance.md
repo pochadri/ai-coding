@@ -75,14 +75,6 @@ For any meaningful maintenance task, in this order:
 4. **Incremental changes with validation.** Small changes, run tests, deploy to staging, monitor. Don't let the agent refactor fifty files at once even if it offers to.
 5. **Update the AGENTS.md when you discover landmines.** Every time you find a "don't do X for non-obvious reason" situation, write it into AGENTS.md so the next agent session doesn't fall in.
 
-## What "good" looks like
-
-Three signs your team is using AI for maintenance well:
-
-1. New engineers can productively work in unfamiliar parts of the codebase within hours, not weeks. The investigation-loop work is one of the highest-leverage AI use cases for onboarding.
-2. Your AGENTS.md grows over time with "don't 'modernize' X" landmines as the team finds them. The doc encodes the institutional memory the AI doesn't have.
-3. Your refactor PRs include the AI-generated characterization tests that locked in current behavior before the refactor started. This means the refactoring loop is actually being used as designed.
-
 If maintenance work is still taking the same time it did before AI, you're probably skipping step 1 or step 5. Both compound; neither is optional.
 
 ## Related reading
