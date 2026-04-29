@@ -24,7 +24,7 @@ Six task categories where Claude Code has materially shifted how I work:
 
 **Multi-file agentic work.** The flagship use case. "Refactor this module to use the new error wrapper, update all callers, fix the tests." Used to be an hour of careful manual work. Now it's a five-minute spec, twenty minutes of agent execution, fifteen minutes of careful review.
 
-**Reading and explaining unfamiliar code.** I drop Claude Code on a legacy directory I've never seen and ask "walk me through what this does, end-to-end." The 1M context window means I can paste entire subsystems without retrieval pipelines. Routinely saves me a half-day of investigation per question. The [worked example in `08-quality/ai-for-maintenance.md`](../08-quality/ai-for-maintenance.md#a-worked-example-the-auth-module-nobody-understood) is a real two-hour case.
+**Reading and explaining unfamiliar code.** I drop Claude Code on a legacy directory I've never seen and ask "walk me through what this does, end-to-end." The 1M context window means I can paste entire subsystems without retrieval pipelines. Routinely saves me a half-day of investigation per question. The [worked example in `07-quality-and-security/ai-for-maintenance.md`](../07-quality-and-security/ai-for-maintenance.md#a-worked-example-the-auth-module-nobody-understood) is a real two-hour case.
 
 **Long-running mechanical tasks.** Dependency upgrades, mechanical migrations, test-coverage backfills, codemod-style work. I queue these and check in later. Success rate is roughly 80% on first attempt, 95% after one round of correction.
 
@@ -32,7 +32,7 @@ Six task categories where Claude Code has materially shifted how I work:
 
 **The "what could go wrong" pre-mortem.** I prompt the agent with the diff and ask "what fails in production for this code." It catches ~30% of the issues a human reviewer would catch, in 30 seconds, against zero of my time. Doesn't replace review; complements it.
 
-**Security review as a separate session.** The AI-vs-AI pattern (different session, prompted as a security engineer) catches injection risks, missing authz checks, and deserialization gotchas that the generation session would have rationalized past. See [09 — Defenses](../09-security/defenses.md#ai-vs-ai-review-a-separate-model-reviews-the-first-models-output) for the worked example.
+**Security review as a separate session.** The AI-vs-AI pattern (different session, prompted as a security engineer) catches injection risks, missing authz checks, and deserialization gotchas that the generation session would have rationalized past. See [09 — Defenses](../07-quality-and-security/defenses.md#ai-vs-ai-review-a-separate-model-reviews-the-first-models-output) for the worked example.
 
 ## What it doesn't do well
 
@@ -42,11 +42,11 @@ Honest about the limits:
 
 **Anything where you need to see the change visually as you make it.** Pure CLI output. If your work is layout-heavy or you need to see rendered output side-by-side with code, an IDE-native tool fits better.
 
-**Java security-critical code.** This isn't a Claude Code limitation specifically — it's the [Java security paradox](../09-security/threat-landscape.md). Any agent on Java needs more security review than the same agent on TypeScript or Python. Claude Code is no exception.
+**Java security-critical code.** This isn't a Claude Code limitation specifically — it's the [Java security paradox](../07-quality-and-security/threat-landscape.md). Any agent on Java needs more security review than the same agent on TypeScript or Python. Claude Code is no exception.
 
 **Very large refactors.** Past about 1,500 lines of touched code or more than 30 files in a single change, I'd split the work into smaller agent sessions or fall back to a deterministic codemod for the mechanical part and Claude Code for the judgment-required edges.
 
-**Cross-service contract changes.** Same as every other agent: it sees one repo, not the three downstream services that consume the API you just changed. [Code knowledge graphs](../07-memory/artifact-memory.md) close part of this gap; nothing closes all of it.
+**Cross-service contract changes.** Same as every other agent: it sees one repo, not the three downstream services that consume the API you just changed. [Code knowledge graphs](../06-skills-and-memory/artifact-memory.md) close part of this gap; nothing closes all of it.
 
 ## Things that have changed in the last six months
 
@@ -54,7 +54,7 @@ The tool moves fast. Six deltas worth knowing as of April 2026.
 
 The biggest practical shift was the **1M context window** (rolled out broadly in late 2025). Most of the RAG pipelines I'd built a year ago are no longer load-bearing; I just paste the relevant subsystem into context. Closely related: **64k output tokens default** for Opus 4.6 (early 2026) means long generations are now genuinely long. I write longer specs than I used to and get back complete implementations more often.
 
-The **`/memory` command** with auto-memory persists learned facts across sessions to `~/.claude/CLAUDE.md`, load-bearing for projects that go beyond a single week (see [07 — Memory / Vendor-native](../07-memory/vendor-native.md#claude-code-memory)). **Permission modes** (sandbox and approval gates) are the safety floor — the most restrictive mode requires per-action approval; intermediate modes constrain shell, file-write, and network access. I default to a moderately-restrictive mode and tighten for anything touching secrets or production.
+The **`/memory` command** with auto-memory persists learned facts across sessions to `~/.claude/CLAUDE.md`, load-bearing for projects that go beyond a single week (see [07 — Memory / Vendor-native](../06-skills-and-memory/vendor-native.md#claude-code-memory)). **Permission modes** (sandbox and approval gates) are the safety floor — the most restrictive mode requires per-action approval; intermediate modes constrain shell, file-write, and network access. I default to a moderately-restrictive mode and tighten for anything touching secrets or production.
 
 Two newer features I treat as power-features rather than defaults: **Auto mode** (March 24, 2026 research preview) lets the agent decide which actions are safe to take without asking — I use it for read-only and clearly-scoped work and don't use it for anything touching auth, secrets, or state-changing external APIs. **Computer use** (March 25, 2026) lets Claude open files, click, and navigate the screen — useful for tasks that span tools (code + browser + terminal), but on for specific workflows, off by default.
 
@@ -80,7 +80,7 @@ Claude Code's permission modes are the closest thing to "AI safety controls you 
 - **Approve-on-risk mode**: read-only and clearly-scoped operations execute without asking; risky operations (file deletion, git push, network egress, external API calls) prompt.
 - **Auto mode**: the agent decides. Use for tightly-scoped read-only or low-stakes work; don't use for anything you'd be uncomfortable explaining in an incident review.
 
-The sandbox is the last line of defense against prompt-injection attacks (see [supply chain](../09-security/supply-chain.md)). If it's wide open, those attacks have full reach. Default to the most restrictive mode tolerable; loosen deliberately, not by accident.
+The sandbox is the last line of defense against prompt-injection attacks (see [supply chain](../07-quality-and-security/supply-chain.md)). If it's wide open, those attacks have full reach. Default to the most restrictive mode tolerable; loosen deliberately, not by accident.
 
 ## What it actually costs
 
@@ -94,5 +94,5 @@ The cost most teams underestimate isn't the subscription; it's the operational c
 
 - [Cursor](./cursor.md), the IDE-native companion in the same kit
 - [Recommended setup](./recommended-setup.md), full kit and current pricing
-- [Skills](../06-skills/), the highest-leverage long-term investment for any Claude Code team
-- [09 — Security / Defenses](../09-security/defenses.md), sandbox modes and the AI-vs-AI security review pattern
+- [Skills](../06-skills-and-memory/), the highest-leverage long-term investment for any Claude Code team
+- [09 — Security / Defenses](../07-quality-and-security/defenses.md), sandbox modes and the AI-vs-AI security review pattern

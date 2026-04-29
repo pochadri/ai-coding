@@ -3,8 +3,8 @@ title: The Research Landscape
 summary: Synthesis of contradictory studies on AI coding productivity (METR, GitHub, Uplevel, GitClear, Faros, McKinsey).
 tags: [research, productivity, evidence]
 related:
-  - ../10-team-and-process/measuring-impact.md
-  - ../11-frontier/research-frontier.md
+  - ../08-team-and-adoption/measuring-impact.md
+  - ../09-frontier/research-frontier.md
   - ../03-effective-use/where-ai-helps.md
 last_updated: 2026-04-25
 ---
@@ -44,6 +44,6 @@ This isn't an attack on vendor research. It's an acknowledgment that the citatio
 
 ## Related reading
 
-- [Measuring what matters](../10-team-and-process/measuring-impact.md), DORA metrics, the hidden cost of PR review
+- [Measuring what matters](../08-team-and-adoption/measuring-impact.md), DORA metrics, the hidden cost of PR review
 - [Failure modes](../03-effective-use/failure-modes.md), why duplication and bugs go up
-- [Research frontier](../11-frontier/research-frontier.md), what's still being studied
+- [Research frontier](../09-frontier/research-frontier.md), what's still being studied

@@ -5,7 +5,7 @@ tags: [spec-driven, workflow, spec-kit, kiro, ears, agents-md]
 related:
   - ../04-understanding-and-context/context-engineering.md
   - ./agents.md
-  - ../08-quality/technical-excellence.md
+  - ../07-quality-and-security/technical-excellence.md
 last_updated: 2026-04-28
 ---
 
@@ -99,7 +99,7 @@ The mental model that helps: **the spec is the codebase you're maintaining; the 
 
 The spec-hardening pattern above generalizes directly to security. The single highest-leverage security practice I've adopted is making security requirements first-class lines in the spec — alongside functional requirements, not in a separate "security review" pass tacked on at the end. The mechanism is the same: when the agent produces insecure code, the spec is missing a constraint; add the constraint and regenerate. Over time the security-relevant lines accumulate and the agent stops producing the same classes of vulnerability.
 
-The full treatment lives in [09 — Defenses, Spec-driven security](../09-security/defenses.md#spec-driven-security-the-highest-leverage-tier-2-practice) with concrete spec lines I include by default (authn/authz before business logic, parameterized queries, no `pickle` or `ObjectInputStream` on untrusted input, secret-handling through the config layer, SSRF allowlists for outbound calls). If you take spec-driven development seriously for quality, take it seriously for security too. The mechanism is identical.
+The full treatment lives in [09 — Defenses, Spec-driven security](../07-quality-and-security/defenses.md#spec-driven-security-the-highest-leverage-tier-2-practice) with concrete spec lines I include by default (authn/authz before business logic, parameterized queries, no `pickle` or `ObjectInputStream` on untrusted input, secret-handling through the config layer, SSRF allowlists for outbound calls). If you take spec-driven development seriously for quality, take it seriously for security too. The mechanism is identical.
 
 ## When this workflow isn't worth it
 
@@ -127,8 +127,8 @@ The spec-driven workflow looks like overhead the first three times you do it. By
 
 - [Context engineering](../04-understanding-and-context/context-engineering.md), the lower-level companion practice (specs are one form of context)
 - [The agentic shift](./agents.md), what specs hand off *to*
-- [Technical excellence](../08-quality/technical-excellence.md), why horizontal concerns belong in the spec template
-- [The alignment bottleneck](../10-team-and-process/alignment-bottleneck.md), why a checked-in spec is also an alignment artifact for the team
+- [Technical excellence](../07-quality-and-security/technical-excellence.md), why horizontal concerns belong in the spec template
+- [The alignment bottleneck](../08-team-and-adoption/alignment-bottleneck.md), why a checked-in spec is also an alignment artifact for the team
 
 ## Sources
 

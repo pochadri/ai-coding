@@ -5,7 +5,7 @@ tags: [understanding, comprehension, repository-intelligence, scaling]
 related:
   - ./context-engineering.md
   - ../03-effective-use/failure-modes.md
-  - ../08-quality/ai-for-maintenance.md
+  - ../07-quality-and-security/ai-for-maintenance.md
 last_updated: 2026-04-25
 ---
 
@@ -55,7 +55,7 @@ For small codebases, this is fine. For large codebases serving multiple use case
 
 I've seen this in practice. I've worked with monorepos of 500k+ lines of code. Claude Code can read it all, but it keeps suggesting patterns that work in isolation but break our cross-service contracts. It doesn't know that we never use library X because of a security incident three years ago. It doesn't know that module Y is deprecated but still in use by two legacy clients.
 
-The solution, as far as I've found one, has two parts. **First, documentation becomes critical.** Not the documentation that engineers have always said they should write and never quite do. Documentation that captures *why*, not just *what*. Architecture decision records. Context that AI can read and learn from. **Second, persistent memory layers** ([07 — Memory](../07-memory/)) turn that documentation into something the agent actually carries across sessions instead of re-discovering each time.
+The solution, as far as I've found one, has two parts. **First, documentation becomes critical.** Not the documentation that engineers have always said they should write and never quite do. Documentation that captures *why*, not just *what*. Architecture decision records. Context that AI can read and learn from. **Second, persistent memory layers** ([07 — Memory](../06-skills-and-memory/)) turn that documentation into something the agent actually carries across sessions instead of re-discovering each time.
 
 ## The Repository Intelligence Problem
 
@@ -70,5 +70,5 @@ This is why [context engineering](./context-engineering.md) has become so critic
 ## Related reading
 
 - [Context engineering](./context-engineering.md), the in-session practical answer
-- [07 — Memory](../07-memory/), the cross-session practical answer
-- [AI for maintenance](../08-quality/ai-for-maintenance.md), the *why* problem in legacy systems
+- [07 — Memory](../06-skills-and-memory/), the cross-session practical answer
+- [AI for maintenance](../07-quality-and-security/ai-for-maintenance.md), the *why* problem in legacy systems

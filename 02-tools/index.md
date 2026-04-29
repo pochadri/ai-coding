@@ -51,4 +51,4 @@ quadrantChart
 
 - Get more out of any tool → **[03 — Effective use](../03-effective-use/)**
 - Understand the workflow shift → **[05 — Workflows](../05-workflows/)** (specs, agents, skills)
-- See what just shipped → **[Recent updates](../11-frontier/recent-updates-april-2026.md)**
+- See what just shipped → **[Recent updates](../09-frontier/recent-updates-april-2026.md)**

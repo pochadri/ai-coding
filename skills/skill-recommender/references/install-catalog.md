@@ -1,7 +1,7 @@
 # Install catalog, full descriptions
 
 Loaded on demand by `skill-recommender` when building install recommendations.
-Mirrors `06-skills/ecosystem-landscape.md`. Refresh quarterly.
+Mirrors `06-skills-and-memory/ecosystem-landscape.md`. Refresh quarterly.
 
 > Last refresh: April 2026. Star counts and links drift; verify before quoting in
 > production recommendations. Install commands tend to drift faster than anything else

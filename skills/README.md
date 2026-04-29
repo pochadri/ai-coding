@@ -11,7 +11,7 @@ meant to be installed.
 
 A meta-skill that runs a phased Q&A and recommends the right skill stack for your
 project, both *existing skills to install* and *custom skills to write yourself*. It's
-the conversational version of [the web-based picker](../06-skills/picker.md).
+the conversational version of [the web-based picker](../06-skills-and-memory/skill-picker.md).
 
 **Triggers** (any of these phrases):
 - *"recommend skills for my project"*
@@ -94,7 +94,7 @@ and that your tool reads from that location.
 
 The recommendations are sourced from `references/install-catalog.md` and
 `references/custom-skill-templates.md` in the skill folder. These files mirror
-[`06-skills/ecosystem-landscape.md`](../06-skills/ecosystem-landscape.md), the same
+[`06-skills-and-memory/ecosystem-landscape.md`](../06-skills-and-memory/ecosystem-landscape.md), the same
 catalog that drives the website. **Refresh quarterly** (or whenever you notice the
 ecosystem has moved) by re-syncing from this repo:
 
@@ -120,4 +120,4 @@ The decision rules in `SKILL.md` are extracted from prompts the author was repea
 the references files separate static catalog data from instructions; progressive
 disclosure keeps the always-loaded `SKILL.md` portion lean. If you're learning to author
 skills, read `SKILL.md` here as a working example, then read
-[Building your own skills](../06-skills/building-your-own.md) for the full pattern.
+[Building your own skills](../06-skills-and-memory/building-your-own.md) for the full pattern.

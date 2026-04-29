@@ -5,7 +5,7 @@ tags: [tools, windsurf, codeium, amazon-q, kiro, antigravity, cline, aider]
 related:
   - ./recommended-setup.md
   - ../05-workflows/spec-driven-development.md
-  - ../11-frontier/recent-updates-april-2026.md
+  - ../09-frontier/recent-updates-april-2026.md
 last_updated: 2026-04-28
 ---
 
@@ -77,4 +77,4 @@ Honest about tools that get attention but I wouldn't recommend as primary:
 
 - [Recommended setup](./recommended-setup.md), the author's actual stack and current pricing
 - [Spec-driven development](../05-workflows/spec-driven-development.md), the workflow Kiro is built around
-- [Recent updates](../11-frontier/recent-updates-april-2026.md), market movements and the OpenAI / Windsurf acquisition context
+- [Recent updates](../09-frontier/recent-updates-april-2026.md), market movements and the OpenAI / Windsurf acquisition context

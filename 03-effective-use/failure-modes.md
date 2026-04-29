@@ -5,8 +5,8 @@ tags: [failure-modes, vibe-coding, hallucinations, technical-debt, juniors]
 related:
   - ./review-discipline.md
   - ../04-understanding-and-context/understanding-problem.md
-  - ../09-security/threat-landscape.md
-  - ../10-team-and-process/junior-developers.md
+  - ../07-quality-and-security/threat-landscape.md
+  - ../08-team-and-adoption/junior-developers.md
 last_updated: 2026-04-25
 ---
 
@@ -34,7 +34,7 @@ Now I verify every AI-suggested dependency against the actual package registry. 
 
 ## The Skill Atrophy Concern
 
-I worry about this for [junior developers](../10-team-and-process/junior-developers.md) especially.
+I worry about this for [junior developers](../08-team-and-adoption/junior-developers.md) especially.
 
 When I was learning to code, I had to read documentation, understand APIs, struggle through problems. That struggle was how I learned. If you can just ask AI for the answer, do you ever build that deep understanding?
 
@@ -70,5 +70,5 @@ This is also a review discipline. Reviewers should flag overengineering as a def
 
 - [Review discipline](./review-discipline.md), the checklist that catches these patterns
 - [The understanding problem](../04-understanding-and-context/understanding-problem.md), why "looks right" isn't enough
-- [Security](../09-security/threat-landscape.md), hallucinated dependencies as an attack vector
-- [Junior developers](../10-team-and-process/junior-developers.md), protecting learning
+- [Security](../07-quality-and-security/threat-landscape.md), hallucinated dependencies as an attack vector
+- [Junior developers](../08-team-and-adoption/junior-developers.md), protecting learning

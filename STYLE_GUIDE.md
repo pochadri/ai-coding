@@ -202,7 +202,7 @@ When a link is to another page in this guide, prefer the descriptive in-text for
 
 Don't link to the same page repeatedly within one page. The first reference is enough.
 
-Cross-folder links use relative paths (`../09-security/defenses.md`). Don't use absolute paths.
+Cross-folder links use relative paths (`../07-quality-and-security/defenses.md`). Don't use absolute paths.
 
 ## Punctuation
 
@@ -247,16 +247,16 @@ These are the moves that make the guide trustworthy. Use them deliberately.
 
 Match the depth to the topic's importance, not to a uniform target.
 
-- **A folder index** (e.g., `08-quality/index.md`) is appropriately ~30-50 lines. It's a router.
+- **A folder index** (e.g., `07-quality-and-security/index.md`) is appropriately ~30-50 lines. It's a router.
 - **A short personal-setup statement** (e.g., `02-tools/recommended-setup.md`) is appropriately ~30-50 lines.
 - **A typical content page** is ~100-200 lines.
-- **A heavyweight topic page** (e.g., `09-security/defenses.md`) can be ~200-400 lines.
+- **A heavyweight topic page** (e.g., `07-quality-and-security/defenses.md`) can be ~200-400 lines.
 
 Don't pad. If you have nothing more to say, stop.
 
 Don't truncate. If a topic warrants depth and you cut it short, the page reads as a stub.
 
-When in doubt, calibrate against the strongest pages: `09-security/defenses.md`, `09-security/threat-landscape.md`, `01-foundations/my-experience.md`, `12-adoption/index.md`, `10-team-and-process/alignment-bottleneck.md`.
+When in doubt, calibrate against the strongest pages: `07-quality-and-security/defenses.md`, `07-quality-and-security/threat-landscape.md`, `01-foundations/my-experience.md`, `08-team-and-adoption/index.md`, `08-team-and-adoption/alignment-bottleneck.md`.
 
 ## Recommendations: be opinionated
 
@@ -274,10 +274,10 @@ Cap the number of recommendations. The "3 active skills" guidance is a typical e
 
 Whenever a principle could be illustrated with a real example, use the example. Examples that have landed well in this guide:
 
-- The `your-app-error-wrapper` skill (in [building your own skills](./06-skills/building-your-own.md))
-- The password-reset endpoint security review (in [defenses](./09-security/defenses.md))
+- The `your-app-error-wrapper` skill (in [building your own skills](./06-skills-and-memory/building-your-own.md))
+- The password-reset endpoint security review (in [defenses](./07-quality-and-security/defenses.md))
 - The rate-limiting spec evolution (in [spec-driven development](./05-workflows/spec-driven-development.md))
-- The endpoint-that-worked-but-had-no-logs example (in [technical excellence](./08-quality/technical-excellence.md))
+- The endpoint-that-worked-but-had-no-logs example (in [technical excellence](./07-quality-and-security/technical-excellence.md))
 
 The pattern: a real situation, the diff or output the agent produced, what was wrong with it, what the fix was, and the lesson generalized. Three-to-five paragraphs of worked example beats ten paragraphs of theory.
 
@@ -303,7 +303,7 @@ Run these checks before declaring a page done.
 3. **Read-aloud test.** Does this sound like a peer talking, or a corporate doc?
 4. **Consultant-words grep.** Scan for the avoid-list above; cut any matches.
 5. **Em-dash count.** More than ~10 in body prose is a sign to convert most.
-6. **Bullet bold-lead count.** More than ~6-8 in one page is a sign to restructure — *but it's a heuristic, not a hard cap*. Pages that are info-dense reference material (like `09-security/defenses.md`) legitimately exceed it when the bullets are doing real definitional or comparison work. Convert the *structural tics*, keep the *structural work*.
+6. **Bullet bold-lead count.** More than ~6-8 in one page is a sign to restructure — *but it's a heuristic, not a hard cap*. Pages that are info-dense reference material (like `07-quality-and-security/defenses.md`) legitimately exceed it when the bullets are doing real definitional or comparison work. Convert the *structural tics*, keep the *structural work*.
 7. **Citation density.** More than ~3 inline citations per page is usually too many; move to footer.
 8. **Meta-narration scan.** Any sentence that's about the page rather than the content of the page should be cut.
 9. **"We" scan.** "We" should not appear in body prose (only in template boilerplate).

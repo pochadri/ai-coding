@@ -6,7 +6,7 @@ related:
   - ./claude-code.md
   - ./other-tools.md
   - ../05-workflows/agents.md
-  - ../11-frontier/recent-updates-april-2026.md
+  - ../09-frontier/recent-updates-april-2026.md
 last_updated: 2026-04-28
 ---
 
@@ -73,5 +73,5 @@ I keep Codex installed and run it on a project a month to track how the gap is m
 
 - [Claude Code](./claude-code.md), the main alternative for agentic work and the depth comparison this page assumes
 - [The agentic shift](../05-workflows/agents.md), where multi-agent patterns fit into the broader workflow
-- [Recent updates (April 2026)](../11-frontier/recent-updates-april-2026.md), the official Codex plugin for Claude Code and recent OpenAI moves
+- [Recent updates (April 2026)](../09-frontier/recent-updates-april-2026.md), the official Codex plugin for Claude Code and recent OpenAI moves
 - [Other tools](./other-tools.md), the rest of the ecosystem (Windsurf, Antigravity, Codeium, Amazon Q)

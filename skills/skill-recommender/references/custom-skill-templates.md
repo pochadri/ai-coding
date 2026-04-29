@@ -792,7 +792,7 @@ license: MIT
 
 > **Scope distinction:** This is the **review-time** skill, it fires *after* code is
 > written, ideally in a separate session using a different model from the one that
-> generated the code (the AI-vs-AI review pattern; see the guide's `09-security/defenses.md`
+> generated the code (the AI-vs-AI review pattern; see the guide's `07-quality-and-security/defenses.md`
 > page on the website). The companion **authoring-time** skill below
 > (`your-input-validation-rules`) fires when *writing* an input handler. They overlap
 > on the input-validation surface deliberately, review-time catches what

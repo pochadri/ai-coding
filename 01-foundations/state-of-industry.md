@@ -5,7 +5,7 @@ tags: [industry, adoption, statistics]
 related:
   - ./research-landscape.md
   - ../03-effective-use/where-ai-helps.md
-  - ../10-team-and-process/measuring-impact.md
+  - ../08-team-and-adoption/measuring-impact.md
 last_updated: 2026-04-25
 ---
 
@@ -23,4 +23,4 @@ That's not cognitive dissonance, it's pragmatism. The tools ARE useful, just not
 
 - [The research landscape](./research-landscape.md), why the productivity numbers don't match the marketing
 - [Where AI actually helps](../03-effective-use/where-ai-helps.md), the use cases the data supports
-- [Measuring impact properly](../10-team-and-process/measuring-impact.md), DORA metrics over self-report
+- [Measuring impact properly](../08-team-and-adoption/measuring-impact.md), DORA metrics over self-report

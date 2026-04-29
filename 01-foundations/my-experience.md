@@ -8,9 +8,9 @@ related:
   - ../03-effective-use/failure-modes.md
   - ../02-tools/recommended-setup.md
   - ../05-workflows/spec-driven-development.md
-  - ../06-skills/building-your-own.md
-  - ../07-memory/practice-and-risks.md
-  - ../10-team-and-process/alignment-bottleneck.md
+  - ../06-skills-and-memory/building-your-own.md
+  - ../06-skills-and-memory/practice-and-risks.md
+  - ../08-team-and-adoption/alignment-bottleneck.md
 last_updated: 2026-04-28
 ---
 
@@ -39,7 +39,7 @@ I track which categories of work I use AI for, how often, and how it goes. The c
 
 **Python and TypeScript:** I let the agent draft, then I read every line. Real productivity gain at this point is something like 30-40% on TS, 20-30% on Python, *if and only if* I have a half-decent spec written first. Without a spec, the gain shrinks toward zero (I waste the saved time arguing with the agent and reverting bad assumptions).
 
-**Java/Spring:** more cautious. The agent's idiomatic Java is often 2010-era idiomatic, and the [Java security paradox](../09-security/threat-landscape.md) means I run an extra security pass on anything touching auth, deserialization, or reflection. Productivity gain is real but smaller; the review burden is higher.
+**Java/Spring:** more cautious. The agent's idiomatic Java is often 2010-era idiomatic, and the [Java security paradox](../07-quality-and-security/threat-landscape.md) means I run an extra security pass on anything touching auth, deserialization, or reflection. Productivity gain is real but smaller; the review burden is higher.
 
 **Go and Rust:** I do less of these now, but the gain is closer to TS than to Java. The training data is cleaner; the agent's first cut is usually closer to right.
 
@@ -61,7 +61,7 @@ Two distinct uses. **Characterization tests before refactoring** (asking the age
 
 ### Security review
 
-The pattern I've come to depend on: AI drafts the implementation, I write the security boundary by hand, then I open a *separate session with a different model* and prompt it as a security engineer reviewing the diff. The cross-session, ideally cross-family review catches what the generation session would have rationalized past. I added a [worked example to the defenses page](../09-security/defenses.md) showing this on a real auth endpoint. This pattern alone is the single most-load-bearing security practice I've adopted; I would not ship customer-facing code without it now.
+The pattern I've come to depend on: AI drafts the implementation, I write the security boundary by hand, then I open a *separate session with a different model* and prompt it as a security engineer reviewing the diff. The cross-session, ideally cross-family review catches what the generation session would have rationalized past. I added a [worked example to the defenses page](../07-quality-and-security/defenses.md) showing this on a real auth endpoint. This pattern alone is the single most-load-bearing security practice I've adopted; I would not ship customer-facing code without it now.
 
 ### Documentation
 
@@ -75,7 +75,7 @@ Multi-step tasks I would have done myself a year ago, like dependency upgrades, 
 
 This is the area where my experience has changed the most this year, and it's worth its own subsection.
 
-I used to think the productivity story was "I am 30% faster, therefore my team is 30% faster." It isn't. The team's throughput hasn't moved nearly that much, even though my individual throughput has. Most of the gap goes to PR review (more code, more time spent reviewing), to coordination (more parallel work, more collisions), and to catching subtle AI-introduced bugs that the author missed on the first pass. I cover the structural reasons in [the alignment bottleneck](../10-team-and-process/alignment-bottleneck.md). The short version: scaling individual productivity doesn't scale team output if team alignment doesn't scale with it.
+I used to think the productivity story was "I am 30% faster, therefore my team is 30% faster." It isn't. The team's throughput hasn't moved nearly that much, even though my individual throughput has. Most of the gap goes to PR review (more code, more time spent reviewing), to coordination (more parallel work, more collisions), and to catching subtle AI-introduced bugs that the author missed on the first pass. I cover the structural reasons in [the alignment bottleneck](../08-team-and-adoption/alignment-bottleneck.md). The short version: scaling individual productivity doesn't scale team output if team alignment doesn't scale with it.
 
 ## Things I changed my mind about
 
@@ -91,7 +91,7 @@ Position now: the absolute version doesn't survive a deadline; nobody actually f
 
 Position then: skills are just system prompts with extra steps; the open standard is overhyped.
 
-Position now: skills are the highest-leverage long-term investment a team can make. Specifically *custom* skills, written by the team, capturing the conventions the agent keeps re-discovering. My `your-app-error-wrapper` skill (the [worked example here](../06-skills/building-your-own.md)) saved me a PR-comment argument every single PR for the next six months. Twenty minutes of work, hours per week of return. The community skills ecosystem is mostly noise; the team-authored skill kit is the load-bearing thing.
+Position now: skills are the highest-leverage long-term investment a team can make. Specifically *custom* skills, written by the team, capturing the conventions the agent keeps re-discovering. My `your-app-error-wrapper` skill (the [worked example here](../06-skills-and-memory/building-your-own.md)) saved me a PR-comment argument every single PR for the next six months. Twenty minutes of work, hours per week of return. The community skills ecosystem is mostly noise; the team-authored skill kit is the load-bearing thing.
 
 ### "Agents are too unreliable for real work"
 
@@ -115,7 +115,7 @@ Position now: vendor-native memory (Claude `/memory`) plus a curated AGENTS.md i
 
 Position then: if I ship more, the team ships more.
 
-Position now: the team's throughput hasn't moved nearly as much as my individual throughput has. The bottleneck moved from implementation to alignment, and the tools we have (PRs, Slack, Jira) are not built for the new bottleneck. This is the [alignment-bottleneck thesis](../10-team-and-process/alignment-bottleneck.md) and it's reshaped how I think about whether AI is "working" at the team level.
+Position now: the team's throughput hasn't moved nearly as much as my individual throughput has. The bottleneck moved from implementation to alignment, and the tools we have (PRs, Slack, Jira) are not built for the new bottleneck. This is the [alignment-bottleneck thesis](../08-team-and-adoption/alignment-bottleneck.md) and it's reshaped how I think about whether AI is "working" at the team level.
 
 ## What surprised me in the last six months
 
@@ -152,6 +152,6 @@ If you want the one-paragraph version of everything above: pick one tool and pay
 ## Related reading
 
 - [Where AI actually helps](../03-effective-use/where-ai-helps.md), the generalized version of these observations
-- [Building your own skills](../06-skills/building-your-own.md), the highest-leverage long-term investment
-- [The alignment bottleneck](../10-team-and-process/alignment-bottleneck.md), why the team picture differs from the individual picture
+- [Building your own skills](../06-skills-and-memory/building-your-own.md), the highest-leverage long-term investment
+- [The alignment bottleneck](../08-team-and-adoption/alignment-bottleneck.md), why the team picture differs from the individual picture
 - [QUICKSTART](../QUICKSTART.md), the five-minute version of the paragraph above

@@ -4,9 +4,9 @@ summary: Curating what the AI sees. The discipline that decides whether AI ships
 tags: [context-engineering, claude-md, cursorrules, agents-md, skills]
 related:
   - ./understanding-problem.md
-  - ../07-memory/
+  - ../06-skills-and-memory/
   - ../05-workflows/spec-driven-development.md
-  - ../06-skills/
+  - ../06-skills-and-memory/
 last_updated: 2026-04-25
 ---
 
@@ -64,7 +64,7 @@ The major AI coding tools are converging on similar patterns.
 - **Instruction files** (`CLAUDE.md`, `.cursorrules`, `AGENTS.md`) provide persistent context about your project. The AI reads these at the start of every session.
 - **Skills** are descriptions of additional resources that the LLM can load on demand. Claude Code's [skills system](../05-workflows/skills-ecosystem.md) lets you package prompts, scripts, and documentation that activate when relevant.
 - **Context routing** classifies queries and directs them to the right context source. A billing question doesn't need the onboarding knowledge base.
-- **Memory systems** maintain information across sessions. This was a stub when the guide was first written; it's now an entire ecosystem (Claude memory, Copilot Memory, Codex Memories, claude-mem, Mem0, Letta, Zep/Graphiti, code knowledge graphs like graphify and GitNexus). See [07 — Memory](../07-memory/) for the full treatment. Context engineering shapes the *current* turn; memory shapes *future* turns.
+- **Memory systems** maintain information across sessions. This was a stub when the guide was first written; it's now an entire ecosystem (Claude memory, Copilot Memory, Codex Memories, claude-mem, Mem0, Letta, Zep/Graphiti, code knowledge graphs like graphify and GitNexus). See [07 — Memory](../06-skills-and-memory/) for the full treatment. Context engineering shapes the *current* turn; memory shapes *future* turns.
 
 ## What I've Learned
 

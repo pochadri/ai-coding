@@ -6,7 +6,7 @@ related:
   - ./prompting-patterns.md
   - ./review-discipline.md
   - ./failure-modes.md
-  - ../09-security/threat-landscape.md
+  - ../07-quality-and-security/threat-landscape.md
 last_updated: 2026-04-28
 ---
 
@@ -20,7 +20,7 @@ The single biggest 2026 shift: the **1M context window** moved several reading-a
 
 These are the tasks where I lean on AI without thinking, and where the productivity gains are most real.
 
-**Reading and explaining unfamiliar code.** The use case where I get the most asymmetric value. Drop Claude Code on a decade-old codebase and ask "walk me through what this does, what assumptions it bakes in, what's likely to break if I touch it." With 1M context, you can paste an entire subsystem and ask cross-cutting questions. Routinely saves me a half-day of investigation per question. The [worked example in 08-quality](../08-quality/ai-for-maintenance.md#a-worked-example-the-auth-module-nobody-understood) is a real two-hour case where pre-AI would have been a full day.
+**Reading and explaining unfamiliar code.** The use case where I get the most asymmetric value. Drop Claude Code on a decade-old codebase and ask "walk me through what this does, what assumptions it bakes in, what's likely to break if I touch it." With 1M context, you can paste an entire subsystem and ask cross-cutting questions. Routinely saves me a half-day of investigation per question. The [worked example in 07-quality-and-security](../07-quality-and-security/ai-for-maintenance.md#a-worked-example-the-auth-module-nobody-understood) is a real two-hour case where pre-AI would have been a full day.
 
 **Boilerplate.** New React components, CRUD endpoints, scaffolding tests, anything where the pattern is well-established and you're filling in blanks. This is where the "30% productivity gain" claims hold up best.
 
@@ -42,17 +42,17 @@ These are the tasks where AI helps but you have to work for it. Not "leave it on
 
 **Complex business logic with implicit constraints.** AI gives you something that looks right but has subtle bugs at the boundaries — off-by-one errors, wrong assumptions about who can do what, edge cases the spec didn't mention. The fix is [spec-driven development](../05-workflows/spec-driven-development.md): write the constraints down explicitly so the agent can't pick the wrong one. Without a spec, this is mediocre. With a good spec, it's closer to great.
 
-**Code that needs to integrate with your existing codebase.** AI doesn't know your conventions, your utilities, your patterns. It'll generate generic solutions instead of using the helper function you already have. The fix is a strong [AGENTS.md](../12-adoption/templates/agents-md-org-template.md) and a custom skill kit (your error wrapper, your test conventions, your API contract style — see [building your own skills](../06-skills/building-your-own.md)). With those in place, this moves toward "great." Without them, mediocre.
+**Code that needs to integrate with your existing codebase.** AI doesn't know your conventions, your utilities, your patterns. It'll generate generic solutions instead of using the helper function you already have. The fix is a strong [AGENTS.md](../08-team-and-adoption/templates/agents-md-org-template.md) and a custom skill kit (your error wrapper, your test conventions, your API contract style — see [building your own skills](../06-skills-and-memory/building-your-own.md)). With those in place, this moves toward "great." Without them, mediocre.
 
 **Anything with very recent APIs.** Training data cutoffs mean the agent suggests deprecated patterns. React code from AI is especially bad about this, still suggesting class components and outdated lifecycle methods. The fix is to point it at current docs explicitly in the prompt, or to use a skill that captures current best practices for the framework. Mitigated, not eliminated.
 
-**Java security-critical code.** This isn't an agent limitation specifically; it's the [Java security paradox](../09-security/threat-landscape.md). AI fares worse on Java security than on TypeScript or Python. The fix is the structured pattern (AI drafts, human writes the security boundary, separate-model security review pass) plus the Trail of Bits skills. With discipline, mediocre. Without it, bad.
+**Java security-critical code.** This isn't an agent limitation specifically; it's the [Java security paradox](../07-quality-and-security/threat-landscape.md). AI fares worse on Java security than on TypeScript or Python. The fix is the structured pattern (AI drafts, human writes the security boundary, separate-model security review pass) plus the Trail of Bits skills. With discipline, mediocre. Without it, bad.
 
 ## AI is bad for
 
 These categories haven't moved. AI is still the wrong tool, even with the 2026 capability gains.
 
-**Security boundaries written naively.** AI-generated auth code, crypto, input validation, permission checks: still routinely vulnerable. The fix is not "wait for a better model." The fix is the disciplined pattern in [09 — Defenses](../09-security/defenses.md#1-treat-ai-generated-security-critical-code-as-untrusted-by-default): use AI to draft, hand-write the security boundary, run a separate-model security review pass. With discipline, AI can participate in security work safely. Without it, never trust AI to write a security boundary.
+**Security boundaries written naively.** AI-generated auth code, crypto, input validation, permission checks: still routinely vulnerable. The fix is not "wait for a better model." The fix is the disciplined pattern in [09 — Defenses](../07-quality-and-security/defenses.md#1-treat-ai-generated-security-critical-code-as-untrusted-by-default): use AI to draft, hand-write the security boundary, run a separate-model security review pass. With discipline, AI can participate in security work safely. Without it, never trust AI to write a security boundary.
 
 **Architecture and system-design decisions.** AI can't reason about system-level trade-offs that aren't visible in the immediate code: production load patterns, data growth over years, the deprecation of a service three quarters out, the political cost of choosing one team's API over another's. It'll happily produce working code that violates a constraint nobody documented. The decision-making part of architecture is still human.
 
@@ -83,5 +83,5 @@ That's the rule. Everything else is application of it.
 - [Prompting patterns](./prompting-patterns.md), getting better output upstream of the categorization
 - [Review discipline](./review-discipline.md), what to check before merging AI code in any category
 - [Failure modes](./failure-modes.md), the patterns that make "mediocre" code dangerous
-- [09 — Defenses](../09-security/defenses.md), the disciplined pattern that makes the "bad" category recoverable
+- [09 — Defenses](../07-quality-and-security/defenses.md), the disciplined pattern that makes the "bad" category recoverable
 - [Spec-driven development](../05-workflows/spec-driven-development.md), the upgrade from "mediocre with prompting" to "great with a spec"

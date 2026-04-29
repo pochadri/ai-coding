@@ -16,4 +16,4 @@ The thinking layer of the guide. These two pages are the most cross-referenced i
 
 - Apply this in workflows → **[05 — Workflows](../05-workflows/)** (specs, agents, skills)
 - Use it to catch failure modes → **[03 — Effective use / Failure modes](../03-effective-use/failure-modes.md)**
-- See it in maintenance contexts → **[06 — AI for maintenance](../08-quality/ai-for-maintenance.md)**
+- See it in maintenance contexts → **[06 — AI for maintenance](../07-quality-and-security/ai-for-maintenance.md)**

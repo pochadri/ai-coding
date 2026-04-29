@@ -165,7 +165,7 @@ Prompts evolve into specs and specs evolve into skills. The relationship:
 - A *spec* is the formalized version of a recurring task — checked into the repo, PR-reviewed, regenerable.
 - A *skill* is the formalized version of a recurring *category* of task — discovered automatically by the agent based on the trigger phrases in its description.
 
-You start with prompts. The ones you find yourself reusing become specs. The patterns that show up across many specs become skills. The progression is real and worth investing in: the highest-leverage thing you can do with a prompt that works is graduate it into a skill so you stop having to remember to type it. See [building your own skills](../06-skills/building-your-own.md) for that workflow.
+You start with prompts. The ones you find yourself reusing become specs. The patterns that show up across many specs become skills. The progression is real and worth investing in: the highest-leverage thing you can do with a prompt that works is graduate it into a skill so you stop having to remember to type it. See [building your own skills](../06-skills-and-memory/building-your-own.md) for that workflow.
 
 ## Related reading
 
@@ -173,4 +173,4 @@ You start with prompts. The ones you find yourself reusing become specs. The pat
 - [Review discipline](./review-discipline.md), what to do with the output once you have it
 - [Context engineering](../04-understanding-and-context/context-engineering.md), what to set up *once* so you don't have to repeat in every prompt
 - [Spec-driven development](../05-workflows/spec-driven-development.md), where prompting graduates into specifying
-- [Building your own skills](../06-skills/building-your-own.md), where specs graduate into skills
+- [Building your own skills](../06-skills-and-memory/building-your-own.md), where specs graduate into skills

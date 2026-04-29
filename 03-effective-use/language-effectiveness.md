@@ -4,7 +4,7 @@ summary: Tier list of AI coding effectiveness by language and framework. The Jav
 tags: [languages, frameworks, python, javascript, rust, java, react]
 related:
   - ./where-ai-helps.md
-  - ../09-security/threat-landscape.md
+  - ../07-quality-and-security/threat-landscape.md
   - ../01-foundations/my-experience.md
 last_updated: 2026-04-25
 ---
@@ -79,5 +79,5 @@ If you're evaluating AI tools for a project:
 ## Related reading
 
 - [Where AI helps](./where-ai-helps.md), the general use-case framework
-- [Security](../09-security/threat-landscape.md), the Java security paradox in context
+- [Security](../07-quality-and-security/threat-landscape.md), the Java security paradox in context
 - [My experience](../01-foundations/my-experience.md), JS/TS gains in practice

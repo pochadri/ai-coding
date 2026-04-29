@@ -19,4 +19,4 @@ The pragmatic core of the guide. Pick a tool, then come here to use it well.
 
 - Set up persistent context → **[04 — Understanding & context](../04-understanding-and-context/)**
 - Adopt newer workflows → **[05 — Workflows](../05-workflows/)**
-- Catch quality and security issues → **[06 — Quality, security, maintenance](../08-quality/)**
+- Catch quality and security issues → **[06 — Quality, security, maintenance](../07-quality-and-security/)**

@@ -97,37 +97,37 @@ const levelInfo = computed(() => {
       name: 'Level 0 — Unmanaged',
       summary: 'Personal accounts, ad hoc, shadow AI dominant.',
       next: 'Get to Level 1: 30-day shadow-AI inventory; pick approved tools; publish a starter AUP.',
-      roadmap: '/12-adoption/90-day-roadmap#if-youre-at-level-0-or-1--90-days-to-operational',
+      roadmap: '/08-team-and-adoption/90-day-roadmap#if-youre-at-level-0-or-1--90-days-to-operational',
     },
     1: {
       name: 'Level 1 — Sanctioned',
       summary: 'Approved tools available; AUP exists but lightly enforced; no measurement.',
       next: 'Get to Level 2: deploy DX Core 4 (or DORA + daily-active-usage); require AGENTS.md per repo; update code review for AI.',
-      roadmap: '/12-adoption/90-day-roadmap#if-youre-at-level-0-or-1--90-days-to-operational',
+      roadmap: '/08-team-and-adoption/90-day-roadmap#if-youre-at-level-0-or-1--90-days-to-operational',
     },
     2: {
       name: 'Level 2 — Operational',
       summary: 'Measurement live; AUP enforced; AGENTS.md per repo; DevEx team owns AI.',
       next: 'Get to Level 3: stand up the platform team (2-3 FTE); deploy AI Gateway; integrate AppSec scanning for AI patterns.',
-      roadmap: '/12-adoption/90-day-roadmap#if-youre-at-level-2--90-days-to-platformed',
+      roadmap: '/08-team-and-adoption/90-day-roadmap#if-youre-at-level-2--90-days-to-platformed',
     },
     3: {
       name: 'Level 3 — Platformed',
       summary: 'Centralized AI Gateway; tool catalog; champions network; security integrated.',
       next: 'Get to Level 4: hold the discipline 6+ months; bake AI into hiring/leveling; junior pipeline strategy; cyber insurance review.',
-      roadmap: '/12-adoption/90-day-roadmap#if-youre-at-level-3--90-days-to-compounding',
+      roadmap: '/08-team-and-adoption/90-day-roadmap#if-youre-at-level-3--90-days-to-compounding',
     },
     4: {
       name: 'Level 4 — Compounding',
       summary: 'Productivity gains held over 6+ months; hiring reflects AI fluency; junior pipeline preserved.',
       next: 'Most orgs should treat this as the destination. Level 5 is for orgs where AI coding is core to the operating model.',
-      roadmap: '/12-adoption/maturity-model#level-5--native',
+      roadmap: '/08-team-and-adoption/maturity-model#level-5--native',
     },
     5: {
       name: 'Level 5 — Native',
       summary: 'Autonomous agents in bounded domains; EU AI Act / SOC 2 audit-ready continuously; AI is operating-model infrastructure.',
       next: 'You\'re at the frontier. Anything beyond this is research, not engineering management.',
-      roadmap: '/12-adoption/maturity-model#level-5--native',
+      roadmap: '/08-team-and-adoption/maturity-model#level-5--native',
     },
   }
   return info[level.value]

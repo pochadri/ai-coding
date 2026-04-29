@@ -23,7 +23,7 @@ Topical sections first (productivity, security, academic, regulatory), then fold
 - **Primary source:** https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/
 - **Paper:** [arXiv:2507.09089](https://arxiv.org/abs/2507.09089)
 - **Code/data:** https://github.com/METR/Measuring-Early-2025-AI-on-Exp-OSS-Devs
-- **Cited in:** [Research landscape](./01-foundations/research-landscape.md), [Measuring impact](./10-team-and-process/measuring-impact.md)
+- **Cited in:** [Research landscape](./01-foundations/research-landscape.md), [Measuring impact](./08-team-and-adoption/measuring-impact.md)
 
 ### DORA — 2025 State of AI-Assisted Software Development
 - **Author/Org:** Google Cloud / DORA
@@ -69,7 +69,7 @@ Topical sections first (productivity, security, academic, regulatory), then fold
 - **Author/Org:** Faros AI
 - **Year:** 2025
 - **URL:** https://www.faros.ai/blog/ai-software-engineering
-- **Cited in:** [Research landscape](./01-foundations/research-landscape.md), [Measuring impact](./10-team-and-process/measuring-impact.md)
+- **Cited in:** [Research landscape](./01-foundations/research-landscape.md), [Measuring impact](./08-team-and-adoption/measuring-impact.md)
 
 ### Atlassian — Developer Survey (59% stat)
 - **Author/Org:** Source guide attributes to Atlassian, but verification suggests the actual source is **Clutch.co**.
@@ -119,7 +119,7 @@ Topical sections first (productivity, security, academic, regulatory), then fold
 ### Gartner — Multi-Agent Inquiry Surge
 - **Source guide claim:** +1,445% increase in multi-agent system inquiries Q1 2024 → Q2 2025.
 - **URL:** **NOT FOUND** as a primary Gartner publication via this verification pass.
-- **Cited in:** [Research frontier](./11-frontier/research-frontier.md)
+- **Cited in:** [Research frontier](./09-frontier/research-frontier.md)
 
 ### GitHub — AI Code Stats (early 2026)
 - **Source guide claim:** 51% of all code committed in early 2026 was AI-generated or substantially assisted.
@@ -137,7 +137,7 @@ Topical sections first (productivity, security, academic, regulatory), then fold
 - **Finding:** Only 55% of AI-generated code is secure (newer models do not improve on this).
 - **Main report:** https://www.veracode.com/resources/analyst-reports/state-of-software-security-2026/
 - **GenAI update (where 55% lives):** https://www.veracode.com/blog/spring-2026-genai-code-security/
-- **Cited in:** [Technical excellence](./08-quality/technical-excellence.md), [Bottom line](./11-frontier/bottom-line.md)
+- **Cited in:** [Technical excellence](./07-quality-and-security/technical-excellence.md), [Bottom line](./09-frontier/bottom-line.md)
 
 ### Black Duck — 2026 OSSRA Report
 - **Title:** "2026 Open Source Security and Risk Analysis (OSSRA) Report"
@@ -146,7 +146,7 @@ Topical sections first (productivity, security, academic, regulatory), then fold
 - **Finding:** Mean vulnerabilities per codebase up 107% YoY; OSS components up 30%.
 - **URL:** https://www.blackduck.com/resources/analyst-reports/open-source-security-risk-analysis.html
 - **Blog:** https://www.blackduck.com/blog/open-source-trends-ossra-report.html
-- **Cited in:** [Technical excellence](./08-quality/technical-excellence.md)
+- **Cited in:** [Technical excellence](./07-quality-and-security/technical-excellence.md)
 
 ### Georgia Tech — Vibe Security Radar
 - **Author/Org:** Hanqing Zhao, Systems Software & Security Lab (SSLab), Georgia Tech
@@ -155,14 +155,14 @@ Topical sections first (productivity, security, academic, regulatory), then fold
 - **Direct project URL:** Not found this pass. SSLab: https://gts3.org/
 - **Coverage:** https://www.futurity.org/ai-generated-code-vulnerable-3330542/
 - **Note:** Verified via secondary coverage; project page not surfaced.
-- **Cited in:** [Technical excellence](./08-quality/technical-excellence.md), [Recent updates](./11-frontier/recent-updates-april-2026.md)
+- **Cited in:** [Technical excellence](./07-quality-and-security/technical-excellence.md), [Recent updates](./09-frontier/recent-updates-april-2026.md)
 
 ### Opsera — AI Coding Impact 2026 Benchmark
 - **Author/Org:** Opsera
 - **Year:** 2026
 - **Finding:** AI-generated code introduces 15–18% more vulnerabilities per line vs. human-written.
 - **URL:** https://opsera.ai/resources/report/ai-coding-impact-2026-benchmark-report/
-- **Cited in:** [Technical excellence](./08-quality/technical-excellence.md)
+- **Cited in:** [Technical excellence](./07-quality-and-security/technical-excellence.md)
 
 ### Aikido Security — State of AI in Security & Development 2026
 - **Author/Org:** Aikido Security
@@ -170,7 +170,7 @@ Topical sections first (productivity, security, academic, regulatory), then fold
 - **Finding:** 1 in 5 breaches caused by AI-generated code; 24% of production code globally is AI-generated (29% US).
 - **URL:** https://www.aikido.dev/state-of-ai-security-development-2026
 - **Alt URL:** https://www.aikido.dev/reports/2026-state-of-ai-in-security-development
-- **Cited in:** [Technical excellence](./08-quality/technical-excellence.md)
+- **Cited in:** [Technical excellence](./07-quality-and-security/technical-excellence.md)
 
 ---
 
@@ -182,35 +182,35 @@ Topical sections first (productivity, security, academic, regulatory), then fold
 - **Year:** 2026
 - **URL:** [arXiv:2601.20404](https://arxiv.org/abs/2601.20404) — HTML: https://arxiv.org/html/2601.20404v1
 - **Companion paper:** "Evaluating AGENTS.md..." (Gloaguen et al.) — [arXiv:2602.11988](https://arxiv.org/abs/2602.11988)
-- **Cited in:** [Spec-driven development](./05-workflows/spec-driven-development.md), [Context engineering](./04-understanding-and-context/context-engineering.md), [Skills ecosystem](./05-workflows/skills-ecosystem.md), [Research frontier](./11-frontier/research-frontier.md)
+- **Cited in:** [Spec-driven development](./05-workflows/spec-driven-development.md), [Context engineering](./04-understanding-and-context/context-engineering.md), [Skills ecosystem](./05-workflows/skills-ecosystem.md), [Research frontier](./09-frontier/research-frontier.md)
 
 ### Tao et al. — RAG for Code Survey
 - **Title:** "Retrieval-Augmented Code Generation: A Survey with Focus on Repository-Level Approaches"
 - **Author:** Yicheng Tao et al.
 - **Year:** Last revised January 2026
 - **URL:** [arXiv:2510.04905](https://arxiv.org/abs/2510.04905)
-- **Cited in:** [Research frontier](./11-frontier/research-frontier.md)
+- **Cited in:** [Research frontier](./09-frontier/research-frontier.md)
 
 ### Seo et al. — Paper2Code
 - **Title:** "Paper2Code: Automating Code Generation from Scientific Papers in Machine Learning"
 - **Authors:** Minju Seo, Jinheon Baek, Seongyun Lee, Sung Ju Hwang
 - **Year:** v5 last revised February 2026
 - **URL:** [arXiv:2504.17192](https://arxiv.org/abs/2504.17192)
-- **Cited in:** [Research frontier](./11-frontier/research-frontier.md)
+- **Cited in:** [Research frontier](./09-frontier/research-frontier.md)
 
 ### Mohsenimofidi et al. — Context Engineering for AI Agents in OSS
 - **Title:** "Context Engineering for AI Agents in Open-Source Software"
 - **Authors:** Seyedmoein Mohsenimofidi, Matthias Galster, Christoph Treude, Sebastian Baltes
 - **Year:** 2025
 - **URL:** [arXiv:2510.21413](https://arxiv.org/abs/2510.21413)
-- **Cited in:** [Research frontier](./11-frontier/research-frontier.md)
+- **Cited in:** [Research frontier](./09-frontier/research-frontier.md)
 
 ### Vasilopoulos — Codified Context
 - **Title:** "Codified Context: Infrastructure for AI Agents in a Complex Codebase"
 - **Author:** Aristidis Vasilopoulos
 - **Year:** February 2026
 - **URL:** [arXiv:2602.20478](https://arxiv.org/abs/2602.20478)
-- **Cited in:** [Research frontier](./11-frontier/research-frontier.md)
+- **Cited in:** [Research frontier](./09-frontier/research-frontier.md)
 
 ### MSR 2026 paper on `.cursorrules`
 - **Source guide claim:** A paper at MSR 2026 conference analyzing `.cursorrules` files across thousands of repos.
@@ -218,7 +218,7 @@ Topical sections first (productivity, security, academic, regulatory), then fold
 - **Closest URL:** [arXiv:2602.14690](https://arxiv.org/abs/2602.14690)
 - **Also relevant:** "Decoding the Configuration of AI Coding Agents: Insights from Claude Code Projects" — [arXiv:2511.09268](https://arxiv.org/abs/2511.09268)
 - **Note:** ⚠️ Could not locate the specific MSR 2026 paper. The Galster et al. preprint above is the most likely match.
-- **Cited in:** [Research frontier](./11-frontier/research-frontier.md)
+- **Cited in:** [Research frontier](./09-frontier/research-frontier.md)
 
 ---
 
@@ -247,9 +247,9 @@ Topical sections first (productivity, security, academic, regulatory), then fold
 ### Collaborative-agent / multiplayer-agent tools
 - **ACE — Agent Collaboration Environment (GitHub Labs):** the research prototype Maggie (staff researcher engineer at GitHub Labs) presented in the talk *"One Developer, Two Dozen Agents, Zero Alignment."* Multiplayer chat sessions backed by isolated cloud microVMs, shared prompt history, live previews, integrated PR creation, multiplayer code editing, summary/dashboard views.
   - **URL:** ⚠️ No primary URL verified at time of writing. The talk's framing and ACE's feature set are documented in the source notes the guide draws from; treat as directional until GitHub Labs publishes an official ACE landing page or repo.
-  - **Cited in:** [The alignment bottleneck](./10-team-and-process/alignment-bottleneck.md), [What's coming next](./11-frontier/whats-coming.md), [Maturity model](./12-adoption/maturity-model.md)
+  - **Cited in:** [The alignment bottleneck](./08-team-and-adoption/alignment-bottleneck.md), [What's coming next](./09-frontier/whats-coming.md), [Maturity model](./08-team-and-adoption/maturity-model.md)
 
-### Skill libraries (extensive — see [folder 06 — Skills](./06-skills/) for full coverage)
+### Skill libraries (extensive — see [folder 06 — Skills](./06-skills-and-memory/) for full coverage)
 
 **Methodology systems**
 - **gstack (Garry Tan):** https://github.com/garrytan/gstack — site: https://gstacks.org/
@@ -257,7 +257,7 @@ Topical sections first (productivity, security, academic, regulatory), then fold
 - **Superpowers blog post (canonical):** [Vincent, Oct 9, 2025](https://blog.fsck.com/2025/10/09/superpowers/)
 - **BMAD-METHOD (Brian Madison + community):** https://github.com/bmad-code-org/BMAD-METHOD (~46K stars). Issue showing workflow rigidity: [#1332](https://github.com/bmad-code-org/BMAD-METHOD/issues/1332).
 - **Compound Engineering (Every Inc.):** https://github.com/EveryInc/compound-engineering-plugin (~16K stars). Background: [Compound Engineering — How Every Codes With Agents](https://every.to/chain-of-thought/compound-engineering-how-every-codes-with-agents). Critical analysis: [Will Larson on Compound Engineering](https://lethain.com/everyinc-compound-engineering/).
-- **GSD / get-shit-done:** https://github.com/gsd-build/get-shit-done (~57K stars; MIT, actively maintained, supports 15+ runtimes — a legitimate primary methodology choice. Two narrow caveats — a `$GSD` Solana token in the README header (matters if you have a no-crypto-dependency policy) and a "Welcome Back" banner referencing a prior Anthropic ToS event (largely mitigated by multi-runtime support) — see [ecosystem-landscape.md](./06-skills/ecosystem-landscape.md#two-things-worth-knowing-about-gsd)). Comparative analysis: [Superpowers, GSD, and gstack: What Each Claude Code Framework Actually Constrains](https://medium.com/@tentenco/superpowers-gsd-and-gstack-what-each-claude-code-framework-actually-constrains-12a1560960ad).
+- **GSD / get-shit-done:** https://github.com/gsd-build/get-shit-done (~57K stars; MIT, actively maintained, supports 15+ runtimes — a legitimate primary methodology choice. Two narrow caveats — a `$GSD` Solana token in the README header (matters if you have a no-crypto-dependency policy) and a "Welcome Back" banner referencing a prior Anthropic ToS event (largely mitigated by multi-runtime support) — see [ecosystem-landscape.md](./06-skills-and-memory/ecosystem-landscape.md#two-things-worth-knowing-about-gsd)). Comparative analysis: [Superpowers, GSD, and gstack: What Each Claude Code Framework Actually Constrains](https://medium.com/@tentenco/superpowers-gsd-and-gstack-what-each-claude-code-framework-actually-constrains-12a1560960ad).
 
 **Anthropic official**
 - **`anthropics/skills`:** https://github.com/anthropics/skills (~124K stars; includes `frontend-design`, `skill-creator`, document skills)
@@ -274,7 +274,7 @@ Topical sections first (productivity, security, academic, regulatory), then fold
 - **ClickHouse:** https://github.com/ClickHouse/agent-skills
 - **Expo:** https://github.com/expo/skills
 - **Figma:** https://github.com/figma/community-resources/tree/main/agent_skills
-- **Stripe / Polar / Netlify:** No single first-party `agent-skills` repo found as of April 2026 (community skills exist; see [Ecosystem landscape](./06-skills/ecosystem-landscape.md#stripe-polar-netlify-state-of-play))
+- **Stripe / Polar / Netlify:** No single first-party `agent-skills` repo found as of April 2026 (community skills exist; see [Ecosystem landscape](./06-skills-and-memory/ecosystem-landscape.md#stripe-polar-netlify-state-of-play))
 
 **Security-focused**
 - **Trail of Bits:** https://github.com/trailofbits/skills (CC BY-SA 4.0)
@@ -359,14 +359,14 @@ Topical sections first (productivity, security, academic, regulatory), then fold
 
 ### Andrej Karpathy — observations on LLM coding pitfalls
 - **Original post:** https://x.com/karpathy/status/2015883857489522876
-- **Topic:** LLMs make wrong assumptions silently, overcomplicate code and APIs, change/remove code they don't fully understand, and "are exceptionally good at looping until they meet specific goals." The post that inspired the `andrej-karpathy-skills` CLAUDE.md template (~95K stars; see [06 — Ecosystem landscape](./06-skills/ecosystem-landscape.md#forrest-changs-andrej-karpathy-skills)).
+- **Topic:** LLMs make wrong assumptions silently, overcomplicate code and APIs, change/remove code they don't fully understand, and "are exceptionally good at looping until they meet specific goals." The post that inspired the `andrej-karpathy-skills` CLAUDE.md template (~95K stars; see [06 — Ecosystem landscape](./06-skills-and-memory/ecosystem-landscape.md#forrest-changs-andrej-karpathy-skills)).
 - **Cited in:** [Failure modes / overcomplication](./03-effective-use/failure-modes.md), [Prompting patterns / success criteria over imperatives](./03-effective-use/prompting-patterns.md), [Review discipline / surgical changes](./03-effective-use/review-discipline.md)
 
 ### Forrest Chang — `andrej-karpathy-skills` repository
 - **Repo:** https://github.com/forrestchang/andrej-karpathy-skills
 - **License:** MIT · ~95K stars (April 2026) · created January 27, 2026
 - **What it is:** a single `CLAUDE.md` (also packaged as a Claude Code plugin) distilling four behavioral principles from Karpathy's tweet above. The single-file format and meteoric star growth make it a noteworthy data point on what the community is reaching for.
-- **Cited in:** [Ecosystem landscape](./06-skills/ecosystem-landscape.md), [Choosing skills](./06-skills/choosing-skills.md), [QUICKSTART](./QUICKSTART.md)
+- **Cited in:** [Ecosystem landscape](./06-skills-and-memory/ecosystem-landscape.md), [Choosing skills](./06-skills-and-memory/choosing-skills.md), [QUICKSTART](./QUICKSTART.md)
 
 ### Collins Dictionary — Word of the Year 2025
 - **WOTY page:** https://www.collinsdictionary.com/us/woty
@@ -393,12 +393,12 @@ Topical sections first (productivity, security, academic, regulatory), then fold
 - **Note:** ⚠️ The source guide's phrase "took full effect in February" is misleading. February 2026 is a guidelines milestone, not a major effective date. Full applicability of the high-risk regime is August 2026.
 - **Official text:** https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng
 - **Commission portal:** https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
-- **Cited in:** [Security](./09-security/threat-landscape.md), [Recent updates](./11-frontier/recent-updates-april-2026.md)
+- **Cited in:** [Security](./07-quality-and-security/threat-landscape.md), [Recent updates](./09-frontier/recent-updates-april-2026.md)
 
 ### FTC Guidance
 - **Source guide claim:** Companies bear full legal responsibility for AI-generated code quality and security.
 - **URL:** No single primary FTC publication surfaced this pass. Verify against https://www.ftc.gov/business-guidance/.
-- **Cited in:** [Security](./09-security/threat-landscape.md), [Recent updates](./11-frontier/recent-updates-april-2026.md)
+- **Cited in:** [Security](./07-quality-and-security/threat-landscape.md), [Recent updates](./09-frontier/recent-updates-april-2026.md)
 
 ---
 
@@ -495,7 +495,7 @@ Topical sections first (productivity, security, academic, regulatory), then fold
 - **Lovable security crisis (Dec 2025):** [The Next Web](https://thenextweb.com/news/lovable-vibe-coding-security-crisis-exposed)
 - **Apiiro Fortune 50 study — 322% privilege escalation (June 2025):** [report](https://apiiro.com/blog/4x-velocity-10x-vulnerabilities-ai-coding-assistants-are-shipping-more-risks/)
 
-### Maturity models (sources for the synthesis in 12-adoption/maturity-model.md)
+### Maturity models (sources for the synthesis in 08-team-and-adoption/maturity-model.md)
 - **Gartner AI maturity toolkit:** https://www.gartner.com/en/chief-information-officer/research/ai-maturity-model-toolkit
 - **Gartner AI-Native Software Engineering:** https://www.gartner.com/en/documents/7586633
 - **Gartner: only 45% of high-AI-maturity orgs sustain projects 3+ years (June 2025):** https://www.gartner.com/en/newsroom/press-releases/2025-06-30-gartner-survey-finds-forty-five-percent-of-organizations-with-high-artificial-intelligence-maturity-keep-artificial-intelligence-projects-operational-for-at-least-three-years

@@ -467,5 +467,5 @@ Loaded on demand:
 
 Part of the **AI Coding Tools — A Practitioner's Guide** repo
 (<https://github.com/pochadri/ai-coding>). Decision rules mirror the SkillPicker
-component documented in `06-skills/picker.md`. Install catalog is sourced from
-`06-skills/ecosystem-landscape.md`. Refresh both quarterly as the ecosystem moves.
+component documented in `06-skills-and-memory/skill-picker.md`. Install catalog is sourced from
+`06-skills-and-memory/ecosystem-landscape.md`. Refresh both quarterly as the ecosystem moves.

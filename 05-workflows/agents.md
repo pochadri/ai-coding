@@ -6,7 +6,7 @@ related:
   - ./spec-driven-development.md
   - ./skills-ecosystem.md
   - ../02-tools/claude-code.md
-  - ../08-quality/when-things-go-wrong.md
+  - ../07-quality-and-security/when-things-go-wrong.md
 last_updated: 2026-04-25
 ---
 
@@ -66,7 +66,7 @@ That's not science fiction. Claude Code does this today. Not perfectly, but well
 
 **New features.** The agent doesn't know our product direction, our users, our constraints. It'll generate working code that misses the point entirely.
 
-**Anything security-related.** Agents make mistakes. For auth, encryption, input validation, I want human eyes on every line. See [Security](../09-security/threat-landscape.md).
+**Anything security-related.** Agents make mistakes. For auth, encryption, input validation, I want human eyes on every line. See [Security](../07-quality-and-security/threat-landscape.md).
 
 **Complex architectural changes.** Agents can refactor within an architecture. They can't redesign the architecture itself. That requires judgment they don't have.
 
@@ -97,12 +97,12 @@ This isn't perfect, but it catches most of the "wait, why did you do that?" mome
 
 Everything above is the *single-developer* view of agent work. The team view is a different problem and a harder one. Most agents run in private, local sessions. The plan is in the prompter's head; the prompts are on the prompter's machine; the first time anyone else sees the work is when the pull request opens. That's structurally bad: by the time the team can disagree, the code is already written.
 
-GitHub's Labs team has been the loudest on this thesis ("one developer, two dozen agents, zero alignment") and is prototyping a tool called ACE that puts agent sessions into shared, multiplayer environments. I cover the broader argument and what teams can do today (without ACE) in [the alignment bottleneck](../10-team-and-process/alignment-bottleneck.md). If you're scaling agent use across a team, read that page next.
+GitHub's Labs team has been the loudest on this thesis ("one developer, two dozen agents, zero alignment") and is prototyping a tool called ACE that puts agent sessions into shared, multiplayer environments. I cover the broader argument and what teams can do today (without ACE) in [the alignment bottleneck](../08-team-and-adoption/alignment-bottleneck.md). If you're scaling agent use across a team, read that page next.
 
 ## Related reading
 
 - [Spec-driven development](./spec-driven-development.md), what to hand to the agent
 - [Skills ecosystem](./skills-ecosystem.md), packaged agent behaviors
 - [Claude Code](../02-tools/claude-code.md), the author's primary agent platform
-- [When things go wrong](../08-quality/when-things-go-wrong.md), debugging systematic agent mistakes
-- [The alignment bottleneck](../10-team-and-process/alignment-bottleneck.md), the team-coordination problem agents create
+- [When things go wrong](../07-quality-and-security/when-things-go-wrong.md), debugging systematic agent mistakes
+- [The alignment bottleneck](../08-team-and-adoption/alignment-bottleneck.md), the team-coordination problem agents create
