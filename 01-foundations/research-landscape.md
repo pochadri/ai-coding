@@ -23,14 +23,26 @@ McKinsey's February 2026 study across 4,500 developers reportedly found 46% redu
 
 Here's my synthesis: AI tools help with simple, well-defined, greenfield tasks. They hurt (or at best don't help) with complex, ambiguous, maintenance work. Most real software development is the latter, which is why the productivity gains don't always materialize.
 
-```mermaid
-xychart-beta
-    title "Reported productivity impact across major studies (% change)"
-    x-axis ["METR 2025", "Uplevel (bugs)", "DORA 2025 org", "GitClear (clones)", "Microsoft RCT", "McKinsey", "GitHub HTTP"]
-    y-axis "% impact" -45 --> 60
-    bar [-19, -41, 0, -75, 17, 46, 55]
-```
-<p class="mermaid-caption">▴ The contradiction visualized. METR/Uplevel/GitClear find quality regressions; Microsoft/McKinsey/GitHub find throughput gains. Both methodologies are sound; they're measuring different things on different populations.</p>
+<div class="divbar">
+  <div class="divbar__title">Reported productivity impact across major studies (% change)</div>
+  <div class="divbar__rows" style="--zero: 57.1%;">
+    <div class="divbar__label">GitClear (clones)</div>
+    <div class="divbar__track"><div class="divbar__bar divbar__bar--neg" style="left: 3.6%; width: 53.6%;">−75%</div></div>
+    <div class="divbar__label">Uplevel (bugs)</div>
+    <div class="divbar__track"><div class="divbar__bar divbar__bar--neg" style="left: 27.9%; width: 29.3%;">−41%</div></div>
+    <div class="divbar__label">METR 2025</div>
+    <div class="divbar__track"><div class="divbar__bar divbar__bar--neg" style="left: 43.6%; width: 13.6%;">−19%</div></div>
+    <div class="divbar__label">DORA 2025 org</div>
+    <div class="divbar__track"><div class="divbar__bar divbar__bar--zero" style="left: calc(57.1% - 14px); width: 28px;">0</div></div>
+    <div class="divbar__label">Microsoft RCT</div>
+    <div class="divbar__track"><div class="divbar__bar divbar__bar--pos" style="left: 57.1%; width: 12.1%;">+17%</div></div>
+    <div class="divbar__label">McKinsey</div>
+    <div class="divbar__track"><div class="divbar__bar divbar__bar--pos" style="left: 57.1%; width: 32.9%;">+46%</div></div>
+    <div class="divbar__label">GitHub HTTP</div>
+    <div class="divbar__track"><div class="divbar__bar divbar__bar--pos" style="left: 57.1%; width: 39.3%;">+55%</div></div>
+  </div>
+</div>
+<p class="divbar__caption">▴ The contradiction visualized. METR/Uplevel/GitClear find quality regressions; Microsoft/McKinsey/GitHub find throughput gains. Both methodologies are sound; they're measuring different things on different populations.</p>
 
 > Full citations and links to these studies live in [REFERENCES.md](../REFERENCES.md).
 

@@ -980,3 +980,98 @@ p.mermaid-caption {
   font-style: italic;
   margin: 0.25rem 0 2rem;
 }
+
+/* Diverging horizontal bar chart — drop-in replacement for mermaid xychart.
+   Renders reliably (pure HTML/CSS, no JS), supports signed values. */
+
+.divbar {
+  margin: 2rem 0 0.5rem;
+  padding: 1.5rem 1.25rem;
+  background: var(--vp-c-bg-soft);
+  border-radius: 12px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.divbar__title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.divbar__rows {
+  display: grid;
+  grid-template-columns: minmax(140px, max-content) 1fr;
+  column-gap: 1rem;
+  row-gap: 0.55rem;
+  align-items: center;
+}
+
+.divbar__label {
+  font-size: 0.85rem;
+  color: var(--vp-c-text-2);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.divbar__track {
+  position: relative;
+  height: 22px;
+  background: linear-gradient(to right,
+    var(--vp-c-divider) 0,
+    var(--vp-c-divider) calc(var(--zero, 50%) - 0.5px),
+    var(--vp-c-text-1) calc(var(--zero, 50%) - 0.5px),
+    var(--vp-c-text-1) calc(var(--zero, 50%) + 0.5px),
+    var(--vp-c-divider) calc(var(--zero, 50%) + 0.5px),
+    var(--vp-c-divider) 100%);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.divbar__bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 0 0.4rem;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.divbar__bar--pos {
+  background: var(--vp-c-brand-1);
+  color: #fff;
+  justify-content: flex-end;
+}
+
+.divbar__bar--neg {
+  background: #c1422f;
+  color: #fff;
+  justify-content: flex-start;
+}
+
+.divbar__bar--zero {
+  background: transparent;
+  color: var(--vp-c-text-2);
+  border: 1px dashed var(--vp-c-divider);
+  justify-content: center;
+  font-weight: 500;
+}
+
+.dark .divbar__bar--neg {
+  background: #d65b48;
+}
+
+.divbar__caption {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--vp-c-text-2);
+  font-style: italic;
+  margin: 0.5rem 0 2rem;
+}

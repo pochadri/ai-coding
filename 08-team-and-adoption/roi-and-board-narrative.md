@@ -21,14 +21,24 @@ What follows is what I actually measure, how the cost picture quietly changed in
 
 ## The bimodal productivity story
 
-```mermaid
-xychart-beta
-    title "Reported AI coding productivity impact (% change in throughput)"
-    x-axis ["METR 2025 RCT", "DORA 2025 (org)", "Microsoft RCT (2022)", "McKinsey", "Booking.com DAU", "Anthropic internal"]
-    y-axis "% change" -25 --> 70
-    bar [-19, 0, 17, 35, 16, 67]
-```
-<p class="mermaid-caption">▴ The bimodal productivity range. METR (rigorous RCT) shows -19%; Anthropic internal shows +67%. Both are real. Your number is somewhere in this band, usually closer to METR/DORA than to vendor-self-reported.</p>
+<div class="divbar">
+  <div class="divbar__title">Reported AI coding productivity impact (% change in throughput)</div>
+  <div class="divbar__rows" style="--zero: 26.3%;">
+    <div class="divbar__label">METR 2025 RCT</div>
+    <div class="divbar__track"><div class="divbar__bar divbar__bar--neg" style="left: 6.3%; width: 20%;">−19%</div></div>
+    <div class="divbar__label">DORA 2025 (org)</div>
+    <div class="divbar__track"><div class="divbar__bar divbar__bar--zero" style="left: calc(26.3% - 14px); width: 28px;">0</div></div>
+    <div class="divbar__label">Microsoft RCT (2022)</div>
+    <div class="divbar__track"><div class="divbar__bar divbar__bar--pos" style="left: 26.3%; width: 17.9%;">+17%</div></div>
+    <div class="divbar__label">Booking.com DAU</div>
+    <div class="divbar__track"><div class="divbar__bar divbar__bar--pos" style="left: 26.3%; width: 16.8%;">+16%</div></div>
+    <div class="divbar__label">McKinsey</div>
+    <div class="divbar__track"><div class="divbar__bar divbar__bar--pos" style="left: 26.3%; width: 36.8%;">+35%</div></div>
+    <div class="divbar__label">Anthropic internal</div>
+    <div class="divbar__track"><div class="divbar__bar divbar__bar--pos" style="left: 26.3%; width: 70.5%;">+67%</div></div>
+  </div>
+</div>
+<p class="divbar__caption">▴ The bimodal productivity range. METR (rigorous RCT) shows −19%; Anthropic internal shows +67%. Both are real. Your number is somewhere in this band, usually closer to METR/DORA than to vendor-self-reported.</p>
 
 The picture, with sources on both sides:
 
