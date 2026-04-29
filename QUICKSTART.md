@@ -35,6 +35,28 @@ Three things, in order of leverage:
 
 That's the floor. If your project is touching customer data or money, also read the rest of [09 — Security](./07-quality-and-security/) before you ship.
 
+## Two checklists to keep in your editor
+
+For when you're about to use AI on something non-trivial and want a fast sanity check.
+
+**Before you prompt:**
+
+- Is the problem clearly defined (inputs, outputs, success criterion)?
+- Are the constraints written down (security boundary, perf budget, what NOT to do)?
+- Does the prompt name the role (security engineer reviewing / staff engineer reading) before the task?
+- For multi-step work: have you asked for the plan before the code?
+
+**Before you merge:**
+
+- Do I actually understand what this does (and can I explain it)?
+- Do all imports / dependencies exist in the real registries?
+- Is there an obvious security issue (injection, secrets, missing authz, deserialization)?
+- Are non-happy-path edge cases handled (null, empty, malformed, concurrent)?
+- Does this match the codebase's existing patterns, or is it generic AI code?
+- For anything touching auth or external input: did the separate-model security review pass run?
+
+If any of these is "no," fix that before moving on. The cost of pausing is tiny; the cost of merging on a "no" compounds.
+
 ## What to do this week
 
 If you have another two hours after the three things above:

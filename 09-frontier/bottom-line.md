@@ -32,6 +32,18 @@ AI coding tools are transforming how software is built. The question isn't wheth
 
 **Stay curious.** The field is changing faster than anyone predicted. What's true today may not be true in six months. But the fundamentals, understanding, judgment, quality, will remain valuable.
 
+## If you do five things from this guide
+
+If everything above is too much and you want the actionable version, here are the five things that compound the most for the least effort:
+
+1. **Pick one tool, pay for it, stop deliberating.** Indecision costs more than picking the "wrong" one. See [recommended setup](../02-tools/recommended-setup.md).
+2. **Write an AGENTS.md in your repo root.** Even thirty lines. Iterate on it forever; the first version doesn't need to be good. See [the org-level template](../08-team-and-adoption/templates/agents-md-org-template.md).
+3. **Set up the security floor.** Static analysis in CI, secret-scanning pre-commit, `skill-scanner` before any community skill. See [Defenses, Tier 1](../07-quality-and-security/defenses.md).
+4. **Adopt spec-driven development for non-trivial work.** A 100-word markdown spec before the agent touches code. See [spec-driven development](../05-workflows/spec-driven-development.md).
+5. **Run a separate-session security review pass on anything touching auth, deserialization, or external input.** Different session, ideally different model. See [the AI-vs-AI pattern](../07-quality-and-security/defenses.md#ai-vs-ai-review-a-separate-model-reviews-the-first-models-output).
+
+The rest of the guide is the longer version of those five.
+
 ---
 
 *Written April 2026, after two years of daily AI coding tool usage, many experiments, some failures, a lot of reading, and watching the field evolve in real time.*

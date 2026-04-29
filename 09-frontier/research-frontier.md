@@ -92,6 +92,14 @@ What I'd not bet on yet:
 - Formal verification reaching production quality at scale. Promising; not soon.
 - Spec-as-source becoming the default workflow. Promising for senior engineers; not yet broadly adopted.
 
+## What to do with this research today
+
+Three things worth pulling forward into practice without waiting for the academic field to settle:
+
+1. **Adopt cross-family review for security-critical PRs now.** The research backs it; the tools support it; the cost is one extra prompt in a different session. Don't wait for it to become a "default."
+2. **Treat AGENTS.md like maintained code.** PR-review changes, refresh quarterly, version it alongside the codebase. Drop the "write once, forget" pattern.
+3. **Watch the multi-agent orchestration space, but don't build your own yet.** The vendor-provided primitives (Codex multi-agent v2, Cursor's Agents Window) are catching up; investing in custom orchestration today usually gets superseded inside 6-12 months.
+
 ## Related reading
 
 - [The research landscape](../01-foundations/research-landscape.md), the productivity-side studies
