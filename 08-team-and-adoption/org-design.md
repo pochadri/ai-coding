@@ -106,12 +106,12 @@ What a champion does *not* do:
 
 ## Hiring and leveling
 
-This is the conversation I find hardest to have honestly with CTO peers, because the data is mixed and the implications are uncomfortable.
+This is the conversation I find hardest to have straight with CTO peers, because the data is mixed and the implications are uncomfortable.
 
-The data:
-- BCG's "Rebuilding the Engineering Growth Ladder for an AI-First World" reframes career ladders around observable behaviors across 5–7 dimensions. The shift is from output volume (story points, lines, PRs) to *judgment as observable behavior*, what they decide *not* to do, what they catch in review, the quality of their `AGENTS.md`.
-- The 2026 Pragmatic Engineer survey found Staff+ engineers are the heaviest agent users (63.5%), more than ICs (49.7%), EMs (46.1%), or Directors/VPs (51.9%). Leverage scales with experience.
-- The 2025 LeadDev survey found 54% of engineering leaders plan to hire fewer junior engineers because seniors+AI cover more.
+The data points I keep returning to:
+- BCG's "Rebuilding the Engineering Growth Ladder for an AI-First World" reframes career ladders around observable behaviors across 5–7 dimensions. The shift I'd take from it: from output volume (story points, lines, PRs) to *judgment as observable behavior* — what they decide *not* to do, what they catch in review, the quality of their `AGENTS.md`.
+- The 2026 Pragmatic Engineer survey found Staff+ engineers are the heaviest agent users (63.5%) — more than ICs (49.7%), EMs (46.1%), or Directors/VPs (51.9%). Leverage scales with experience, which matches what I see.
+- The 2025 LeadDev survey found 54% of engineering leaders plan to hire fewer junior engineers because seniors+AI cover more. Whether that's the right move is exactly the conversation in the next section.
 
 What I'd actually do:
 - **Update the leveling rubric** to include AI fluency as an explicit dimension (not "uses AI" — *judgment* about when to use AI, when not to, how to review AI output, how to teach others). Two-quarter rollout because rubrics changes are slow and political.
@@ -122,15 +122,15 @@ What I'd actually do:
 
 ## The junior pipeline question
 
-This is the one I get asked most. Honest version:
+This is the question I get asked most, and the version I keep landing on:
 
-The data is uncomfortable. Employment for software developers aged 22–25 declined nearly 20% from late-2022 peak. Entry-level tech hiring fell ~25% YoY in 2024. The structural risk, a hollowed-out career ladder, lots of seniors, AI doing the grunt work, no juniors learning craft, is real.
+The data is uncomfortable. Employment for software developers aged 22–25 declined nearly 20% from the late-2022 peak. Entry-level tech hiring fell ~25% YoY in 2024. The structural risk I'd point to — a hollowed-out career ladder, lots of seniors, AI doing the grunt work, no juniors learning craft — is real.
 
-The thoughtful counter-arguments:
+The counter-arguments I'd weigh against that:
 
-AWS CEO Matt Garman has argued publicly that juniors are affordable, fast to adopt AI, and essential for pipeline continuity. The hollowed-ladder risk is widely-discussed but few have published programmatic responses.
+AWS CEO Matt Garman has argued publicly that juniors are affordable, fast to adopt AI, and essential for pipeline continuity. I think he's directionally right: the hollowed-ladder risk is widely discussed but few have published programmatic responses.
 
-Camille Fournier's May 2025 take is more nuanced: "vibe coding may become a skill that knowledge workers need," leading to *smaller engineering teams, not juniorization of the field*. She distinguishes greenfield (where junior-only orgs work) from established codebases (where they don't).
+Camille Fournier's May 2025 take is the one I'd send your EMs first: "vibe coding may become a skill that knowledge workers need," leading to *smaller engineering teams, not juniorization of the field*. She distinguishes greenfield (where junior-only orgs work) from established codebases (where they don't), which is the distinction I think most coverage misses.
 
 What I'd do, in priority order:
 

@@ -13,11 +13,11 @@ last_updated: 2026-04-26
 
 > **TL;DR.** AI-generated code introduced a 322% spike in privilege escalation paths (Apiiro Fortune 50 study), *if you mandate AI coding, you must mandate AI AppSec in parallel*. EU AI Act August 2 2026 deadline is real. Shadow AI breaches cost +$650K. The AUP your legal team signs off on should fit on one page and address the six STRIDE categories.
 
-The single most important number in this whole guide for a CTO audience is from [Apiiro's June 2025 study of Fortune 50 codebases](https://apiiro.com/blog/4x-velocity-10x-vulnerabilities-ai-coding-assistants-are-shipping-more-risks/): AI-generated code introduced 10,000+ new security findings/month, a 10× spike vs Dec 2024. Trivial syntax errors dropped 76%, but privilege escalation paths jumped 322% and architectural design flaws spiked 153%. I quote that number more than any other in this guide. It's the one that makes "we'll deal with security later" indefensible.
+If I could only put one number in front of a CTO audience, it'd be this: AI-generated code introduced **10,000+ new security findings per month** in [Apiiro's June 2025 study of Fortune 50 codebases](https://apiiro.com/blog/4x-velocity-10x-vulnerabilities-ai-coding-assistants-are-shipping-more-risks/) — a 10× spike vs December 2024. Trivial syntax errors dropped 76%, but privilege escalation paths jumped 322% and architectural design flaws spiked 153%. I quote that number more than any other in this guide because it's the one that makes "we'll deal with security later" indefensible.
 
-Pair it with [IBM's 2025 finding that shadow-AI-related breaches cost $650K+ more than standard breaches and 1 in 5 organizations has had one](https://www.ibm.com/think/topics/shadow-ai), and the directive writes itself: if you're mandating AI coding, you must mandate AI AppSec in parallel. Anything else is incomplete.
+I'd pair it with [IBM's 2025 finding that shadow-AI-related breaches cost $650K+ more than standard breaches, and 1 in 5 organizations has had one](https://www.ibm.com/think/topics/shadow-ai). Put those two together and the directive writes itself: if you're mandating AI coding, you must mandate AI AppSec in parallel. Anything else is incomplete.
 
-Here's the framework for doing that, plus the regulatory and IP context you need to actually set policy.
+Here's the framework I'd build that on, plus the regulatory and IP context you need to actually set policy.
 
 ---
 
@@ -76,9 +76,9 @@ Critical date: **August 2, 2026**: Articles 8–15 high-risk obligations + Artic
 
 ### What an in-house engineering org actually needs to do
 
-Most coverage focuses on the AI Act's implications for AI vendors. The implications for in-house engineering orgs are what I see CTOs miss most often. Worth being concrete:
+Most coverage I see focuses on the Act's implications for AI vendors. The implications for in-house engineering orgs are what I see CTOs miss most often, so I'd urge you to be concrete:
 
-Internal AI tools that affect workers, performance evaluation, task allocation, monitoring, code review automation that affects evaluations — *may* qualify as Annex III high-risk systems (Annex III item 4 covers employment, workers management, and access to self-employment). The classification is interpretation-dependent and there's genuine legal uncertainty about whether code-review automation specifically qualifies, get specialized counsel for your specific use cases. If high-risk classification applies, requirements include:
+Internal AI tools that affect workers — performance evaluation, task allocation, monitoring, code review automation that affects evaluations — *may* qualify as Annex III high-risk systems (Annex III item 4 covers employment, workers management, and access to self-employment). The classification is interpretation-dependent and there's genuine legal uncertainty about whether code-review automation specifically qualifies; I'd get specialized counsel for your specific use cases. If high-risk classification applies, requirements include:
 
 1. Automatic event logging built in from the ground up, not bolted on
 2. Human oversight mechanisms, also not bolted on
@@ -86,30 +86,30 @@ Internal AI tools that affect workers, performance evaluation, task allocation, 
 4. Conformity assessments before "market placement" (which can mean internal deployment)
 5. CE marking + EU database registration
 
-The gap: over half of organizations lack systematic inventories of AI systems in use. You can't classify what you haven't inventoried. I keep meeting CTOs who think this is a 2027 problem; it isn't. This is a 2026 deliverable and Step 1 (the inventory) is exactly what gets you from Level 0 to Level 1 in the maturity model anyway. You're going to do it; you might as well let regulatory pressure pay for it.
+The gap I keep hitting: over half of organizations lack systematic inventories of AI systems in use. You can't classify what you haven't inventoried. I keep meeting CTOs who treat this as a 2027 problem; I'd argue it isn't. This is a 2026 deliverable, and Step 1 (the inventory) is exactly what gets you from Level 0 to Level 1 in the maturity model anyway. You're going to do it — I'd let regulatory pressure pay for it.
 
 ### What's NOT high-risk (and is therefore much lighter touch)
 
 A coding assistant used purely for code generation, where developers review and own the output, is generally not Annex III. Productivity-tooling AI is also generally not high-risk. Most of what your engineering org actually uses falls in the lighter regime, but the transparency obligations under Article 50 still apply (e.g., users must be informed when interacting with AI in synthesized content).
 
-The honest read: most engineering orgs have one or two AI uses that *are* high-risk (anything touching HR, evaluation, monitoring), and a majority that aren't. Inventory first; classify second.
+The way I'd frame it: most engineering orgs have one or two AI uses that *are* high-risk (anything touching HR, evaluation, monitoring), and a majority that aren't. Inventory first; classify second.
 
 ---
 
 ## IP indemnification, the vendor reality
 
-A board will ask "what's our exposure if AI-generated code infringes someone's copyright?" The honest answer in April 2026:
+A board will ask "what's our exposure if AI-generated code infringes someone's copyright?" The version I'd give them in April 2026:
 
-**GitHub Copilot** offers Copyright Commitment indemnification for unmodified suggestions, only when the duplication-detection filter is enabled. Microsoft did not update standard contracts to reflect this; you have to ask. Kate Downing's legal analysis covers the actual scope.
+**GitHub Copilot** offers Copyright Commitment indemnification for unmodified suggestions, but only when the duplication-detection filter is enabled. Microsoft didn't update standard contracts to reflect this; you have to ask. Kate Downing's legal analysis is what I'd hand your counsel for the actual scope.
 
-**Sourcegraph Cody Enterprise** offers uncapped indemnity, no model training on customer data, zero data retention, among the most aggressive vendor positions.
+**Sourcegraph Cody Enterprise** offers uncapped indemnity, no model training on customer data, and zero data retention — among the most aggressive vendor positions I've seen.
 
-**Anthropic Claude Enterprise** can negotiate Zero Data Retention. As of April 2026, Claude Cowork (the chat product) had no EU data residency option, a real gap for German/EU enterprises. Vendor data residency changes monthly; verify before quoting.
+**Anthropic Claude Enterprise** can negotiate Zero Data Retention. As of April 2026, Claude Cowork (the chat product) had no EU data residency option — a real gap for German/EU enterprises. Vendor data residency changes monthly; verify before quoting anything I've written here.
 
 **Cursor / Windsurf** indemnification language is less mature; check current terms.
 
-What to actually do:
-1. For any vendor under serious consideration, get the indemnification language from the contract, not the marketing site
+What I'd actually have you do:
+1. For any vendor under serious consideration, pull the indemnification language from the contract, not the marketing site
 2. Verify your AI tool has any required filters enabled (Copilot's duplication detector)
 3. Push for indemnification scope that covers *modified* output, not just verbatim
 4. Get explicit data-handling commitments in writing (training, retention, residency)
@@ -118,11 +118,11 @@ What to actually do:
 
 ## Shadow AI, the risk most CTOs underestimate
 
-Netskope's 2025 Cloud and Threat Report found 47% of GenAI platform users access these tools through personal, unmonitored accounts. Harmonic Security found 665 distinct GenAI tools across enterprise environments; only 40% of companies had purchased official AI subscriptions. Over 80% of employees use unapproved AI tools.
+Shadow AI is the risk I see CTOs most reliably underestimate, and the supporting numbers are blunt: Netskope's 2025 Cloud and Threat Report puts 47% of GenAI platform users on personal, unmonitored accounts. Harmonic Security found 665 distinct GenAI tools across enterprise environments — only 40% of companies had purchased official AI subscriptions, and over 80% of employees use unapproved tools.
 
-Cost impact, per IBM's 2025 Cost of a Data Breach Report: +$650K per breach when shadow AI is involved, and 1 in 5 organizations has had a breach linked to shadow AI.
+The cost is blunter still: IBM's 2025 Cost of a Data Breach Report puts the shadow-AI premium at +$650K per breach, with 1 in 5 organizations having had one.
 
-The mitigation is not "block all unapproved tools", that pushes shadow AI deeper. It's:
+What I'd urge you to do is *not* block all unapproved tools — that pushes shadow AI deeper, not out. Instead:
 
 1. **Inventory monthly.** Network egress to known AI vendor domains, browser extension audits, expense report review for AI subscriptions.
 2. **Sanction generously.** Make the approved set big enough that 90%+ of legitimate use cases have an in-bounds tool. Approved-but-unused isn't shadow AI; unapproved-because-no-option is.
@@ -133,33 +133,33 @@ The mitigation is not "block all unapproved tools", that pushes shadow AI deeper
 
 ## Cyber insurance is starting to ask
 
-Underwriting in 2025-2026 has shifted. Underwriters now ask which AI models are in use, the decision-making process for tool selection, and verification mechanisms for AI-generated output.
+Underwriting shifted in 2025–2026 in a way I'd flag for any CTO: underwriters now ask which AI models are in use, the decision-making process for tool selection, and the verification mechanisms for AI-generated output. The questionnaire is the signal.
 
-Endorsements emerging: Coalition (2025) added an AI endorsement in their base cyber policy plus a deepfake response endorsement. AXA XL (Oct 2025) added a Generative AI risk endorsement for businesses developing their own gen AI.
+Endorsements I'd watch: Coalition (2025) added an AI endorsement in their base cyber policy plus a deepfake response endorsement. AXA XL (Oct 2025) added a Generative AI risk endorsement for businesses developing their own gen AI.
 
-The coverage gap: many existing cyber policies *implicitly* exclude AI-specific vectors (prompt injection, model poisoning, autonomous decision errors). "Silent AI" coverage, meaning ambiguous coverage in incidents, is the dominant pattern.
+The gap I'd warn you about is that many existing cyber policies *implicitly* exclude AI-specific vectors (prompt injection, model poisoning, autonomous decision errors). "Silent AI" coverage — ambiguous coverage in incidents — is the dominant pattern, and it's the one that bites at claim time.
 
-What to do: schedule a 30-minute call with your cyber insurance broker specifically on AI exposure. Ask for explicit (not silent) AI coverage at renewal. Treat indemnification + insurance as a layered risk story for the board.
+What I'd have you do: schedule a 30-minute call with your cyber insurance broker specifically on AI exposure. Ask for explicit (not silent) AI coverage at renewal. Treat indemnification + insurance as a layered risk story for the board.
 
 ---
 
 ## SOC 2 implications
 
-Auditors in 2025-2026 are focused on CC8.1 (change management) for AI-generated code. Specifically:
+The thing I'd surface to anyone running an audit prep cycle in 2025–2026: auditors are focused on CC8.1 (change management) for AI-generated code. Specifically, they're looking for:
 
 - AI-generated code attributable to specific authorized sessions/users
 - Least-privilege access to AI agents (the agent shouldn't have broader access than the human user it acts for)
 - Continuous monitoring logs proving agents operate within parameters
-- AI-generated code goes through the same review/approval as human code
+- AI-generated code going through the same review/approval as human code
 - Incident response procedures for AI-introduced vulnerabilities
 
-The compliance gap that auditors are flagging: when agents commit directly without workflow enforcement, "no human request" is a major accountability gap. SOC 2 expects privileged actions attributable to an accountable individual.
+The compliance gap I keep seeing flagged: when agents commit directly without workflow enforcement, "no human request" is a major accountability gap. SOC 2 expects privileged actions attributable to an accountable individual, and that's the rule that bites first.
 
 ---
 
 ## What an AUP should actually contain
 
-A useful AUP fits on one page. The categories that matter, in priority order:
+A useful AUP fits on one page. The categories I'd argue for, in priority order:
 
 1. **What's approved** (and how the list is updated)
 2. **What's prohibited** (data classes, use cases, regions)
@@ -167,7 +167,7 @@ A useful AUP fits on one page. The categories that matter, in priority order:
 4. **The audit obligations** (what gets logged, who can see it)
 5. **What happens when something goes wrong** (incident response, escalation)
 
-A fork-able starting point is in the templates folder, not legal advice, but a useful base your legal team can compress.
+A fork-able starting point is in the templates folder — not legal advice, but a base your legal team can compress.
 
 ---
 

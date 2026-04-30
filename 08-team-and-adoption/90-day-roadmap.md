@@ -15,7 +15,7 @@ Most "AI strategy" decks I see have a five-year vision and no Tuesday-morning st
 
 If you don't know your level, take the [maturity assessment](./assessment.md) first.
 
-A note on framing: the [Stanford Digital Economy Lab's *Enterprise AI Playbook* (March 2026)](https://digitaleconomy.stanford.edu/app/uploads/2026/03/EnterpriseAIPlaybook_PereiraGraylinBrynjolfsson.pdf) studied 51 successful deployments and the structural finding I'd lean on hardest is this: **CEO ownership, not CTO delegation**. The orgs that succeed treat AI rollout as a CEO-level commitment with the CTO as the operator. Orgs where the CEO offloads it to the CTO and disengages tend to stall.
+A note on framing before any of this lands: the structural finding I'd push hardest on, drawn from the [Stanford Digital Economy Lab's *Enterprise AI Playbook* (March 2026)](https://digitaleconomy.stanford.edu/app/uploads/2026/03/EnterpriseAIPlaybook_PereiraGraylinBrynjolfsson.pdf) study of 51 successful deployments, is **CEO ownership, not CTO delegation**. The orgs that succeed treat AI rollout as a CEO-level commitment with the CTO as the operator. Orgs where the CEO offloads it to the CTO and disengages tend to stall — that's been my read too, and Stanford's data is the cleanest version I've seen.
 
 Everything below assumes that engagement at the top.
 
@@ -64,7 +64,7 @@ gantt
 | 3–4 | Stand up the working group: one CTO sponsor, one DevEx lead, one security partner, one representative engineer per major team | Working group meeting cadence; first meeting held |
 | 4 | EU AI Act inventory + classification (if you have any EU footprint) | Classification decisions documented |
 
-The honest version: most orgs spend Week 1 surprised by what the shadow-AI inventory turns up. Budget for that.
+A heads-up I'd give you: most orgs spend Week 1 surprised by what the shadow-AI inventory turns up. Budget for that.
 
 ### Days 31–60: Pilot
 
@@ -208,7 +208,7 @@ Three patterns I see fail:
 
 **Pattern 3: Scale before pilot.** "Let's roll out to all teams at once." You can't draw conclusions; you can't iterate; you can't build the champions network. One team, eight weeks, then expand.
 
-The boring sequence, audit → measure → pilot → scale → integrate → operationalize, is what works. The interesting sequences (jump straight to autonomous agents! roll out to 3,000 devs in week 1!) are what makes for great press releases and bad outcomes.
+The boring sequence — audit → measure → pilot → scale → integrate → operationalize — is what I've seen work. The interesting sequences (jump straight to autonomous agents! roll out to 3,000 devs in week 1!) are what makes for great press releases and bad outcomes. I'd urge you to pick boring.
 
 ---
 

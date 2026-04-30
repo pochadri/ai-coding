@@ -44,13 +44,13 @@ The reason I keep returning to it is that it's the cleanest public template for 
 These five are useful supporting evidence rather than full deep-dives. Each is a single paragraph.
 
 ### ✅ Anthropic internal, the upper bound
-[Anthropic employees use Claude in 59% of daily work; +50% productivity; 67% increase in merged PRs/eng/day after Claude Code adoption.](https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic) Honest caveat: vendor-self-reported on a homogeneous, AI-fluent population using their own product. Useful as an *upper bound*, what's theoretically possible when the entire population is bought-in. Not a prediction for your org. I cite Anthropic's numbers as "what's possible" and DORA's flat throughput numbers as "what's typical without the supporting discipline" in the same conversation.
+The numbers I cite as the upper bound for "what's possible when the entire population is bought-in": [+50% productivity, 67% more merged PRs/eng/day, Claude in 59% of daily work](https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic). The caveat I always pair with them: vendor-self-reported on a homogeneous, AI-fluent population using their own product. Not a prediction for your org. I cite Anthropic's numbers as "what's possible" and DORA's flat throughput numbers as "what's typical without the supporting discipline" in the same conversation, and I'd urge you to do the same.
 
 ### ⚠️ Shopify, the mandate without a measurement framework
-Tobi Lütke's [April 2025 memo declaring "reflexive AI usage is now a baseline expectation at Shopify"](https://www.cnbc.com/2025/04/07/shopify-ceo-prove-ai-cant-do-jobs-before-asking-for-more-headcount.html) is the most-cited AI mandate example for a reason, it's the clearest top-down commitment. The reason it's a *cautious* case study and not an endorsement: it's a behavioral mandate without a measurement framework. How is "AI usage" defined? Who decides whether AI "can do" a task? Copying the policy without building the operational muscle to enforce or measure it produces theater, not results.
+Tobi Lütke's [April 2025 memo declaring "reflexive AI usage is now a baseline expectation at Shopify"](https://www.cnbc.com/2025/04/07/shopify-ceo-prove-ai-cant-do-jobs-before-asking-for-more-headcount.html) is the clearest top-down AI commitment I've seen published. I'd treat it as a cautionary case, not an endorsement, because the gap is glaring: it's a behavioral mandate without a measurement framework. How is "AI usage" defined? Who decides whether AI "can do" a task? Copying the policy without building the operational muscle to enforce or measure it produces theater, not results.
 
 ### ⚠️ Klarna, the reversal that defines the cautionary tale
-[Klarna claimed in Feb 2024 that AI replaced 700 customer service agents, $40M savings, 75% of chats handled.](https://www.entrepreneur.com/business-news/klarna-ceo-reverses-course-by-hiring-more-humans-not-ai/491396) [By May 2025 they were rehiring humans](https://mlq.ai/news/klarna-ceo-admits-aggressive-ai-job-cuts-went-too-far-starts-hiring-again-after-us-ipo/), citing quality drops. Not AI coding, but the cleanest case of vendor productivity claims collapsing on close inspection and the lesson generalizes. I bring it up every time a peer asks "are we moving fast enough on headcount?"
+[Klarna claimed in Feb 2024 that AI replaced 700 customer service agents — $40M savings, 75% of chats handled.](https://www.entrepreneur.com/business-news/klarna-ceo-reverses-course-by-hiring-more-humans-not-ai/491396) [By May 2025 they were rehiring humans](https://mlq.ai/news/klarna-ceo-admits-aggressive-ai-job-cuts-went-too-far-starts-hiring-again-after-us-ipo/), citing quality drops. It's not AI coding, but it's the cleanest case I've seen of vendor productivity claims collapsing on close inspection — and I'd argue the lesson generalizes. I bring it up every time a peer asks me "are we moving fast enough on headcount?"
 
 ---
 
@@ -70,19 +70,19 @@ The lesson I bring to every conversation about autonomous agent deployment: **if
 
 ## 🔥 Apiiro, the security spike that changes the conversation
 
-This is the headline security number for the entire AI coding era, and it's the one I quote more often than any other when a peer asks me whether AppSec spend really needs to scale with AI coding adoption. The answer is yes, and this is why.
+This is the security number I quote more than any other when a peer asks me whether AppSec spend really needs to scale with AI coding adoption. My answer is yes, and this is why.
 
-In June 2025, Apiiro [studied Fortune 50 codebases](https://apiiro.com/blog/4x-velocity-10x-vulnerabilities-ai-coding-assistants-are-shipping-more-risks/) and found AI-generated code introduced **10,000+ new security findings per month**: a 10× spike from December 2024. The good news inside the bad news is real: trivial syntax errors dropped 76% and logic bugs dropped 60%. AI is genuinely better than humans at avoiding category-1 mistakes. The bad news is that the categories that *did* get worse are exactly the ones you don't want: **privilege escalation paths jumped 322%**, architectural design flaws spiked 153%, repos with PII/payment data exposure tripled, APIs missing authorization grew 10×. Their summary line — *"4× velocity, 10× vulnerabilities"*, is the version every CTO should be ready to defend against on a board call.
+In June 2025, Apiiro [studied Fortune 50 codebases](https://apiiro.com/blog/4x-velocity-10x-vulnerabilities-ai-coding-assistants-are-shipping-more-risks/) and found AI-generated code introduced **10,000+ new security findings per month** — a 10× spike from December 2024. The good news inside the bad news is real: trivial syntax errors dropped 76% and logic bugs dropped 60%. AI is genuinely better than humans at avoiding category-1 mistakes. The bad news is that the categories that *did* get worse are exactly the ones you don't want: **privilege escalation paths jumped 322%**, architectural design flaws spiked 153%, repos with PII/payment data exposure tripled, APIs missing authorization grew 10×. Their summary line — *"4× velocity, 10× vulnerabilities"* — is the version I'd want every CTO ready to defend on a board call.
 
-The Apiiro number does the work of justifying three things that otherwise feel like nice-to-haves: the AppSec scanning line item in your TCO model, the urgency of getting to Level 2 governance maturity, and the "AI AppSec must be mandated in parallel" position. Without it, "we'll deal with security later" sounds reasonable. With it, it's indefensible.
+I'd urge you to use this number to justify three things that otherwise feel like nice-to-haves: the AppSec scanning line item in your TCO model, the urgency of getting to Level 2 governance maturity, and the "AI AppSec must be mandated in parallel" position. Without it, "we'll deal with security later" sounds reasonable. With it, it's indefensible.
 
 ---
 
 ### 🌱 YC W25, the "95% AI code" data point
-[Garry Tan, March 2025: ~25% of YC's W25 batch had 95% of code written by AI](https://www.cnbc.com/2025/03/15/y-combinator-startups-are-fastest-growing-in-fund-history-because-of-ai.html); the batch grew 10% per week in aggregate. Doesn't generalize to brownfield 100+ engineer orgs, but it's the data point your board will quote at you when they want you to move faster. The right response isn't dismissal, it's articulating that greenfield optimizes for velocity-of-discovery while established orgs optimize for velocity-of-improvement-without-regression. Different disciplines, different stacks.
+This is the data point your board will quote at you when they want you to move faster: [Garry Tan, March 2025 — ~25% of YC's W25 batch had 95% of code written by AI](https://www.cnbc.com/2025/03/15/y-combinator-startups-are-fastest-growing-in-fund-history-because-of-ai.html), and the batch grew 10% per week in aggregate. It doesn't generalize to brownfield 100+ engineer orgs. The response I'd give isn't dismissal — it's articulating that greenfield optimizes for velocity-of-discovery while established orgs optimize for velocity-of-improvement-without-regression. Different disciplines, different stacks.
 
 ### 🟡 Goldman Sachs, the autonomous-agent pilot to watch
-[Goldman deployed Devin (Cognition Labs) alongside ~12,000 human developers in July 2025](https://www.cnbc.com/2025/07/11/goldman-sachs-autonomous-coder-pilot-marks-major-ai-milestone.html), targeting legacy migration / boilerplate. CTO Marco Argenti projected 3-4× productivity vs prior tools. No public outcome data as of April 2026. This is the highest-profile Level 5 attempt, if it works, validates the autonomous-agent-in-narrow-domain pattern at enterprise scale; if it fails publicly, it sets the autonomous-agent push back two years. Either way, the case study writes itself in 2026-2027.
+This is the case I'm watching closest in 2026: [Goldman deployed Devin (Cognition Labs) alongside ~12,000 human developers in July 2025](https://www.cnbc.com/2025/07/11/goldman-sachs-autonomous-coder-pilot-marks-major-ai-milestone.html), targeting legacy migration and boilerplate, with CTO Marco Argenti projecting 3–4× productivity vs prior tools. No public outcome data as of April 2026. It's the highest-profile Level 5 attempt I know of — if it works, it validates the autonomous-agent-in-narrow-domain pattern at enterprise scale; if it fails publicly, it sets the autonomous-agent push back two years. Either way, the case study writes itself in 2026–2027.
 
 ---
 
@@ -111,15 +111,15 @@ quadrantChart
 
 ## What I take from these collectively
 
-A few patterns:
+A few patterns I keep returning to:
 
-1. **The orgs that succeed publicly are measurement-disciplined** (Booking.com, Cloudflare). They knew their baseline before the rollout and they pivoted on data.
+1. **The orgs that succeed publicly are measurement-disciplined** (Booking.com, Cloudflare). They knew their baseline before the rollout and they pivoted on data. I'd want that for you.
 2. **The orgs that fail publicly are autonomy-overreach** (Replit/SaaStr) or **claim-overreach** (Klarna). The technology isn't the problem; the constraints around it are.
-3. **The vendor-internal numbers are useful as upper bounds, not predictions** (Anthropic). Treat them that way in board updates.
-4. **The Apiiro 322% number changes the security conversation.** I'd put it in any board deck on AI coding adoption.
-5. **The mandates that work include measurement; the mandates that don't are theater** (Shopify is in the middle, bold ambition, weak measurement framework).
+3. **Vendor-internal numbers are upper bounds, not predictions** (Anthropic). I'd treat them that way in any board update.
+4. **The Apiiro 322% number changes the security conversation.** I'd put it in any board deck on AI coding adoption — it's the single number that converts "we'll deal with security later" from defensible to indefensible.
+5. **The mandates that work include measurement; the mandates that don't are theater** (Shopify sits in the middle: bold ambition, weak measurement framework).
 
-The CTO advantage in 2026 isn't tool selection. It's *operational discipline*, the boring stuff (measurement, governance, AppSec, champions networks) that distinguishes the case studies above from each other.
+The CTO advantage in 2026, in my view, isn't tool selection. It's *operational discipline* — the boring stuff (measurement, governance, AppSec, champions networks) that separates the success cases above from the cautionary ones.
 
 ---
 

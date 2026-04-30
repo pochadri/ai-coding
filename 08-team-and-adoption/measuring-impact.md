@@ -19,7 +19,7 @@ I've seen a lot of teams "measure" AI tool impact by asking developers "do you f
 
 ## What Actually Works
 
-The right approach is **DORA metrics**: deployment frequency, lead time, change failure rate, mean time to recovery. These measure delivery outcomes, not feelings.
+The approach I'd reach for is **DORA metrics**: deployment frequency, lead time, change failure rate, mean time to recovery. These measure delivery outcomes, not feelings.
 
 When I started tracking these properly, here's what I found with AI tools:
 

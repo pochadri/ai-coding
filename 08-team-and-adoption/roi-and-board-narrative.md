@@ -65,13 +65,13 @@ That sentence, or a variant of it, is what you want to be able to defend with da
 
 ### Beyond DORA
 
-DORA (deployment frequency, lead time, change failure rate, MTTR) is necessary but no longer sufficient. The two newer frameworks worth knowing:
+DORA (deployment frequency, lead time, change failure rate, MTTR) is necessary but no longer sufficient. Two newer frameworks I'd put on your radar:
 
 **SPACE (2021)**: Forsgren, Storey, Maddila, Zimmermann, Houck, Butler. Five dimensions: Satisfaction & well-being, Performance, Activity, Communication & collaboration, Efficiency & flow. Published in ACM Queue.
 
-**DX Core 4 (Jan 2025)**: Tacho & Noda, with Forsgren / Storey / Zimmermann as advisors. Unifies DORA + SPACE + DevEx into 4 dimensions: Speed, Effectiveness, Quality, Business Impact. Tested across 300+ organizations. Reported outcomes: 3–12% engineering efficiency gains, 14% more R&D time on features.
+**DX Core 4 (Jan 2025)**: Tacho & Noda, with Forsgren / Storey / Zimmermann as advisors. Unifies DORA + SPACE + DevEx into 4 dimensions: Speed, Effectiveness, Quality, Business Impact. Tested across 300+ organizations, with reported outcomes of 3–12% engineering efficiency gains and 14% more R&D time on features.
 
-For most engineering orgs, DX Core 4 is the right starting point in 2026. It's specifically designed to incorporate AI tool impact and gives you the four-dimensional balance that single-axis metrics miss.
+DX Core 4 is the one I'd reach for if you're starting fresh in 2026. It was specifically designed to incorporate AI tool impact, and it gives you the four-dimensional balance that single-axis metrics miss.
 
 ### The three numbers that actually matter on your AI dashboard
 
@@ -157,17 +157,17 @@ A useful narrative is short, has three numbers, acknowledges the bimodal evidenc
 
 - *"AI is going to make us 10× faster."* It isn't. Reading this back will make you look uninformed in 12 months.
 - *"AI is going to let us ship the same with [N]% fewer engineers."* Even Anthropic's own CEO acknowledges that "if Claude is writing 90% of code, you usually need just as many engineers", the role shifts, not eliminates.
-- *"The metrics show productivity is up X%."* Without the "but throughput is flat" caveat, this isn't honest. Board members talk to peers; the gap will get noticed.
+- *"The metrics show productivity is up X%."* Without the "but throughput is flat" caveat, the claim won't survive a real conversation. Board members talk to peers; the gap will get noticed.
 
 ---
 
 ## What I tell CTO peers about ROI
 
-The most expensive mistake I see is *ROI theater*, picking a metric that always trends up (raw PR volume, lines of code, completions accepted), reporting it monthly, and watching it diverge from delivery reality.
+The most expensive mistake I see is *ROI theater* — picking a metric that always trends up (raw PR volume, lines of code, completions accepted), reporting it monthly, and watching it diverge from delivery reality. I'd push you to do the opposite.
 
-Pick three to four metrics that *can* go down. Report them honestly. The downside is occasional uncomfortable quarters where you have to explain why a number dropped. The upside is institutional credibility, yours and your tooling investment's. The latter compounds.
+Pick three to four metrics that *can* go down. Report them straight. The downside is occasional uncomfortable quarters where you have to explain why a number dropped. The upside is institutional credibility — yours and your tooling investment's. The latter compounds.
 
-If you take only one operational lesson from this page, take Booking.com's pivot from deployment to daily-active-usage as the success metric. Copy it.
+If you take only one operational lesson from this page, take Booking.com's pivot from deployment to daily-active-usage as the success metric. I'd copy it directly.
 
 ---
 
