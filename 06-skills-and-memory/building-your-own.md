@@ -11,6 +11,8 @@ last_updated: 2026-04-25
 
 # Building Your Own Skills
 
+> **TL;DR.** Community skills are generic, your codebase isn't, and the highest-leverage skill I've written was a 20-minute rule about our `AppError` wrapper, not anything clever. The description is *everything* — it's the only thing the agent sees during discovery, so a description that doesn't match the words a user actually types means the skill never fires. Keep the body under ~300 lines, push beyond model defaults (if the output would be the same without the skill loaded, you're paying tokens for nothing), and grow a Gotchas section the moment something breaks in production.
+
 Community skills are generic. Your codebase isn't. The highest-leverage skill I've ever written wasn't a clever methodology, it was just "use our `AppError` wrapper, don't propose generic try/catch." Took me 20 minutes to write. Saved me an argument with the agent every single PR thereafter.
 
 What follows is what I've learned from writing those, what works, what doesn't, what I wasted time on. If you haven't read the format basics on the "what are skills" page yet, start there.

@@ -12,6 +12,8 @@ last_updated: 2026-04-27
 
 # Defenses
 
+> **TL;DR.** The threat landscape is depressing; the defenses are tractable. Five non-negotiables before anything else: treat AI-generated security-critical code as untrusted by default and run a separate-session security review on it; static analysis (Semgrep / Snyk / CodeQL) on every PR; secret scanning pre-commit AND in CI; verify every dependency before installing (slopsquatting is real); and hand-write the security boundary even when AI scaffolds the rest. The pious version of "never use AI for security code" doesn't survive a deadline; the version above does.
+
 The threat landscape is depressing. The defenses are tractable. What follows is the practical "what I do" companion to [The threat landscape](./threat-landscape.md), the page I most want team leads to read.
 
 ## Tier 1: the non-negotiables

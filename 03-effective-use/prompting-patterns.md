@@ -12,6 +12,8 @@ last_updated: 2026-04-28
 
 # Prompting Patterns That Work
 
+> **TL;DR.** The first sentence of your prompt determines the first sentence of the response — state the role, the desired output, and the constraint *before* any context, not after. Beyond that, four patterns earn their keep daily: plan-before-code (catches wrong-mental-model problems while they're still cheap to fix), role assignment (a "senior security engineer" reviewer surfaces injection risks a generic "code reviewer" misses), format constraints (specify the shape — diff, JSON, table — not just the task), and confidence grading on every finding (forces commitment instead of hedging). Skip these and you're not prompting; you're hoping.
+
 The difference between an engineer who gets useful output from AI and one who keeps fighting the model is rarely the model. It's the prompt. After two years of daily use I've converged on roughly a dozen patterns that show up in nearly every working session, and a parallel list of failure modes that show up the moment those patterns get skipped.
 
 This page is the patterns and the failures. The [PROMPTS library](../PROMPTS.md) is the copy-pasteable form.

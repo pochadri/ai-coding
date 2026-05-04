@@ -122,13 +122,14 @@ The guide is one author's perspective. "We" appears only inside template boilerp
 A typical content page has this skeleton, in this order:
 
 1. **Frontmatter:** `title`, `summary`, `tags`, `related`, `last_updated`. The summary is what shows in search and folder index pages; write it as a sentence that stands alone and would convince a scanner to click.
-2. **Lede paragraph (the inverted pyramid top).** The thesis of the page. Should land the main idea in the first 2-3 sentences. If the lede is buried in paragraph 3, restructure.
-3. **Optional TL;DR or "If you read nothing else" bullets.** For longer pages, a short bulleted summary right after the lede catches the layer-cake scanner. Use it when the page is long enough that someone will only read the top.
-4. **Logical sections in priority order.** Most important first; supporting detail next; nuance and edge cases last. Inverted pyramid all the way down.
-5. **Worked examples** where they help. One concrete example often beats a paragraph of theory.
-6. **What "good" looks like** (optional). A short list of observable behaviors of a team / project doing this right. Strong choice for how-to pages.
-7. **Related reading** at the bottom. Links to adjacent pages.
-8. **Sources** at the very bottom (when needed). See the citations rule below.
+2. **H1.**
+3. **TL;DR blockquote (required for content essays > 150 lines).** Format: `> **TL;DR.** [2-4 sentences leading with the strongest opinion or finding, with concrete numbers/names where they exist, ending with the actionable point]`. Placed *between H1 and the lede*, not after. Renders with the "TL;DR." bold in brand ink-red via the design system's blockquote-strong-first-child treatment. **Apply to:** essay/argument pages in the numbered folders. **Do not apply to:** index pages, reference docs (`REFERENCES.md`, `GLOSSARY.md`, `PROMPTS.md`, `install-catalog.md`, `custom-skill-templates.md`), templates, skill files, or pages under 150 lines (the lede is the summary).
+4. **Lede paragraph (the inverted pyramid top).** The thesis of the page in prose. Should land the main idea in the first 2-3 sentences. If the lede is buried in paragraph 3, restructure.
+5. **Logical sections in priority order.** Most important first; supporting detail next; nuance and edge cases last. Inverted pyramid all the way down.
+6. **Worked examples** where they help. One concrete example often beats a paragraph of theory.
+7. **What "good" looks like** (optional). A short list of observable behaviors of a team / project doing this right. Strong choice for how-to pages.
+8. **Related reading** at the bottom. Links to adjacent pages.
+9. **Sources** at the very bottom (when needed). See the citations rule below.
 
 **Headers and scanning.** Headers are sentence case ("How specs harden over time") not title case ("How Specs Harden Over Time"). Use H2 for major sections, H3 for sub-sections within them. Avoid H4 unless you really need it.
 
