@@ -115,7 +115,7 @@ This is the conversation I find hardest to have straight with CTO peers, because
 
 The data points I keep returning to:
 - BCG's "Rebuilding the Engineering Growth Ladder for an AI-First World" reframes career ladders around observable behaviors across 5–7 dimensions. The shift I'd take from it: from output volume (story points, lines, PRs) to *judgment as observable behavior* — what they decide *not* to do, what they catch in review, the quality of their `AGENTS.md`.
-- The 2026 Pragmatic Engineer survey found Staff+ engineers are the heaviest agent users (63.5%) — more than ICs (49.7%), EMs (46.1%), or Directors/VPs (51.9%). Leverage scales with experience, which matches what I see.
+- The 2026 Pragmatic Engineer survey found Staff+ engineers (Staff and above on the senior-IC track) are the heaviest agent users (63.5%) — more than ICs (49.7%), EMs (46.1%), or Directors/VPs (51.9%). Leverage scales with experience, which matches what I see.
 - The 2025 LeadDev survey found 54% of engineering leaders plan to hire fewer junior engineers because seniors+AI cover more. Whether that's the right move is exactly the conversation in the next section.
 
 What I'd actually do:
