@@ -28,10 +28,11 @@ The version that works puts AI tooling in DevEx (or DevEx-adjacent), with an exp
 ### Charter for an AI DevEx team
 
 ```mermaid
-flowchart TB
+flowchart LR
     PT["🛠 Platform Team<br/>(2-8 FTE)"]:::team
 
     subgraph Owns["Owns directly"]
+      direction TB
       AIG[AI Gateway<br/>auth · cost · retention]:::owns
       Cat[Tool catalog<br/>vetted · sandbox · prohibited]:::owns
       AGM[AGENTS.md template<br/>org-wide canonical]:::owns
@@ -39,6 +40,7 @@ flowchart TB
     end
 
     subgraph Coord["Coordinates"]
+      direction TB
       CC[Champions coordinator]:::coord
       Ch1[Team A champion]:::champ
       Ch2[Team B champion]:::champ
@@ -47,6 +49,7 @@ flowchart TB
     end
 
     subgraph Partners["Partners with"]
+      direction TB
       Sec[Security<br/>AppSec rules]:::partner
       Leg[Legal<br/>AUP · indemnification]:::partner
       HR[HR<br/>perf review]:::partner

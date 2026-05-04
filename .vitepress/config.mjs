@@ -30,10 +30,10 @@ export default withMermaid(defineConfig({
     flowchart: {
       curve: 'basis',
       htmlLabels: true,
-      nodeSpacing: 50,
-      rankSpacing: 50,
-      diagramPadding: 20,
-      wrappingWidth: 200,
+      nodeSpacing: 40,
+      rankSpacing: 45,
+      diagramPadding: 16,
+      wrappingWidth: 140,
     },
     sequence: {
       diagramMarginX: 20,
