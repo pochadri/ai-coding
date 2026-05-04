@@ -9,26 +9,27 @@
   --vp-c-brand-1: #9F2D24;
   --vp-c-brand-2: #B83C30;
   --vp-c-brand-3: #C8503D;
-  --vp-c-brand-soft: rgba(159, 45, 36, 0.10);
+  --vp-c-brand-soft: rgba(159, 45, 36, 0.08);
 
-  /* Warm paper background, warm near-black ink */
-  --vp-c-bg: #FAF7F2;
-  --vp-c-bg-alt: #F4EFE8;
-  --vp-c-bg-soft: #F1ECE3;
-  --vp-c-bg-elv: #FAF7F2;
+  /* Neutral surfaces — Linear/Vercel/Stripe-docs face, no warm cream tint */
+  --vp-c-bg: #FFFFFF;
+  --vp-c-bg-alt: #FAFAFA;
+  --vp-c-bg-soft: #F4F4F5;
+  --vp-c-bg-elv: #FFFFFF;
 
-  --vp-c-text-1: #1A1614;
-  --vp-c-text-2: #6B6359;
-  --vp-c-text-3: #928979;
+  --vp-c-text-1: #18181B;
+  --vp-c-text-2: #71717A;
+  --vp-c-text-3: #A1A1AA;
 
-  --vp-c-divider: #E5DED2;
-  --vp-c-gutter: #EFE9DC;
+  --vp-c-divider: #E4E4E7;
+  --vp-c-gutter: #F4F4F5;
 
-  --vp-c-default-soft: rgba(107, 99, 89, 0.10);
+  --vp-c-default-soft: rgba(113, 113, 122, 0.08);
 
-  /* Type system */
-  --vp-font-family-base: "Source Serif 4", "Source Serif Pro", Georgia, "Iowan Old Style", "Times New Roman", serif;
-  --vp-font-family-serif: "Fraunces", "Source Serif 4", Georgia, "Iowan Old Style", "Times New Roman", serif;
+  /* Type system — Geist sans body, Fraunces serif for hero/display only,
+     IBM Plex Mono for metadata, JetBrains Mono for code. */
+  --vp-font-family-base: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+  --vp-font-family-serif: "Fraunces", Georgia, "Iowan Old Style", "Times New Roman", serif;
   --vp-font-family-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
   --vp-font-family-mono-meta: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
@@ -36,23 +37,24 @@
 }
 
 .dark {
-  /* Warm ink, lifted accent for contrast on dark */
-  --vp-c-brand-1: #D9614F;
-  --vp-c-brand-2: #C8503D;
-  --vp-c-brand-3: #9F2D24;
-  --vp-c-brand-soft: rgba(217, 97, 79, 0.14);
+  /* Lifted accent for contrast on dark */
+  --vp-c-brand-1: #E25647;
+  --vp-c-brand-2: #D44434;
+  --vp-c-brand-3: #B83C30;
+  --vp-c-brand-soft: rgba(226, 86, 71, 0.14);
 
-  --vp-c-bg: #15110E;
-  --vp-c-bg-alt: #1B1714;
-  --vp-c-bg-soft: #1F1A16;
-  --vp-c-bg-elv: #15110E;
+  /* Neutral off-black, Vercel-docs face */
+  --vp-c-bg: #0A0A0A;
+  --vp-c-bg-alt: #18181B;
+  --vp-c-bg-soft: #1F1F23;
+  --vp-c-bg-elv: #0A0A0A;
 
-  --vp-c-text-1: #E8E2D9;
-  --vp-c-text-2: #928979;
-  --vp-c-text-3: #6B6359;
+  --vp-c-text-1: #FAFAFA;
+  --vp-c-text-2: #A1A1AA;
+  --vp-c-text-3: #71717A;
 
-  --vp-c-divider: #2D2723;
-  --vp-c-gutter: #211C18;
+  --vp-c-divider: #27272A;
+  --vp-c-gutter: #18181B;
 }
 
 /* ----- Reusable mono-meta small-caps treatment ----- */
@@ -139,15 +141,13 @@
 }
 
 .home-pub__lede {
-  font-family: var(--vp-font-family-serif);
-  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
-  line-height: 1.45;
-  color: var(--vp-c-text-1);
+  font-family: var(--vp-font-family-base);
+  font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+  line-height: 1.5;
+  color: var(--vp-c-text-2);
   font-weight: 400;
-  font-style: italic;
-  max-width: 36em;
+  max-width: 38em;
   margin: 0 0 2rem;
-  font-variation-settings: "opsz" 36;
 }
 
 .home-pub__lede br {
@@ -515,37 +515,22 @@
 
 /* Lede treatment — the summary paragraph right after H1 */
 .vp-doc h1 + p {
-  font-family: var(--vp-font-family-serif);
-  font-size: 1.2rem;
+  font-family: var(--vp-font-family-base);
+  font-size: 1.15rem;
   line-height: 1.55;
-  color: var(--vp-c-text-1);
+  color: var(--vp-c-text-2);
   font-weight: 400;
-  font-style: italic;
   margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
   border-bottom: 1px solid var(--vp-c-divider);
-  font-variation-settings: "opsz" 24;
-}
-
-/* Drop cap on the first body paragraph following the lede.
-   Editorial publication signal — confirms the framing on first sight. */
-.vp-doc h1 + p + p::first-letter {
-  font-family: var(--vp-font-family-serif);
-  font-size: 3.6em;
-  font-weight: 700;
-  float: left;
-  line-height: 0.85;
-  margin: 0.18em 0.12em -0.05em 0;
-  color: var(--vp-c-text-1);
-  font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0;
 }
 
 .vp-doc h2 {
-  font-family: var(--vp-font-family-serif);
-  letter-spacing: -0.015em;
-  line-height: 1.2;
+  font-family: var(--vp-font-family-base);
+  letter-spacing: -0.012em;
+  line-height: 1.25;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.55rem;
   border-top: none;
   padding-top: 0;
   margin-top: 3rem;
@@ -572,7 +557,8 @@
 }
 
 .vp-doc p {
-  line-height: 1.7;
+  line-height: 1.65;
+  font-size: 16.5px;
 }
 
 .vp-doc strong {

@@ -15,15 +15,15 @@ export default withMermaid(defineConfig({
   mermaid: {
     theme: 'base',
     themeVariables: {
-      primaryColor: '#1A1614',
-      primaryTextColor: '#FAF7F2',
+      primaryColor: '#18181B',
+      primaryTextColor: '#FAFAFA',
       primaryBorderColor: '#9F2D24',
-      lineColor: '#6B6359',
-      secondaryColor: '#F1ECE3',
-      tertiaryColor: '#FAF7F2',
-      mainBkg: '#1A1614',
-      secondBkg: '#F1ECE3',
-      tertiaryBkg: '#FAF7F2',
+      lineColor: '#71717A',
+      secondaryColor: '#F4F4F5',
+      tertiaryColor: '#FFFFFF',
+      mainBkg: '#18181B',
+      secondBkg: '#F4F4F5',
+      tertiaryBkg: '#FFFFFF',
       fontFamily: '"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace',
       fontSize: '13px',
     },
@@ -58,7 +58,7 @@ export default withMermaid(defineConfig({
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,0..100,0..1;1,9..144,400..700,0..100,0..1&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&display=swap'
+      href: 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,0..100,0..1;1,9..144,400..700,0..100,0..1&family=Geist:wght@400..700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&display=swap'
     }],
   ],
 
