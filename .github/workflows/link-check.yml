@@ -1,0 +1,54 @@
+name: Link check
+
+on:
+  schedule:
+    # Run every Monday at 09:00 UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Restore lychee cache
+        uses: actions/cache@v4
+        with:
+          path: .lycheecache
+          key: cache-lychee-${{ github.sha }}
+          restore-keys: cache-lychee-
+
+      - name: Run lychee link checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Check all internal markdown links + external URLs.
+          # Skip social media/auth-walled hosts that lychee can't follow.
+          args: >-
+            --cache
+            --max-cache-age 7d
+            --no-progress
+            --accept 200,206,429
+            --exclude-path node_modules
+            --exclude-path .vitepress/dist
+            --exclude '^https://x\.com'
+            --exclude '^https://twitter\.com'
+            --exclude '^https://linkedin\.com'
+            --exclude '^https://www\.linkedin\.com'
+            './**/*.md'
+          fail: false
+          format: markdown
+          output: ./lychee-report.md
+
+      - name: Open / update tracking issue on failure
+        if: env.lychee_exit_code != '0'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Broken links detected (weekly check)"
+          content-filepath: ./lychee-report.md
+          labels: bug, link-rot, automated
