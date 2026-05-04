@@ -126,9 +126,13 @@ When skills are a team-level concern (rather than a personal kit), additional st
 
 ## A short rule
 
-If you can't articulate **(a)** what a skill changes about the agent's reasoning, **(b)** what trust assumption it represents, and **(c)** how you'd notice when it stops helping, don't install it.
+Before installing a skill, answer three questions:
 
-If your own skill fails any of those tests, don't ship it.
+- What does it change about how the agent reasons?
+- What trust assumption does it represent?
+- How would you notice when it stops helping?
+
+If you can't answer all three, don't install it. If your own skill fails any of those tests, don't ship it.
 
 ## Related reading
 
