@@ -192,7 +192,7 @@ gantt
 |---|---|
 | 2 | Draft updated leveling rubric with AI fluency dimension |
 | 4 | Junior pipeline position paper (1 page, CTO-signed) |
-| 6 | Calibration session with EMs/Staff+ on the new rubric |
+| 6 | Calibration session with EMs/[Staff+](../GLOSSARY.md#staff-engineer) on the new rubric |
 | 8 | Cyber insurance renewal with explicit AI coverage |
 | 12 | Quarterly board update with the bimodal narrative + 6-month productivity trend |
 

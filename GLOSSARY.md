@@ -93,3 +93,6 @@ A short policy (one page works) covering approved tools, prohibited data classes
 
 ### Shadow AI
 The use of AI tools (often on personal accounts) outside the org's sanctioned set. Per Netskope 2025: 47% of GenAI users access tools through personal, unmonitored accounts. Per IBM 2025: shadow-AI-related breaches cost +$650K and 1 in 5 orgs has had one. See [Risk, governance, policy / Shadow AI](./08-team-and-adoption/risk-governance-policy.md#shadow-ai).
+
+### Staff+ engineer
+Industry shorthand for Staff Engineer and above on the senior-IC ladder (Staff, Senior Staff, Principal, Distinguished, Fellow). The "+" means "and higher levels." Common in role-based surveys like the Pragmatic Engineer's. Distinguishes senior individual contributors from engineers below Staff (often grouped as "ICs") and from the management track (EMs, Directors).
