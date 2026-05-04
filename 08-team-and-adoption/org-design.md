@@ -11,6 +11,8 @@ last_updated: 2026-04-26
 
 # Org Design and the Platform Team
 
+> **TL;DR.** Atlassian acquired DX for $1B (Sept 2025, closed Nov 2025) — developer productivity *measurement* is now a board-level capability worth acquiring outright. The org that wins this isn't the one with the best AI tools; it's the one that knows whether the tools are working and adjusts. The pieces that matter, in order: a DevEx-housed platform team (2–8 FTE) owning AI gateway / tool catalog / canonical `AGENTS.md` / telemetry dashboards; a 5–10%-of-engineers champions network coordinated centrally; hiring and leveling rubrics rewritten for AI-augmented engineers; and a deliberate junior-pipeline answer because the bottom rung collapses if you don't engineer one.
+
 The single most-quoted org-design observation I've made to peers in 2026: **Atlassian acquired DX for $1B in cash + restricted stock** ([announced Sept 2025, closed Nov 2025](https://techcrunch.com/2025/09/18/atlassian-acquires-dx-a-developer-productivity-platform-for-1b/)). Developer productivity *measurement* is now a board-level capability worth acquiring outright. That's the signal worth orienting around, the org that wins this isn't the one with the best AI tools; it's the one that knows whether the tools are working and adjusts.
 
 The org pieces that actually matter, in order: the platform team's charter, the champions network, what to do about hiring and leveling, and the junior-pipeline question I get asked more than any other.

@@ -12,6 +12,8 @@ last_updated: 2026-04-26
 
 # Practice and Risks
 
+> **TL;DR.** My current stack: vendor-native baseline (`/memory` + `~/.claude/CLAUDE.md` pruned monthly), claude-mem for cross-session interaction memory, GitNexus on team monorepos and graphify on a personal `/raw` folder for artifact memory. **Three active layers, total** — same logic as skill bloat, more than that and you start fighting your own tooling. The April 2026 underbelly nobody talks about loudly enough: memory poisoning is real and growing, staleness rots fast, and the Karpathy LLM Wiki pattern (synthesized notes in version control, not RAG re-reading) is the most interesting reframe of the year.
+
 The decision tree, the actual stacks I use, the patterns worth borrowing, and then the security and quality concerns. The memory situation in April 2026 has a real underbelly that nobody's talking about loudly enough.
 
 For the full picker logic, also see the interactive memory picker (linked at the end).

@@ -13,6 +13,8 @@ last_updated: 2026-04-28
 
 # Review Discipline
 
+> **TL;DR.** AI-generated code needs *different* review than human-written code, and most teams' checklists were built for the latter — that's the cause of the "defect rates crept up six months in" pattern. Floor: a five-item checklist starting with "do I actually understand what this does?" (controversial but load-bearing). Modern playbook on top: a separate-session security review pass (cross-family ideally — same training data ≈ same blind spots), the prompt reviewed as part of the diff, the "did the author understand it" check, large-diff strategy for the 1,000-line agentic outputs, and review the tests as carefully as the code (AI test suites match the agent's mental model, not yours).
+
 This is where most teams fail. They adopt AI tools without changing their review practices, then get surprised six months in when defect rates have crept up and PR-review time has doubled. The cause is downstream of one fact: **AI-generated code needs different review than human-written code**, and most teams' review checklists were built for the latter.
 
 Humans make typos, forget edge cases, get tired. AI makes different mistakes: subtle logic errors at boundaries, hallucinated APIs, security shortcuts, the systematic patterns covered in [failure modes](./failure-modes.md) and in [07 — When things go wrong](../07-quality-and-security/when-things-go-wrong.md). The review playbook has to match.
