@@ -12,6 +12,8 @@ last_updated: 2026-04-26
 
 # Interaction Memory Tools
 
+> **TL;DR.** When vendor-native memory isn't enough — usually because you want transparency, cross-tool portability, or a deeper episodic store — there are now ~25 third-party memory layers across seven architectural tiers (plain markdown journals → memory-as-OS). The flagship for Claude Code users is **claude-mem** (~67K stars, the reference implementation, AGPL-3.0). The serious-infra play is **Graphiti/Zep** because of validity-windowed facts (old facts invalidated, not deleted — the right answer to staleness; others are copying it). Mem0 is for building agent apps, Letta Code if you want memory as the *primary* concept, the rest are mostly variations on those bets.
+
 When the vendor-native defaults don't cut it, usually because you want transparency, cross-tool portability, KG-backed retrieval, or just a deeper episodic store, you reach for a third-party memory layer. There are roughly twenty-five of these now, with very different bets.
 
 The ones worth knowing, by category. For *artifact* memory (code knowledge graphs like graphify and GitNexus) and for "what should I actually use," see the related pages at the end.

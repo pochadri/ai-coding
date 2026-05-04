@@ -12,6 +12,8 @@ last_updated: 2026-04-26
 
 # Artifact Memory (Code Knowledge Graphs)
 
+> **TL;DR.** Interaction memory captures *what we said*; artifact memory captures *what the code is*. Vector-DB RAG over source files isn't enough — the agent confidently breaks module C from module A because grep didn't find the call site. Two leading projects converge on "build a queryable graph of the codebase" but bet differently: **graphify** (multi-modal: code + docs + papers + audio + screenshots in one graph, no embeddings, MIT) for solo and small-team mixed corpora; **GitNexus** (code-only, depth-first, 12-phase ingestion DAG, hybrid retrieval, PolyForm Noncommercial) for team monorepos with impact-analysis review needs. Pick by *what you're indexing*, not by features.
+
 For most of the AI-coding-tools era, "memory" has meant *what we said*, past conversations, decisions, preferences. That's [interaction memory](./interaction-memory.md), and it's important. But there's a different sub-problem these tools don't solve well: **the agent doesn't actually understand your codebase's structure**, even when the relevant files are in front of it.
 
 You've felt this. The agent confidently proposes a change in module A that breaks an assumption in module C because nothing in A's file mentions C. It writes a refactor that misses three call sites because grep found four and the fifth is dynamic. It reasons about types as if they were the local definitions, not the inherited ones.

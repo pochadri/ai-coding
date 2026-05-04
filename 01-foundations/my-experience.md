@@ -16,6 +16,8 @@ last_updated: 2026-04-28
 
 # My Personal Experience
 
+> **TL;DR.** Two years of daily use, tracked. Current kit: Claude Code 4+ hours/day, ~8-10 custom skills per project (the high-leverage tier; community skills a distant second), vendor-native memory, static analysis + secret scanning in CI, spec-driven development for anything non-trivial, and a deliberate cross-session security review on anything touching auth or deserialization. Real productivity gain at the *individual* level: ~30-40% on TypeScript, ~20-30% on Python, *if and only if* I write a half-decent spec first. The thing I changed my mind about hardest: individual 30% faster does **not** make the team 30% faster — the gap goes to PR review, coordination, and catching subtle AI-introduced bugs.
+
 I've been tracking my own AI coding usage carefully since mid-2024. What follows is the reflective version of that tracking: what I do today, what's changed since I started, what surprised me, and what it actually costs in dollars and habit. The rest of the guide generalizes from these observations; this is the data point.
 
 ## Where I am right now
