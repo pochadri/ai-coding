@@ -1,6 +1,6 @@
 ---
 title: 01 — Foundations
-summary: Why this guide exists, the industry numbers, the contradictory research, and the author's tracked experience.
+summary: Why this guide exists, the industry numbers, the contradictory research, and my tracked experience.
 ---
 
 # Foundations
@@ -9,7 +9,7 @@ Start here if you're new to the guide. This folder establishes *why* AI coding i
 
 ## Read in order
 
-1. [Why I wrote this](./why-this-guide.md), the author's stance and warning about opinionated takes
+1. [Why I wrote this](./why-this-guide.md), my stance and warning about opinionated takes
 2. [The state of the industry](./state-of-industry.md), adoption numbers, spend, and the trust gap
 3. [The research landscape](./research-landscape.md), METR, GitHub/MS, Uplevel, GitClear, Faros, McKinsey
 4. [My personal experience](./my-experience.md), tracked observations across languages and tasks

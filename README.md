@@ -211,6 +211,6 @@ When the practitioner content needs to become a rollout: maturity, governance, R
 
 ## A note on opinions
 
-The author has been tracking their own AI coding usage since mid-2024 and has read more studies than is healthy. Take everything here as informed opinion, not gospel; the field is changing faster than anyone can keep up with. Some predictions in [What's coming next](./09-frontier/whats-coming.md) will be wrong.
+I've been tracking my own AI coding usage since mid-2024 and have read more studies than is healthy. Take everything here as informed opinion, not gospel; the field is changing faster than anyone can keep up with. Some predictions in [What's coming next](./09-frontier/whats-coming.md) will be wrong.
 
 What probably won't change: understanding, judgment, and quality remain valuable, regardless of how much code AI writes for you.

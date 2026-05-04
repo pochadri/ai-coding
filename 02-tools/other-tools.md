@@ -75,6 +75,6 @@ Honest about tools that get attention but I wouldn't recommend as primary:
 
 ## Related reading
 
-- [Recommended setup](./recommended-setup.md), the author's actual stack and current pricing
+- [Recommended setup](./recommended-setup.md), my actual stack and current pricing
 - [Spec-driven development](../05-workflows/spec-driven-development.md), the workflow Kiro is built around
 - [Recent updates](../09-frontier/recent-updates-april-2026.md), market movements and the OpenAI / Windsurf acquisition context

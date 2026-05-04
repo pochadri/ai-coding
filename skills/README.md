@@ -116,7 +116,7 @@ MIT (matches the rest of the repo).
 ## How this skill was made
 
 This is itself an example of the "build your own skill" pattern this guide recommends.
-The decision rules in `SKILL.md` are extracted from prompts the author was repeating;
+The decision rules in `SKILL.md` are extracted from prompts I was repeating;
 the references files separate static catalog data from instructions; progressive
 disclosure keeps the always-loaded `SKILL.md` portion lean. If you're learning to author
 skills, read `SKILL.md` here as a working example, then read

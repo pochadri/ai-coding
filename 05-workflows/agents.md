@@ -103,6 +103,6 @@ GitHub's Labs team has been the loudest on this thesis ("one developer, two doze
 
 - [Spec-driven development](./spec-driven-development.md), what to hand to the agent
 - [Skills ecosystem](./skills-ecosystem.md), packaged agent behaviors
-- [Claude Code](../02-tools/claude-code.md), the author's primary agent platform
+- [Claude Code](../02-tools/claude-code.md), my primary agent platform
 - [When things go wrong](../07-quality-and-security/when-things-go-wrong.md), debugging systematic agent mistakes
 - [The alignment bottleneck](../08-team-and-adoption/alignment-bottleneck.md), the team-coordination problem agents create

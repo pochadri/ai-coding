@@ -5,7 +5,7 @@ summary: Takes on each major AI coding tool, plus the recommended setup.
 
 # Tools
 
-Opinionated reviews of the tools the author has used daily. No "everything is wonderful" overview, each page says who the tool is *for* and what's wrong with it.
+Opinionated reviews of the tools I've used daily. No "everything is wonderful" overview, each page says who the tool is *for* and what's wrong with it.
 
 ## At a glance
 
@@ -45,7 +45,7 @@ quadrantChart
 3. [Claude Code](./claude-code.md)
 4. [OpenAI Codex](./openai-codex.md)
 5. [Other tools](./other-tools.md), Windsurf, Codeium, Amazon Q, Kiro, Antigravity, Cline/Aider
-6. [Recommended setup](./recommended-setup.md), what the author actually uses
+6. [Recommended setup](./recommended-setup.md), what I actually use
 
 ## Where to go next
 
