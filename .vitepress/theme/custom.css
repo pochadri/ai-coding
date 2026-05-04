@@ -1041,6 +1041,24 @@
   height: auto;
 }
 
+/* Neutralize .vp-doc p bleed into mermaid labels — without this,
+   foreignObject <p> inherits 16.5px / 1.65 line-height and overflows
+   nodes sized for 13px. */
+.mermaid-diagram foreignObject p,
+.mermaid-diagram .nodeLabel p,
+.mermaid-diagram .edgeLabel p {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: 1.25;
+}
+
+.mermaid-diagram .nodeLabel,
+.mermaid-diagram .edgeLabel {
+  font-size: 13px;
+  line-height: 1.25;
+}
+
 p.mermaid-caption {
   text-align: center;
   font-size: 0.875rem;

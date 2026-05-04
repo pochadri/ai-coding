@@ -24,15 +24,16 @@ export default withMermaid(defineConfig({
       mainBkg: '#18181B',
       secondBkg: '#F4F4F5',
       tertiaryBkg: '#FFFFFF',
-      fontFamily: '"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace',
+      fontFamily: '"Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif',
       fontSize: '13px',
     },
     flowchart: {
       curve: 'basis',
-      htmlLabels: false,
+      htmlLabels: true,
       nodeSpacing: 50,
       rankSpacing: 50,
       diagramPadding: 20,
+      wrappingWidth: 200,
     },
     sequence: {
       diagramMarginX: 20,
