@@ -1,30 +1,73 @@
 /* ============================================================
- * VitePress brand-color overrides
- * Forest-green palette aligned with the favicon and theme-color.
+ * Editorial bones + engineered metadata
+ * Warm-ink palette, Fraunces display, Source Serif 4 body,
+ * IBM Plex Mono metadata, JetBrains Mono code.
  * ============================================================ */
 
 :root {
-  --vp-c-brand-1: #2d6b5a;
-  --vp-c-brand-2: #3c8772;
-  --vp-c-brand-3: #62a991;
-  --vp-c-brand-soft: rgba(60, 135, 114, 0.14);
+  /* Ink-red accent (newspaper ink, not startup green) */
+  --vp-c-brand-1: #9F2D24;
+  --vp-c-brand-2: #B83C30;
+  --vp-c-brand-3: #C8503D;
+  --vp-c-brand-soft: rgba(159, 45, 36, 0.08);
 
-  --vp-c-default-soft: rgba(101, 117, 133, 0.14);
+  /* Neutral surfaces — Linear/Vercel/Stripe-docs face, no warm cream tint */
+  --vp-c-bg: #FFFFFF;
+  --vp-c-bg-alt: #FAFAFA;
+  --vp-c-bg-soft: #F4F4F5;
+  --vp-c-bg-elv: #FFFFFF;
 
-  --vp-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --vp-font-family-mono: ui-monospace, SFMono-Regular, "SF Mono",
-    Menlo, Consolas, "Liberation Mono", monospace;
-  --vp-font-family-serif: "Iowan Old Style", "Charter", Georgia, "Times New Roman", serif;
+  --vp-c-text-1: #18181B;
+  --vp-c-text-2: #71717A;
+  --vp-c-text-3: #A1A1AA;
+
+  --vp-c-divider: #E4E4E7;
+  --vp-c-gutter: #F4F4F5;
+
+  --vp-c-default-soft: rgba(113, 113, 122, 0.08);
+
+  /* Type system — Geist sans body, Fraunces serif for hero/display only,
+     IBM Plex Mono for metadata, JetBrains Mono for code. */
+  --vp-font-family-base: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+  --vp-font-family-serif: "Fraunces", Georgia, "Iowan Old Style", "Times New Roman", serif;
+  --vp-font-family-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --vp-font-family-mono-meta: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
   --vp-layout-max-width: 1440px;
 }
 
 .dark {
-  --vp-c-brand-1: #62a991;
-  --vp-c-brand-2: #3c8772;
-  --vp-c-brand-3: #2d6b5a;
-  --vp-c-brand-soft: rgba(98, 169, 145, 0.16);
+  /* Lifted accent for contrast on dark */
+  --vp-c-brand-1: #E25647;
+  --vp-c-brand-2: #D44434;
+  --vp-c-brand-3: #B83C30;
+  --vp-c-brand-soft: rgba(226, 86, 71, 0.14);
+
+  /* Neutral off-black, Vercel-docs face */
+  --vp-c-bg: #0A0A0A;
+  --vp-c-bg-alt: #18181B;
+  --vp-c-bg-soft: #1F1F23;
+  --vp-c-bg-elv: #0A0A0A;
+
+  --vp-c-text-1: #FAFAFA;
+  --vp-c-text-2: #A1A1AA;
+  --vp-c-text-3: #71717A;
+
+  --vp-c-divider: #27272A;
+  --vp-c-gutter: #18181B;
+}
+
+/* ----- Reusable mono-meta small-caps treatment ----- */
+.mono-meta,
+.home-pub__masthead-meta,
+.home-pub__kicker,
+.home-pub__date,
+.home-pub__toc-head,
+.home-pub__shortcut-label,
+.home-pub__voices-head,
+.home-pub__sig-text {
+  font-family: var(--vp-font-family-mono-meta);
+  font-feature-settings: "ss01", "ss02";
 }
 
 /* ============================================================
@@ -90,19 +133,20 @@
   font-family: var(--vp-font-family-serif);
   font-size: clamp(2.75rem, 7vw, 4.75rem);
   font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.025em;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
   margin: 0 0 1.25rem;
   color: var(--vp-c-text-1);
+  font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0;
 }
 
 .home-pub__lede {
-  font-family: var(--vp-font-family-serif);
-  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  font-family: var(--vp-font-family-base);
+  font-size: clamp(1.1rem, 1.8vw, 1.3rem);
   line-height: 1.5;
-  color: var(--vp-c-text-1);
+  color: var(--vp-c-text-2);
   font-weight: 400;
-  max-width: 36em;
+  max-width: 38em;
   margin: 0 0 2rem;
 }
 
@@ -141,15 +185,27 @@
 }
 
 .home-pub__btn--brand {
-  background: var(--vp-c-brand-1);
-  border-color: var(--vp-c-brand-1);
-  color: #fff;
+  background: var(--vp-c-text-1);
+  border-color: var(--vp-c-text-1);
+  color: var(--vp-c-bg);
 }
 
 .home-pub__btn--brand:hover {
-  background: var(--vp-c-brand-2);
-  border-color: var(--vp-c-brand-2);
-  color: #fff;
+  background: #2D2723;
+  border-color: #2D2723;
+  color: var(--vp-c-bg);
+}
+
+.dark .home-pub__btn--brand {
+  background: var(--vp-c-text-1);
+  border-color: var(--vp-c-text-1);
+  color: var(--vp-c-bg);
+}
+
+.dark .home-pub__btn--brand:hover {
+  background: #FAF7F2;
+  border-color: #FAF7F2;
+  color: var(--vp-c-bg);
 }
 
 .home-pub__arrow {
@@ -173,13 +229,13 @@
 
 .home-pub__pull-mark {
   position: absolute;
-  top: 0.75rem;
+  top: 1rem;
   left: 1.25rem;
   font-family: var(--vp-font-family-serif);
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   line-height: 1;
   color: var(--vp-c-brand-1);
-  font-weight: 700;
+  font-weight: 400;
   user-select: none;
 }
 
@@ -260,20 +316,26 @@
 
 .home-pub__toc-list li {
   display: grid;
-  grid-template-columns: 60px 1fr;
+  grid-template-columns: 78px 1fr;
   align-items: baseline;
-  gap: 1rem;
+  gap: 1.25rem;
   padding: 1.1rem 0;
   border-bottom: 1px solid var(--vp-c-divider);
   margin: 0;
 }
 
 .home-pub__num {
-  font-family: var(--vp-font-family-serif);
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-family: var(--vp-font-family-mono-meta);
+  font-size: 0.85rem;
+  font-weight: 600;
   color: var(--vp-c-brand-1);
-  letter-spacing: -0.01em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.home-pub__num::before {
+  content: "§ ";
 }
 
 .home-pub__toc-list a {
@@ -390,12 +452,14 @@
 
 .home-pub__voices li {
   font-family: var(--vp-font-family-serif);
-  font-size: 1.05rem;
-  line-height: 1.55;
+  font-size: 1.1rem;
+  line-height: 1.5;
   color: var(--vp-c-text-1);
+  font-style: italic;
   padding: 0 0 0 1rem;
   border-left: 2px solid var(--vp-c-brand-1);
   margin: 0;
+  font-variation-settings: "opsz" 24;
 }
 
 /* Signature footer */
@@ -412,9 +476,11 @@
 }
 
 .home-pub__sig-text {
-  font-size: 0.85rem;
+  font-size: 0.74rem;
   color: var(--vp-c-text-2);
-  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
 }
 
 .home-pub__sig-text a {
@@ -434,23 +500,24 @@
  * ============================================================ */
 
 .vp-doc {
-  --vp-doc-content-max-width: 760px;
+  --vp-doc-content-max-width: 700px;
 }
 
 .vp-doc h1 {
   font-family: var(--vp-font-family-serif);
   letter-spacing: -0.025em;
-  line-height: 1.1;
+  line-height: 1.05;
   font-weight: 700;
-  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-size: clamp(2.1rem, 4.4vw, 2.8rem);
   margin-bottom: 1.5rem;
+  font-variation-settings: "opsz" 144, "SOFT" 50, "WONK" 0;
 }
 
-/* Subtle "kicker" treatment for the page summary at the top — when the
-   first paragraph after H1 is the lede */
+/* Lede treatment — the summary paragraph right after H1 */
 .vp-doc h1 + p {
+  font-family: var(--vp-font-family-base);
   font-size: 1.15rem;
-  line-height: 1.6;
+  line-height: 1.55;
   color: var(--vp-c-text-2);
   font-weight: 400;
   margin-bottom: 2rem;
@@ -459,11 +526,11 @@
 }
 
 .vp-doc h2 {
-  font-family: var(--vp-font-family-serif);
-  letter-spacing: -0.015em;
-  line-height: 1.2;
+  font-family: var(--vp-font-family-base);
+  letter-spacing: -0.012em;
+  line-height: 1.25;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.55rem;
   border-top: none;
   padding-top: 0;
   margin-top: 3rem;
@@ -490,7 +557,8 @@
 }
 
 .vp-doc p {
-  line-height: 1.7;
+  line-height: 1.65;
+  font-size: 16.5px;
 }
 
 .vp-doc strong {

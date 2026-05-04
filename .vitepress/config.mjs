@@ -15,17 +15,17 @@ export default withMermaid(defineConfig({
   mermaid: {
     theme: 'base',
     themeVariables: {
-      primaryColor: '#3c8772',
-      primaryTextColor: '#ffffff',
-      primaryBorderColor: '#2d6b5a',
-      lineColor: '#3c8772',
-      secondaryColor: '#e8f3ef',
-      tertiaryColor: '#f6f8fa',
-      mainBkg: '#3c8772',
-      secondBkg: '#e8f3ef',
-      tertiaryBkg: '#ffffff',
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
-      fontSize: '14px',
+      primaryColor: '#18181B',
+      primaryTextColor: '#FAFAFA',
+      primaryBorderColor: '#9F2D24',
+      lineColor: '#71717A',
+      secondaryColor: '#F4F4F5',
+      tertiaryColor: '#FFFFFF',
+      mainBkg: '#18181B',
+      secondBkg: '#F4F4F5',
+      tertiaryBkg: '#FFFFFF',
+      fontFamily: '"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace',
+      fontSize: '13px',
     },
     flowchart: {
       curve: 'basis',
@@ -53,7 +53,13 @@ export default withMermaid(defineConfig({
 
   head: [
     ['link', { rel: 'icon', href: '/ai-coding/favicon.svg' }],
-    ['meta', { name: 'theme-color', content: '#3c8772' }],
+    ['meta', { name: 'theme-color', content: '#9F2D24' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,0..100,0..1;1,9..144,400..700,0..100,0..1&family=Geist:wght@400..700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&display=swap'
+    }],
   ],
 
   markdown: {
