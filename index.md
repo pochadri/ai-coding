@@ -37,7 +37,7 @@ title: AI Coding Tools
 
 Most material in this space is either vendor-curated optimism (*"10× productivity!"*) or pure skepticism (*"METR says 19% slower!"*). Neither is useful on its own. The picture from two years of measured daily use is **bimodal** — both numbers are real — and the practical work is holding both in your head at the same time without being lied to by either.
 
-This guide is what I've worked out. Opinionated, current as of April 2026, structured by topic so you can read just the parts you need. It calls out what doesn't work as carefully as what does, in first-person practitioner voice — not consultant voice.
+This guide is what I've worked out. Opinionated, current as of April 2026, structured by topic so you can read just the parts you need. It calls out what doesn't work as carefully as what does.
 
 </section>
 

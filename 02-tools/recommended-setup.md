@@ -12,7 +12,7 @@ last_updated: 2026-04-28
 
 # My Setup
 
-The honest version, as of late April 2026.
+As of late April 2026.
 
 I use **[Claude Code](./claude-code.md)** as the primary harness — agentic multi-file work, refactoring, codebase exploration, security review passes. It's where I spend the bulk of my AI coding time. With serious daily use I pay roughly **$200/month** at current usage-billed pricing (Anthropic's published benchmark for serious users is ~$13/dev/active day, which lands in this range).
 

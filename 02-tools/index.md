@@ -1,6 +1,6 @@
 ---
 title: 02 — Tools
-summary: Honest takes on each major AI coding tool, plus the author's recommended setup.
+summary: Takes on each major AI coding tool, plus the recommended setup.
 ---
 
 # Tools

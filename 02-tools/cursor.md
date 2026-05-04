@@ -59,7 +59,7 @@ What this means in practice:
 - For the specific tasks where Opus's reasoning still matters (security-critical work, novel architecture decisions, anything where being wrong in subtle ways is expensive), I still pay for Opus. The gap closed but didn't disappear.
 - The "fast" / "slow" request pricing model on Cursor remains confusing. Heavy users burn through credits quickly; expect to spend at least $40-60/month for serious daily use, or more if you lean on Opus through Cursor's BYOK option.
 
-The honest take: Composer 2 is a real shift, but I haven't migrated my high-stakes work to it. For exploration, mechanical refactors, and routine in-editor completion, it's now my default in Cursor. For anything I'd be uncomfortable explaining in an incident review, I still route through Claude Code with Opus.
+Composer 2 is a real shift, but I haven't migrated my high-stakes work to it. For exploration, mechanical refactors, and routine in-editor completion, it's now my default in Cursor. For anything I'd be uncomfortable explaining in an incident review, I still route through Claude Code with Opus.
 
 ## The memory regression you need to know about
 

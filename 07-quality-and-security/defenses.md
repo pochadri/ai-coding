@@ -18,7 +18,7 @@ The threat landscape is depressing. The defenses are tractable. What follows is 
 
 ## Tier 1: the non-negotiables
 
-These are not opinions. They are the floor. Honest version, not the pious version: every developer I know uses AI on security-relevant code at least sometimes. The defenses below are what makes that survivable.
+These are not opinions. They are the floor. Every developer I know uses AI on security-relevant code at least sometimes. The defenses below are what makes that survivable.
 
 ### 1. Treat AI-generated security-critical code as untrusted by default
 

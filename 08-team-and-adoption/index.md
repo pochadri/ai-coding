@@ -42,7 +42,3 @@ This is the rollout problem at scale: maturity, governance, ROI, org design, the
 - The practitioner-side disciplines that all of this assumes: **[03 — Effective use](../03-effective-use/)**
 - The quality and security floor: **[07 — Quality & Security](../07-quality-and-security/)**
 - The skills and memory substrate: **[06 — Skills & Memory](../06-skills-and-memory/)**
-
-## A note on voice
-
-These pages are written in the same first-person practitioner voice as the rest of the guide. Where I cite numbers, they're verified, with full citations in [REFERENCES.md](../REFERENCES.md). Where I'm sharing opinion or pattern, I say so. The synthesis is mine; the data isn't.
