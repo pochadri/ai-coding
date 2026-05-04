@@ -1,30 +1,71 @@
 /* ============================================================
- * VitePress brand-color overrides
- * Forest-green palette aligned with the favicon and theme-color.
+ * Editorial bones + engineered metadata
+ * Warm-ink palette, Fraunces display, Source Serif 4 body,
+ * IBM Plex Mono metadata, JetBrains Mono code.
  * ============================================================ */
 
 :root {
-  --vp-c-brand-1: #2d6b5a;
-  --vp-c-brand-2: #3c8772;
-  --vp-c-brand-3: #62a991;
-  --vp-c-brand-soft: rgba(60, 135, 114, 0.14);
+  /* Ink-red accent (newspaper ink, not startup green) */
+  --vp-c-brand-1: #9F2D24;
+  --vp-c-brand-2: #B83C30;
+  --vp-c-brand-3: #C8503D;
+  --vp-c-brand-soft: rgba(159, 45, 36, 0.10);
 
-  --vp-c-default-soft: rgba(101, 117, 133, 0.14);
+  /* Warm paper background, warm near-black ink */
+  --vp-c-bg: #FAF7F2;
+  --vp-c-bg-alt: #F4EFE8;
+  --vp-c-bg-soft: #F1ECE3;
+  --vp-c-bg-elv: #FAF7F2;
 
-  --vp-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --vp-font-family-mono: ui-monospace, SFMono-Regular, "SF Mono",
-    Menlo, Consolas, "Liberation Mono", monospace;
-  --vp-font-family-serif: "Iowan Old Style", "Charter", Georgia, "Times New Roman", serif;
+  --vp-c-text-1: #1A1614;
+  --vp-c-text-2: #6B6359;
+  --vp-c-text-3: #928979;
+
+  --vp-c-divider: #E5DED2;
+  --vp-c-gutter: #EFE9DC;
+
+  --vp-c-default-soft: rgba(107, 99, 89, 0.10);
+
+  /* Type system */
+  --vp-font-family-base: "Source Serif 4", "Source Serif Pro", Georgia, "Iowan Old Style", "Times New Roman", serif;
+  --vp-font-family-serif: "Fraunces", "Source Serif 4", Georgia, "Iowan Old Style", "Times New Roman", serif;
+  --vp-font-family-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --vp-font-family-mono-meta: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
   --vp-layout-max-width: 1440px;
 }
 
 .dark {
-  --vp-c-brand-1: #62a991;
-  --vp-c-brand-2: #3c8772;
-  --vp-c-brand-3: #2d6b5a;
-  --vp-c-brand-soft: rgba(98, 169, 145, 0.16);
+  /* Warm ink, lifted accent for contrast on dark */
+  --vp-c-brand-1: #D9614F;
+  --vp-c-brand-2: #C8503D;
+  --vp-c-brand-3: #9F2D24;
+  --vp-c-brand-soft: rgba(217, 97, 79, 0.14);
+
+  --vp-c-bg: #15110E;
+  --vp-c-bg-alt: #1B1714;
+  --vp-c-bg-soft: #1F1A16;
+  --vp-c-bg-elv: #15110E;
+
+  --vp-c-text-1: #E8E2D9;
+  --vp-c-text-2: #928979;
+  --vp-c-text-3: #6B6359;
+
+  --vp-c-divider: #2D2723;
+  --vp-c-gutter: #211C18;
+}
+
+/* ----- Reusable mono-meta small-caps treatment ----- */
+.mono-meta,
+.home-pub__masthead-meta,
+.home-pub__kicker,
+.home-pub__date,
+.home-pub__toc-head,
+.home-pub__shortcut-label,
+.home-pub__voices-head,
+.home-pub__sig-text {
+  font-family: var(--vp-font-family-mono-meta);
+  font-feature-settings: "ss01", "ss02";
 }
 
 /* ============================================================
@@ -90,20 +131,23 @@
   font-family: var(--vp-font-family-serif);
   font-size: clamp(2.75rem, 7vw, 4.75rem);
   font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.025em;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
   margin: 0 0 1.25rem;
   color: var(--vp-c-text-1);
+  font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0;
 }
 
 .home-pub__lede {
   font-family: var(--vp-font-family-serif);
-  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
-  line-height: 1.5;
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+  line-height: 1.45;
   color: var(--vp-c-text-1);
   font-weight: 400;
+  font-style: italic;
   max-width: 36em;
   margin: 0 0 2rem;
+  font-variation-settings: "opsz" 36;
 }
 
 .home-pub__lede br {
@@ -141,15 +185,27 @@
 }
 
 .home-pub__btn--brand {
-  background: var(--vp-c-brand-1);
-  border-color: var(--vp-c-brand-1);
-  color: #fff;
+  background: var(--vp-c-text-1);
+  border-color: var(--vp-c-text-1);
+  color: var(--vp-c-bg);
 }
 
 .home-pub__btn--brand:hover {
-  background: var(--vp-c-brand-2);
-  border-color: var(--vp-c-brand-2);
-  color: #fff;
+  background: #2D2723;
+  border-color: #2D2723;
+  color: var(--vp-c-bg);
+}
+
+.dark .home-pub__btn--brand {
+  background: var(--vp-c-text-1);
+  border-color: var(--vp-c-text-1);
+  color: var(--vp-c-bg);
+}
+
+.dark .home-pub__btn--brand:hover {
+  background: #FAF7F2;
+  border-color: #FAF7F2;
+  color: var(--vp-c-bg);
 }
 
 .home-pub__arrow {
@@ -173,13 +229,13 @@
 
 .home-pub__pull-mark {
   position: absolute;
-  top: 0.75rem;
+  top: 1rem;
   left: 1.25rem;
   font-family: var(--vp-font-family-serif);
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   line-height: 1;
   color: var(--vp-c-brand-1);
-  font-weight: 700;
+  font-weight: 400;
   user-select: none;
 }
 
@@ -260,20 +316,26 @@
 
 .home-pub__toc-list li {
   display: grid;
-  grid-template-columns: 60px 1fr;
+  grid-template-columns: 78px 1fr;
   align-items: baseline;
-  gap: 1rem;
+  gap: 1.25rem;
   padding: 1.1rem 0;
   border-bottom: 1px solid var(--vp-c-divider);
   margin: 0;
 }
 
 .home-pub__num {
-  font-family: var(--vp-font-family-serif);
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-family: var(--vp-font-family-mono-meta);
+  font-size: 0.85rem;
+  font-weight: 600;
   color: var(--vp-c-brand-1);
-  letter-spacing: -0.01em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.home-pub__num::before {
+  content: "§ ";
 }
 
 .home-pub__toc-list a {
@@ -390,12 +452,14 @@
 
 .home-pub__voices li {
   font-family: var(--vp-font-family-serif);
-  font-size: 1.05rem;
-  line-height: 1.55;
+  font-size: 1.1rem;
+  line-height: 1.5;
   color: var(--vp-c-text-1);
+  font-style: italic;
   padding: 0 0 0 1rem;
   border-left: 2px solid var(--vp-c-brand-1);
   margin: 0;
+  font-variation-settings: "opsz" 24;
 }
 
 /* Signature footer */
@@ -412,9 +476,11 @@
 }
 
 .home-pub__sig-text {
-  font-size: 0.85rem;
+  font-size: 0.74rem;
   color: var(--vp-c-text-2);
-  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
 }
 
 .home-pub__sig-text a {
@@ -434,28 +500,44 @@
  * ============================================================ */
 
 .vp-doc {
-  --vp-doc-content-max-width: 760px;
+  --vp-doc-content-max-width: 700px;
 }
 
 .vp-doc h1 {
   font-family: var(--vp-font-family-serif);
   letter-spacing: -0.025em;
-  line-height: 1.1;
+  line-height: 1.05;
   font-weight: 700;
-  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-size: clamp(2.1rem, 4.4vw, 2.8rem);
   margin-bottom: 1.5rem;
+  font-variation-settings: "opsz" 144, "SOFT" 50, "WONK" 0;
 }
 
-/* Subtle "kicker" treatment for the page summary at the top — when the
-   first paragraph after H1 is the lede */
+/* Lede treatment — the summary paragraph right after H1 */
 .vp-doc h1 + p {
-  font-size: 1.15rem;
-  line-height: 1.6;
-  color: var(--vp-c-text-2);
+  font-family: var(--vp-font-family-serif);
+  font-size: 1.2rem;
+  line-height: 1.55;
+  color: var(--vp-c-text-1);
   font-weight: 400;
+  font-style: italic;
   margin-bottom: 2rem;
-  padding-bottom: 1.25rem;
+  padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--vp-c-divider);
+  font-variation-settings: "opsz" 24;
+}
+
+/* Drop cap on the first body paragraph following the lede.
+   Editorial publication signal — confirms the framing on first sight. */
+.vp-doc h1 + p + p::first-letter {
+  font-family: var(--vp-font-family-serif);
+  font-size: 3.6em;
+  font-weight: 700;
+  float: left;
+  line-height: 0.85;
+  margin: 0.18em 0.12em -0.05em 0;
+  color: var(--vp-c-text-1);
+  font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0;
 }
 
 .vp-doc h2 {

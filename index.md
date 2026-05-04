@@ -28,7 +28,7 @@ title: AI Coding Tools
 </section>
 
 <aside class="home-pub__pull">
-  <div class="home-pub__pull-mark">“</div>
+  <div class="home-pub__pull-mark">§</div>
   <blockquote>55% of AI-generated code is secure. The other 45% isn't.</blockquote>
   <cite>Veracode, <em>Spring 2026 GenAI Code Security Report</em></cite>
 </aside>
