@@ -25,7 +25,7 @@ The most common failure: a skill that says "look for these patterns" with no met
 
 I've installed maybe a dozen "security review" skills over the past year. Only one materially changed Claude's reasoning ([Sentry's](https://github.com/getsentry/skills)). The rest were thin checklists masquerading as expertise. One reviewer ran the same experiment formally, tested five popular security skills and found four were thin checklists. Only Sentry's actually improved Claude's reasoning. ([TimOnWeb writeup](https://timonweb.com/ai/i-checked-5-security-skills-for-claude-code-only-one-is-worth-installing/))
 
-**Test:** if you can replace your skill with the prompt "remember to check for X, Y, Z" and get equivalent results, your skill is a thin checklist. Either teach methodology or delete it.
+**Test:** if you can replace your skill with the prompt "remember to check for SQL injection, hardcoded secrets, and missing authz checks" and get equivalent results, your skill is a thin checklist. Either teach methodology or delete it.
 
 ### Skill bloat
 
