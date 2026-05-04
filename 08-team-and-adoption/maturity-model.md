@@ -37,12 +37,12 @@ flowchart LR
     L5([5 · Native<br/>Autonomous in scope]):::level5
     L0 --> L1 --> L2 --> L3 --> L4 --> L5
 
-    classDef level0 fill:#f4f4f4,stroke:#999,color:#333
-    classDef level1 fill:#e8f3ef,stroke:#3c8772,color:#1a4d3e
-    classDef level2 fill:#c5e3d6,stroke:#3c8772,color:#1a4d3e
-    classDef level3 fill:#85c5a8,stroke:#2d6b5a,color:#fff
-    classDef level4 fill:#3c8772,stroke:#2d6b5a,color:#fff
-    classDef level5 fill:#2d6b5a,stroke:#1a4d3e,color:#fff
+    classDef level0 fill:#FAFAFA,stroke:#71717A,color:#18181B
+    classDef level1 fill:#F4F4F5,stroke:#71717A,color:#18181B
+    classDef level2 fill:#E4E4E7,stroke:#71717A,color:#18181B
+    classDef level3 fill:#71717A,stroke:#52525B,color:#FAFAFA
+    classDef level4 fill:#1A1614,stroke:#000000,color:#FAFAFA
+    classDef level5 fill:#9F2D24,stroke:#7A1F18,color:#FAFAFA,stroke-width:2px
 ```
 <p class="mermaid-caption">▴ The six levels with progression. Most orgs are at Level 1 or 2 in early 2026; Level 4 is the realistic destination.</p>
 

@@ -139,10 +139,10 @@ flowchart TD
     Q3 -- "Some + discoverable" --> A4
     Q3 -- "Some + manual" --> A5
 
-    classDef q fill:#f6f8fa,stroke:#3c8772,color:#1a4d3e,stroke-width:2px
-    classDef ans fill:#e8f3ef,stroke:#3c8772,color:#1a4d3e
-    classDef skill fill:#3c8772,stroke:#2d6b5a,color:#fff,stroke-width:2px
-    classDef agents fill:#85c5a8,stroke:#2d6b5a,color:#fff
+    classDef q fill:#FAFAFA,stroke:#71717A,color:#18181B,stroke-width:2px
+    classDef ans fill:#F4F4F5,stroke:#71717A,color:#18181B
+    classDef skill fill:#9F2D24,stroke:#7A1F18,color:#FAFAFA,stroke-width:2px
+    classDef agents fill:#1A1614,stroke:#000000,color:#FAFAFA
 ```
 <p class="mermaid-caption">▴ When to make a skill vs. prompt vs. context file vs. slash command.</p>
 

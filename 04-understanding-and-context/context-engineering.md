@@ -52,10 +52,10 @@ flowchart TB
     MEM --> CW
     MCP --> CW
 
-    classDef always fill:#3c8772,stroke:#2d6b5a,color:#fff,stroke-width:2px
-    classDef ondemand fill:#85c5a8,stroke:#2d6b5a,color:#fff
-    classDef live fill:#c5e3d6,stroke:#3c8772,color:#1a4d3e
-    classDef window fill:#f6f8fa,stroke:#999,color:#333,stroke-width:2px
+    classDef always fill:#9F2D24,stroke:#7A1F18,color:#FAFAFA,stroke-width:2px
+    classDef ondemand fill:#1A1614,stroke:#000000,color:#FAFAFA
+    classDef live fill:#E4E4E7,stroke:#71717A,color:#18181B
+    classDef window fill:#FAFAFA,stroke:#71717A,color:#18181B,stroke-width:2px
 ```
 <p class="mermaid-caption">▴ The four context-engineering primitives. Each loads at a different time; each has a different cost. Most rollout failures over-use one and under-use the others.</p>
 

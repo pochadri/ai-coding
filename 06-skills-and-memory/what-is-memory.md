@@ -65,10 +65,10 @@ flowchart TD
     AM --> AM2[GitNexus]:::tool
     AM --> AM3[Code knowledge graphs]:::tool
 
-    classDef root fill:#3c8772,stroke:#2d6b5a,color:#fff,stroke-width:2px
-    classDef interaction fill:#85c5a8,stroke:#2d6b5a,color:#fff
-    classDef artifact fill:#85c5a8,stroke:#2d6b5a,color:#fff
-    classDef tool fill:#e8f3ef,stroke:#3c8772,color:#1a4d3e
+    classDef root fill:#9F2D24,stroke:#7A1F18,color:#FAFAFA,stroke-width:2px
+    classDef interaction fill:#1A1614,stroke:#000000,color:#FAFAFA
+    classDef artifact fill:#1A1614,stroke:#000000,color:#FAFAFA
+    classDef tool fill:#F4F4F5,stroke:#71717A,color:#18181B
 ```
 <p class="mermaid-caption">▴ The two sub-problems memory solves. Most teams need both layers, they solve different problems and rarely overlap.</p>
 

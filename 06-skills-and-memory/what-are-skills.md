@@ -52,10 +52,10 @@ flowchart LR
     T1 -. "if description matches<br/>user's request" .-> T2
     T2 -. "if body links<br/>to a reference" .-> T3
 
-    classDef tier1 fill:#3c8772,stroke:#2d6b5a,color:#fff,stroke-width:2px
-    classDef tier2 fill:#85c5a8,stroke:#2d6b5a,color:#fff
-    classDef tier3 fill:#e8f3ef,stroke:#3c8772,color:#1a4d3e
-    classDef sys fill:#f6f8fa,stroke:#999,color:#333
+    classDef tier1 fill:#9F2D24,stroke:#7A1F18,color:#FAFAFA,stroke-width:2px
+    classDef tier2 fill:#1A1614,stroke:#000000,color:#FAFAFA
+    classDef tier3 fill:#F4F4F5,stroke:#71717A,color:#18181B
+    classDef sys fill:#FAFAFA,stroke:#71717A,color:#18181B
 ```
 <p class="mermaid-caption">▴ Three-tier progressive disclosure. With 10 skills installed: ~1,000 baseline tokens vs. ~10,000 for monolithic prompts — ~90% baseline-context reduction.</p>
 

@@ -58,11 +58,11 @@ flowchart TB
     CC --> Ch1 & Ch2 & Ch3 & ChN
     PT -.- Sec & Leg & HR & Pro
 
-    classDef team fill:#3c8772,stroke:#2d6b5a,color:#fff,stroke-width:2px
-    classDef owns fill:#e8f3ef,stroke:#3c8772,color:#1a4d3e
-    classDef coord fill:#85c5a8,stroke:#2d6b5a,color:#fff
-    classDef champ fill:#c5e3d6,stroke:#3c8772,color:#1a4d3e
-    classDef partner fill:#f6f8fa,stroke:#999,color:#333
+    classDef team fill:#9F2D24,stroke:#7A1F18,color:#FAFAFA,stroke-width:2px
+    classDef owns fill:#F4F4F5,stroke:#71717A,color:#18181B
+    classDef coord fill:#1A1614,stroke:#000000,color:#FAFAFA
+    classDef champ fill:#E4E4E7,stroke:#71717A,color:#18181B
+    classDef partner fill:#FAFAFA,stroke:#71717A,color:#18181B
 ```
 <p class="mermaid-caption">▴ Platform team at center; owns the technical infrastructure, coordinates the champions network (5-10% of engineers), partners with sec/legal/HR/procurement.</p>
 
