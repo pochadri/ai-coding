@@ -11,6 +11,8 @@ last_updated: 2026-04-26
 
 # The 90-Day Roadmap
 
+> **TL;DR.** Most "AI strategy" decks have a five-year vision and no Tuesday-morning starting point. Three concrete 90-day plans below, by current maturity level (0/1, 2, 3) — don't skip levels, you'll regret it. The structural finding I'd push hardest on, drawn from Stanford's *Enterprise AI Playbook* (March 2026), is **CEO ownership, not CTO delegation**: orgs that succeed treat AI rollout as a CEO-level commitment with the CTO as the operator. Everything below assumes that engagement at the top.
+
 Most "AI strategy" decks I see have a five-year vision and no Tuesday-morning starting point. What follows is three concrete 90-day plans, one for each common starting maturity level (0/1, 2, 3), that I'd actually hand to a peer who said "okay, I'm convinced; what do I do Monday?"
 
 If you don't know your level, take the [maturity assessment](./assessment.md) first.

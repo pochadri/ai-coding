@@ -11,6 +11,8 @@ last_updated: 2026-04-25
 
 # The Skills Ecosystem
 
+> **TL;DR.** Six categories worth distinguishing: **methodology systems** (gstack, Superpowers, BMAD, Compound, GSD — pick *one*, not two; opinionated systems disagreeing is worse than either alone), **Anthropic's official skills**, **vendor skills** for products you actually use, **security skills** for audit and review, **personal/influencer skills** that codify one developer's opinions, and **community catalogs** that aggregate hundreds. Star counts move weekly. The pieces I'd actually try first depend on what you're building — see the [choosing-skills](./choosing-skills.md) page for the decision framework.
+
 The skills ecosystem now has six rough categories, and you'll get the most leverage if you understand which is which: **methodology systems** that impose a workflow, **Anthropic's official skills** that ship with Claude, **vendor skills** for specific products, **security skills** for audit and review, **personal/influencer skills** that codify one developer's opinions, and **community catalogs** that aggregate hundreds.
 
 An opinionated tour follows. For "which one should *I* install" and "how do I write one," see the other pages in this folder; the references page at the root has the canonical URL list.

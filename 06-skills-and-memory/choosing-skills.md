@@ -11,6 +11,8 @@ last_updated: 2026-04-25
 
 # Choosing Skills for Your Project
 
+> **TL;DR.** Fewer than you think. I ran 14 skills + 4 MCP servers for a stretch and my output got *worse* — agent second-guessing, verbose preamble, hedging on simple tasks; deleted nine and the output snapped back. Most experienced practitioners settle on **3 or fewer active skills** and **5–8 active tools** (skills + MCP combined) per context. Match to project type and stage, pick *one* primary methodology (not both gstack and Superpowers), and prune quarterly — I always find one I'm attached to that the data says isn't helping.
+
 The honest answer to "which skills should I install" is: **fewer than you think**.
 
 I learned this the hard way. I went through a phase of installing every skill that looked interesting, at one point I had something like 14 active skills and 4 MCP servers connected. My output got worse, not better. The agent started second-guessing itself, adding verbose preamble, hedging on simple tasks. I deleted nine skills and the output snapped back. Now I run about six and I'm pretty militant about pruning.
